@@ -1,6 +1,6 @@
 # Data Visualization Techniques
 
-Winter Semester 2022/23 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](https://github.com/krzyzinskim) [@HubertR21](https://github.com/HubertR21)
+Winter Semester 2022/23 [@kozaka93](https://github.com/kozaka93) [@krzyzinskim](https://github.com/krzyzinskim) [@HubertR21](https://github.com/HubertR21) [@mikolajsp](https://github.com/mikolajsp)
 
 Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisualizationTechniques)
 
