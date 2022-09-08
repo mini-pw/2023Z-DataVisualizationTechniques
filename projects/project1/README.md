@@ -119,7 +119,7 @@ W PR o nazwie `[projekt1] Nazwisko1_Nazwisko2_Nazwisko3` należy zamieścić fol
 -   plakat w formacie .pdf o nazwie `nazwisko1_nazwisko2_nazwisko3`,
 -   wszystkie kody służące do odtworzenia wykresów (na ile to możliwe) w podfolderze `kody`.
 
-PR robi jedna osoba z zespołu. Folder należy umieścić w [https://github.com/MI2-Education/2023Z-DataVisualizationTechniques](https://github.com/MI2-Education/2023Z-DataVisualizationTechniques).
+PR robi jedna osoba z zespołu. Folder należy umieścić w [../projects/project1](https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/projects/project1).
 
 Jeżeli zajęcia będą odbywały się w trybie stacjonarnym, należy wydrukować plakat i przynieść go na Wykład **8**. W trybie zdalnym należy nagrać prezentację opisującą pracę i załączyć ją w PR na GitHub (można nagrać prezentację w trybie stacjonarnym).
 
