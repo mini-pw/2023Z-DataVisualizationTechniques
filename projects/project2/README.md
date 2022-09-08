@@ -21,14 +21,14 @@ Za projekt można otrzymać od 0 do 25 punktów, z czego:
 
 ## Oddanie projektu
 
-Czas na wykonanie projektu jest do **17-01-2023 ** - do tego dnia (włącznie) będą przyjmowane Pull Requests (PR) na GitHub.
+Czas na wykonanie projektu jest do **17-01-2023** - do tego dnia (włącznie) będą przyjmowane Pull Requests (PR) na GitHub.
 
 W PR o nazwie `[projekt2] Nazwisko1_Nazwisko2_Nazwisko3` należy zamieścić folder o nazwie `nazwisko1_nazwisko2_nazwisko3` zawierający:
 
 -   nagranie w formacie .mp4 o nazwie `nazwisko1_nazwisko2_nazwisko3`,
 -   wszystkie kody służące do odtworzenia projektu (na ile to możliwe) w podfolderze `kody`.
 
-PR robi jedna osoba z zespołu. Folder należy umieścić w [](https://github.com/MI2-Education/2023Z-DataVisualizationTechniques)[https://github.com/MI2-Education/2023Z-DataVisualizationTechniques](https://github.com/MI2-Education/2023Z-DataVisualizationTechniques)
+PR robi jedna osoba z zespołu. Folder należy umieścić w [../projects/project2](https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/projects/project2)
 
 ## Materiały
 
