@@ -8,9 +8,9 @@
 # Kontakt: MS Teams lub mail
 # anna.kozak@pw.edu.pl/mateusz.krzyzinski.stud@pw.edu.pl/hruczynski21@interia.pl/mikolaj.spytek.stud@pw.edu.pl
 
-## 1) Spos骲 pracy na zajeciach laboratoryjnych
+## 1) Spos贸b pracy na zajeciach laboratoryjnych
 # a) pracujemy w R (wiekszosc semestru) i Python
-# b) pracujemy na przygotowanych plikach, kt髍e beda na repozytorium przedmiotu
+# b) pracujemy na przygotowanych plikach, kt贸re beda na repozytorium przedmiotu
 # c) podczas zajec prowadzacy bedzie wprowadzal zagdanienia, a nastepnie bedzie rozwiazywanie zadan w celu utrwalenia wiadomosci
 # d) kolejna porcja materialu bedzie omawiana jezeli wiekszosc grupy wykona zadane zadanie 
 # e) wszelkie pytania czy to zwiazane z kodem, praca domowa czy kwestie teoretyczne prosze smialo zglaszac prowadzacemu 
@@ -69,7 +69,7 @@ mtcars[,c("am","wt","mpg")]
 
 # Jak wybierac jedna kolumne?
 
-# Uwaga na przecinek i wyb髍 kolumn poprzez indeksy
+# Uwaga na przecinek i wyb贸r kolumn poprzez indeksy
 
 # Pytania
 
@@ -87,7 +87,7 @@ unique(mtcars$cyl)
 
 length(unique(mtcars$cyl))
 
-# 4. Jaka jest srednia wartosc zmiennej "drat" dla samochod體 o wartosci zmiennej "cyl" r體nej 4?
+# 4. Jaka jest srednia wartosc zmiennej "drat" dla samochod贸w o wartosci zmiennej "cyl" r贸wnej 4?
 
 mtcars$cyl== 4
 
