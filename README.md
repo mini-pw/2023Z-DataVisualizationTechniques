@@ -44,7 +44,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">2</td>
     <td rowspan="4">10-12</td>
     <td rowspan="4">The Grammar of Graphics</td>
-    <td rowspan="4">R: dplyr, tidyr, forcats</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab2 target="_blank" rel="noopener noreferrer">R: dplyr, tidyr, forcats</a></td>
     <td rowspan="4">Group work</td>
     <td rowspan="4">P1 (1p)</td>
   </tr>
