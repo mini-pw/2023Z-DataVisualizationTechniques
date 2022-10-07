@@ -1,0 +1,4 @@
+Nie udało mi się połączyć z serwerem wydziałowym, żeby pobrać pliki z labolatorium,
+więc zamiast plików .R przesyłam jakikolwiek plik tekstowy.
+
+Pozdrawiam
