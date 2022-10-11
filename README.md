@@ -60,7 +60,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">Colors and scales</td>
     <td rowspan="4">R: ggplot2 - introduction</td>
     <td rowspan="4">Data exploration</td>
-    <td rowspan="4">P1 (1p)<br>HW1 (5p)</td>
+    <td rowspan="4">P1 (1p)<br><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/69"> HW1 (5p) </a></td>
   </tr>
   <tr>
   </tr>
