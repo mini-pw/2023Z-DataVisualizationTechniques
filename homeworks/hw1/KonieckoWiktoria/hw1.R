@@ -46,8 +46,7 @@ df %>%
 df %>% 
   filter(bathrooms==1 | bathrooms==2) %>% 
   group_by(bathrooms) %>% 
-  arrange(grade) %>% 
-  summarise(Q1 = last(head(grade, prop = 0.25)), Q3 = first(tail(grade, prop = 0.25)))
+  summarise(q1=quantile(grade, probs=0.25), q3=quantile(grade, probs=0.75))
 
 # Odp:  zarówno Q1 i Q3 różnią się o jeden
 
@@ -56,22 +55,22 @@ df %>%
   mutate(s_n = ifelse(lat < (min(lat)+max(lat))/2, "south", "north")) %>% 
   group_by(s_n) %>% 
   arrange(price) %>% 
-  summarise(Q1 = last(head(price, prop = 0.25)), Q3 = first(tail(price, prop = 0.25))) %>% 
+  summarise(Q1 = quantile(price, probs = 0.25), Q3 = quantile(price, probs = 0.75)) %>% 
   mutate(dif = Q3-Q1)
 
-# Odp: północ: $5217000, południe: $1485000
+# Odp: północ: $321000, południe: $122500
 
 # 7. Jaka liczba łazienek występuje najczęściej i najrzadziej w nieruchomościach niepołożonych nad wodą, których powierzchnia wewnętrzna na kondygnację nie przekracza 1800 sqft?
 df %>% 
-  filter(waterfront == 1 & sqft_living <= 1800) %>% 
+  filter(waterfront == 1 & (sqft_living/floors) <= 1800) %>% 
   group_by(bathrooms) %>% 
   summarise(n=n()) %>% 
   filter(n==max(n) | n==min(n))
 
-# Odp: Najczęściej występuje 1 łazienka, najrzadziej 1.5, 2, 2.25, 3.25
+# Odp: Najczęściej występuje 2.5 łazienek, najrzadziej 1.25, 4.5
 
 # 8. Znajdź kody pocztowe, w których znajduje się ponad 550 nieruchomości. Dla każdego z nich podaj odchylenie standardowe powierzchni działki oraz najpopularniejszą liczbę łazienek
-mlv <- function(codes){which.max(tabulate(codes))}    # moda
+mlv <- function(c){which.max(tabulate(c))}    # moda
 df %>% 
   group_by(zipcode) %>% 
   summarise(n=n(), sd = sd(sqft_lot), bath = mlv(bathrooms)) %>% 
@@ -82,8 +81,8 @@ df %>%
 # 9. Porównaj średnią oraz medianę ceny nieruchomości, których powierzchnia mieszkalna znajduje się w przedziałach (0, 2000], (2000,4000] oraz (4000, +Inf) sqft, nieznajdujących się przy wodzie.
 df %>% 
   filter(waterfront == 0) %>% 
-  mutate(size = case_when(sqft_living <= 2000 ~"small",
-                          sqft_living <= 4000~ "medium",
+  mutate(size = case_when(sqft_living <= 2000 ~ "small",
+                          sqft_living <= 4000 ~ "medium",
                           TRUE ~ "large")) %>% 
   group_by(size) %>% 
   summarise(mean=mean(price), median=median(price))
@@ -97,9 +96,8 @@ df %>%
 # 10. Jaka jest najmniejsza cena za metr kwadratowy nieruchomości? (bierzemy pod uwagę tylko powierzchnię wewnątrz mieszkania)
 ft_to_m = 0.3048
 df %>%
-  mutate(price_per_sqrm = price/(sqft_living*ft_to_m^2)) %>% 
-  arrange(price_per_sqrm) %>% 
+  mutate(price_per_sqm = price/(sqft_living*ft_to_m^2)) %>% 
+  arrange(price_per_sqm) %>% 
   head(1)
 
 # Odp: $942.79
-
