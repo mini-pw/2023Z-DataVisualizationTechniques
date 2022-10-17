@@ -130,4 +130,4 @@ df %>%
   summarise(price_per_sqm = price / sqm_living) %>% 
   slice_min(price_per_sqm, n = 1)
   
-Odp: 942.79
+# Odp: 942.79
