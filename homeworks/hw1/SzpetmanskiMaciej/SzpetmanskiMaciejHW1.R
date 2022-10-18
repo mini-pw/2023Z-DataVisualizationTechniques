@@ -80,29 +80,19 @@ poczta = poczta$zipcode
 
 # odchylenie standardowe
 
-df %>% filter(zipcode == 98038) %>% select(sqft_lot) -> dzialka
-sd(dzialka$sqft_lot)
-df %>% filter(zipcode == 98052) %>% select(sqft_lot) -> dzialka
-sd(dzialka$sqft_lot)
-df %>% filter(zipcode == 98103) %>% select(sqft_lot) -> dzialka
-sd(dzialka$sqft_lot)
-df %>% filter(zipcode == 98115) %>% select(sqft_lot) -> dzialka
-sd(dzialka$sqft_lot)
-df %>% filter(zipcode == 98117) %>% select(sqft_lot) -> dzialka
-sd(dzialka$sqft_lot)
+df %>% 
+  filter(zipcode %in% poczta) %>% 
+  group_by(zipcode) %>% 
+  summarise(x = sd(sqft_lot))
 
 #liczba łazienek
 
-df %>% filter(zipcode == 98038) %>% group_by(bathrooms) -> pom
-sort(table(pom$bathrooms))
-df %>% filter(zipcode == 98052) %>% group_by(bathrooms) -> pom
-sort(table(pom$bathrooms))
-df %>% filter(zipcode == 98103) %>% group_by(bathrooms) -> pom
-sort(table(pom$bathrooms))
-df %>% filter(zipcode == 98115) %>% group_by(bathrooms) -> pom
-sort(table(pom$bathrooms))
-df %>% filter(zipcode == 98117) %>% group_by(bathrooms) -> pom
-sort(table(pom$bathrooms))
+df %>% 
+  filter(zipcode %in% poczta) %>% 
+  group_by(zipcode, bathrooms) %>% 
+  summarise(lazienki = n()) %>% 
+  top_n(1, lazienki)
+
 
 # Odp:Adres 98038 odchylenie - 63111.11, liczba łazienek - 2.5; 98052 odchylenie - 10276.19, liczba łazienek - 2.5;  98103 odchylenie - 1832.009, liczba łazienek - 1; 98115 odchylenie - 2675.302, liczba łazienek - 1; 98117 odchylenie - 2318.662, liczba łazienek - 1;
 
