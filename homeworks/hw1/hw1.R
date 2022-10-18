@@ -6,11 +6,15 @@ colnames(df)
 dim(df)
 apply(df, 2, function(x) sum(is.na(x))) # nie ma wartości NA w żadnej kolumnie
 
+
 # 1. Jaka jest średnia cena nieruchomości z liczbą łazienek powyżej mediany i położonych na wschód od południka 122W?
 
+df %>% 
+  filter(bathrooms > median(bathrooms) & long > -122) %>% 
+  summarise_at("price", mean)
 
+# Odp: Szukana średnia cena to 625499.4.
 
-# Odp:
 
 # 2. W którym roku zbudowano najwięcej nieruchomości?
 
@@ -18,9 +22,11 @@ df %>%
   group_by(yr_built) %>% 
   summarise(n = n()) %>% 
   arrange(-n) %>% 
+  select(yr_built) %>% 
   head(1)
 
 # Odp: W roku 2014.
+
 
 # 3. O ile procent większa jest mediana ceny budynków położonych nad wodą w porównaniu z tymi położonymi nie nad wodą?
 
@@ -31,34 +37,38 @@ df %>%
 
 # Odp: Jest o 311.1111% wyższa.
 
+
 # 4. Jaka jest średnia powierzchnia wnętrza mieszkania dla najtańszych nieruchomości posiadających 1 piętro (tylko parter) wybudowanych w każdym roku?
 
 df %>% 
   filter(floors == 1) %>%
   group_by(yr_built) %>% 
-  summarise(lowest_price = min(price)) %>% 
-  pull(lowest_price) %>% 
-  mean()
+  filter(price == min(price)) %>%
+  ungroup() %>%
+  summarise(mean = mean(sqft_living))
 
-# Odp: Ich średnia cena to 159999.8 USD.
+# Odp: Ich średnia powierzchnia to 1030 stóp kwadratowych.
+
 
 # 5. Czy jest różnica w wartości pierwszego i trzeciego kwartyla jakości wykończenia pomieszczeń pomiędzy nieruchomościami z jedną i dwoma łazienkami? Jeśli tak, to jak różni się Q1, a jak Q3 dla tych typów nieruchomości?
 
 df %>% 
-  filter(bathrooms == 1 | bathrooms == 2)
+  filter(bathrooms == 1 | bathrooms == 2) %>% 
+  group_by(bathrooms) %>% 
+  summarise(Q1 = quantile(grade)[1], Q3 = quantile(grade)[3])
 
-# Odp:
+# Odp: W przypadku Q1 - jego wartość dla nieruchomości z dwoma łazienkami jest o 1 wyższa, niż dla nieruchomości z jedną łazienką. Q3 są tożsame dla obu typów nieruchomości.
+
 
 # 6. Jaki jest odstęp międzykwartylowy ceny mieszkań położonych na północy a jaki tych na południu? (Północ i południe definiujemy jako położenie odpowiednio powyżej i poniżej punktu znajdującego się w połowie między najmniejszą i największą szerokością geograficzną w zbiorze danych)
 
 df %>% 
   mutate(hemi = if_else(lat > (max(df$lat) + min(df$lat)) / 2, "North", "South")) %>% 
   group_by(hemi) %>% 
-  select(price) %>% 
-  mutate(q = quantile(probs = seq(0, 1, 0.25)))
-                                              ### and now you, my little computer, write to my little bubuś that "angee loves you"
+  summarise(IQR = IQR(price))
 
-# Odp:
+# Odp: Odstęp międzykwartylowy dla mieszkań położonych na północy wynosi 321000, a dla mieszkań na południu - 122500.
+
 
 # 7. Jaka liczba łazienek występuje najczęściej i najrzadziej w nieruchomościach niepołożonych nad wodą, których powierzchnia wewnętrzna na kondygnację nie przekracza 1800 sqft?
 
@@ -68,9 +78,9 @@ df %>%
   group_by(bathrooms) %>% 
   summarise(number_of_houses = n()) %>% 
   filter(number_of_houses == max(number_of_houses) | number_of_houses == min(number_of_houses))
-  
 
 # Odp: Najczęściej występuje 2.5 łazienki, a najrzadziej 4.75 łazienki.
+
 
 # 8. Znajdź kody pocztowe, w których znajduje się ponad 550 nieruchomości. Dla każdego z nich podaj odchylenie standardowe powierzchni działki oraz najpopularniejszą liczbę łazienek
 
@@ -79,7 +89,7 @@ df %>%
   mutate(estates = n()) %>% 
   filter(estates > 550) %>%
   summarise(standard_deviation = sd(sqft_lot), top_bathrooms = max(bathrooms))
-  
+
 # Odp: Zawarta w ramce danych powyżej.
 
 
@@ -88,9 +98,9 @@ df %>%
 df %>% 
   filter(waterfront == 0) %>% 
   mutate(area_group = case_when(
-    sqft_living > 0 & sqft_living <= 2000 ~ "Small",
-    sqft_living > 2000 & sqft_living <= 4000 ~ "Medium",
-    sqft_living > 4000 ~ "Large",
+    sqft_living > 0 & sqft_living <= 2000 ~ "[0, 2000]",
+    sqft_living > 2000 & sqft_living <= 4000 ~ "(2000,4000]",
+    sqft_living > 4000 ~ "(4000, +Inf)",
     TRUE ~ "Other"
   )) %>% 
   group_by(area_group) %>% 
