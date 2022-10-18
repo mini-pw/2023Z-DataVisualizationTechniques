@@ -1,12 +1,10 @@
 library(dplyr)
-setwd("C:/Users/Ag/Desktop/Studia/sem3/TWD")
 df <- read.csv("house_data.csv")
 
 colnames(df)
 dim(df)
 apply(df, 2, function(x) sum(is.na(x))) # nie ma wartości NA w żadnej kolumnie
-View(df)
-str(df)
+
 
 # 1. Jaka jest średnia cena nieruchomości z liczbą łazienek powyżej mediany i położonych na wschód od południka 122W?
 
