@@ -77,6 +77,14 @@ df %>%
   filter(n>550)
 
 # Odp:
+# sd - odchylenie standardowe powierzchni
+# bath - najpopularniejsza liczba łazienek
+#  zipcode     n    sd   bath
+#1   98038   590 63111.     2
+#2   98052   574 10276.     2
+#3   98103   602  1832.     1
+#4   98115   583  2675.     1
+#5   98117   553  2319.     1
 
 # 9. Porównaj średnią oraz medianę ceny nieruchomości, których powierzchnia mieszkalna znajduje się w przedziałach (0, 2000], (2000,4000] oraz (4000, +Inf) sqft, nieznajdujących się przy wodzie.
 df %>% 
@@ -98,6 +106,6 @@ ft_to_m = 0.3048
 df %>%
   mutate(price_per_sqm = price/(sqft_living*ft_to_m^2)) %>% 
   arrange(price_per_sqm) %>% 
-  head(1)
+  head(1) %>% select(price_per_sqrm)
 
 # Odp: $942.79
