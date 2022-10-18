@@ -55,4 +55,3 @@ apply(df, 2, function(x) sum(is.na(x))) # nie ma wartości NA w żadnej kolumnie
 
 
 # Odp:
-
