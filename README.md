@@ -57,7 +57,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">3</td>
     <td rowspan="4">10-19</td>
-    <td rowspan="4">Colors and scales</td>
+    <td rowspan="4">Colors and scales <br> Don't do this at home.</td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab3 target="_blank" rel="noopener noreferrer">R: ggplot2 - introduction</a></td>
     <td rowspan="4">Data exploration</td>
     <td rowspan="4">P1 (1p)<br><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/69"> HW1 (5p) </a></td>
@@ -72,7 +72,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">4</td>
     <td rowspan="4">10-26</td>
     <td rowspan="4">Maps - is it so complicated?</td>
-    <td rowspan="4">R: ggplot2 - plot modification, theme, facets</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab4 target="_blank" rel="noopener noreferrer"R: ggplot2 - plot modification, theme, facets</a></td>
     <td rowspan="4">First visualizations</td>
     <td rowspan="4">P1 (1p)</td>
   </tr>
@@ -85,7 +85,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">5</td>
     <td rowspan="4">11-02</td>
-    <td rowspan="4">Don't do this at home. Other plot types.</td>
+    <td rowspan="4">Other plot types.</td>
     <td rowspan="4">R: ggplot2 - advanced, extensions: patchwork, ggstatsplot, map, ggpubr</td>
     <td rowspan="4">Advanced visualizations</td>
     <td rowspan="4">P1 (1p)<br>HW2 (5p)</td>
