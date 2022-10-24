@@ -57,7 +57,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">3</td>
     <td rowspan="4">10-19</td>
-    <td rowspan="4">Colors and scales <br> Don't do this at home</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L3-kolory-skale.pdf target="_blank" rel="noopener noreferrer">Colors and scales <br> Don't do this at home</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab3 target="_blank" rel="noopener noreferrer">R: ggplot2 - introduction</a></td>
     <td rowspan="4">Data exploration</td>
     <td rowspan="4">P1 (1p)<br><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/69"> HW1 (5p) </a></td>
