@@ -88,7 +88,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">Other plot types.</td>
     <td rowspan="4">R: ggplot2 - advanced, extensions: patchwork, ggstatsplot, map, ggpubr</td>
     <td rowspan="4">Advanced visualizations</td>
-    <td rowspan="4">P1 (1p)<br>HW2 (5p)</td>
+    <td rowspan="4">P1 (1p)<br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/140 target="_blank" rel="noopener noreferrer">HW2 (5p)</a></td>
   </tr>
   <tr>
   </tr>
