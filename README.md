@@ -43,7 +43,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">2</td>
     <td rowspan="4">10-12</td>
-    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L2-gramatyka.pdf target="_blank" rel="noopener noreferrer">The Grammar of Graphics</a></td>
+    <td rowspan="4">-</td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab2 target="_blank" rel="noopener noreferrer">R: dplyr, tidyr, forcats</a></td>
     <td rowspan="4">Group work</td>
     <td rowspan="4">P1 (1p)</td>
@@ -57,7 +57,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">3</td>
     <td rowspan="4">10-19</td>
-    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L3-kolory-skale.pdf target="_blank" rel="noopener noreferrer">Colors and scales <br> Don't do this at home</a></td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L2-gramatyka.pdf target="_blank" rel="noopener noreferrer">The Grammar of Graphics</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab3 target="_blank" rel="noopener noreferrer">R: ggplot2 - introduction</a></td>
     <td rowspan="4">Data exploration</td>
     <td rowspan="4">P1 (1p)<br><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/69"> HW1 (5p) </a></td>
@@ -71,7 +71,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">4</td>
     <td rowspan="4">10-26</td>
-    <td rowspan="4">Maps - is it so complicated?</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L3-kolory-skale.pdf target="_blank" rel="noopener noreferrer">Colors and scales <br> Don't do this at home</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab4 target="_blank" rel="noopener noreferrer">R: ggplot2 - plot modification, theme, facets</a></td>
     <td rowspan="4">First visualizations</td>
     <td rowspan="4">P1 (1p)</td>
@@ -85,7 +85,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">5</td>
     <td rowspan="4">11-02</td>
-    <td rowspan="4">Other plot types.</td>
+    <td rowspan="4">Maps - is it so complicated? <br> Other plot types.</td>
     <td rowspan="4">R: ggplot2 - advanced, extensions: patchwork, ggstatsplot, map, ggpubr</td>
     <td rowspan="4">Advanced visualizations</td>
     <td rowspan="4">P1 (1p)<br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/140 target="_blank" rel="noopener noreferrer">HW2 (5p)</a></td>
