@@ -1,0 +1,81 @@
+---
+title: "Raport z pracy domowej nr 2"
+author: "Mikołaj Mróz"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=8, fig.height=6) 
+```
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
+library(dplyr)
+library(ggplot2)
+```
+## Cel pracy domowej
+Celem pracy domowej było znalezienie wykresu, który nie jest do końca czytelny i spróbować go przedstawić w lepszy sposób, 
+używając przy tym podobnej sztay graficznej.
+
+## Wizualizacja do poprawy:
+
+![https://www.rp.pl/spoleczenstwo/art37294281-sondaz-dostep-do-broni-polacy-sceptyczni](graf.png){#id .class width=75% height=75%}
+
+
+## Poprawione wizualizacje
+
+### Wykres 1
+
+Wykres 1 jako wykres słupkowy jest dużo bardziej czytelny, niż donut-chart na wizualizacji. Kolory są podobne, ponieważ wcześniej były całkiem dobrze dobrane.
+Czcionka nad słupkami jest czarna i tej samej wielkości dla każdego słupka, co powoduje wizualizację bardziej przejrzystą.
+Mój wykres jest także lepiej opisany (podpisane osie, podziałka na osi).
+
+
+```{r, echo=TRUE}
+#wykres 1
+odpowiedz <- c("zdecydowanie zmniejszy", "raczej zmniejszy", "zdecydowanie zwiększy", "raczej zwiększy", "będzie bez wpływu", "nie wiem")
+odpowiedz <- factor(odpowiedz, levels = unique(odpowiedz))
+ile_odp1 <- c(277, 296, 83, 98, 154, 92)
+procent_odp1 <- ile_odp1/sum(ile_odp1)*100
+grupy_odpowiedzi1 <- c("nie", "nie", "tak", "tak", "bez wplywu", "nie wiem")
+
+df1 <- data.frame(odpowiedz, procent_odp1, grupy_odpowiedzi1)
+
+
+plot1 <- ggplot(df1, mapping =  aes(x = odpowiedz, y = procent_odp1, fill = grupy_odpowiedzi1)) + geom_bar(stat = "identity", show.legend = FALSE) +
+  scale_fill_manual(values = c("azure4", "brown1", "darkgrey", "cadetblue4")) + 
+  labs(title = "W jaki sposób ułatwienie dostępu do broni palnej w Polsce wpłynie na Pani/Pana \nbezpieczeństwo?", x = "Odpowiedź", y = "Procent odpowiedzi") +
+  geom_text(aes(label = procent_odp1), position=position_dodge(width=0.9), vjust=-0.25) +
+  scale_y_continuous(limits = c(0,32), expand = c(0, 0), breaks = seq(0,32,5)) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+plot1
+```
+
+
+
+### Wykres 2
+
+Wykres 2 jest także bardziej czytelny. Legenda jest lepiej widoczna i wykres pionowy lepiej obrazuje dane, niż poziomy.
+W poprawionym wykresie można się lepiej dopatrzyć jakie zachodzą trendy w odpowiedziach oddzielnie mężczyzn i kobiet.
+Na moim wykresie widać, że większość kobiet czułaby się mniej bezpiecznie, gdyby dostęp do broni w Polsce byłby ułatwiony, zaś 
+odpowiedzi mężczyzn są bardziej zróżnicowane.
+
+```{r, echo=TRUE, fig.width=9.25, fig.height=6}
+#wykres 2
+plec <- c(rep("kobieta", 6), rep("mężczyzna", 6))
+procent_odp2 <- c(34, 34, 6, 1, 14,11, 21, 25, 11, 20, 17,6)
+
+df2 <- data.frame(odpowiedz, procent_odp2, plec)
+df2 <- df2 %>% group_by(odpowiedz)
+
+plot2 <- ggplot(df2, mapping =  aes(x = odpowiedz, y = procent_odp2, fill = plec)) + geom_bar(position = "dodge", stat = "identity") +
+  labs(title = "W jaki sposób ułatwienie dostępu do broni palnej w Polsce wpłynie na Pani/Pana \nbezpieczeństwo? (w zależności od płci)", x = "Odpowiedź", y = "Procent odpowiedzi") +
+  guides(fill=guide_legend(title="Płeć")) +
+  geom_text(aes(label = procent_odp2), position=position_dodge(width=0.9), vjust=-0.25) +
+  scale_fill_manual(values = c("darkgoldenrod1", "black")) +
+  scale_y_continuous(limits = c(0,38), expand = c(0, 0), breaks = seq(0, 28, 5)) +
+  theme_bw() +
+  theme(panel.grid = element_blank())
+plot2
+
+```
+
