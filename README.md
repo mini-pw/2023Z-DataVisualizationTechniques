@@ -85,7 +85,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">5</td>
     <td rowspan="4">11-02</td>
-    <td rowspan="4">Maps - is it so complicated? <br> Other plot types.</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L4-maps.pdf target="_blank" rel="noopener noreferrer">Maps - is it so complicated?</a></td>
     <td rowspan="4">R: ggplot2 - advanced, extensions: patchwork, ggstatsplot, map, ggpubr</td>
     <td rowspan="4">Advanced visualizations</td>
     <td rowspan="4">P1 (1p)<br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/140 target="_blank" rel="noopener noreferrer">HW2 (5p)</a></td>
