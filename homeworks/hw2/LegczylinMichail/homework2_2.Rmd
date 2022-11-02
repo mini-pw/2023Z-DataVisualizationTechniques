@@ -1,0 +1,54 @@
+---
+title: "Praca Domowa 2"
+author: "Michaił Legczylin"
+date: "01.11.2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(reshape2)
+```
+
+## Obrany wykres
+![](392778221-684x435.webp)
+
+#### Żródło
+https://www.moneycontrol.com/news/business/markets/techs-terrible-week-in-10-charts-9409331.html
+
+Artykuł z 29 października zatytułowany jako "informatyczny koszmarny tydzień" - zatem wykresy w tym artykule jak najbardziej nie przekraczają dwutygodniowej ważności. :) 
+
+### Opis
+Ten wykres jest zły, mimo tego, że jest słupkowy, ponieważ dwie różne rodzaje wartości są umieszczany w jednym pionie, co zmniejsza czytelność. Też nie ma jasnych linii, żeby łatwo porównywać wysokości słupków.
+
+## Poprawiona wersja
+
+```{r, echo=FALSE}
+
+months <- c("Dec 2020", "Mar 2021", "Jun 2021", "Sep 2021", "Dec 2021", "Mar 2022", "Jun 2022", "Sep 2022")
+income <- c(15, 12, 15, 12, 16, 11, 11, 9)
+losses <- c(3, 2, 3, 3, 4, 3, 3, 4)
+
+frame <- data.frame(
+  months = months,
+  income = (income),
+  losses = (losses)
+)
+
+options(scipen = 999)
+
+frame <- melt(frame, id.vars='months')
+
+frame %>%
+  ggplot(aes(x = months, y = value, fill=variable)) +
+  geom_bar(stat='identity', position='dodge') +
+  labs(title="",
+       x="Miesiące",
+       y="Wartości w miliardach")
+```
+
+### Opis
+
+Ten wykres jest lepszy ze względu na to, że łatwo porównać straty i zyski w danym miesiącu oraz dzięki gridu w tle łatwo jest odczytywać wartości.
