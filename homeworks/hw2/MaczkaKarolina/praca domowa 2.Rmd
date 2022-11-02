@@ -1,0 +1,49 @@
+---
+title: "Praca Domowa 2"
+author: "Karolina Mączka"
+date: '2022-10-31'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r echo=FALSE, message=FALSE}
+library("dplyr")
+library("ggplot2")
+df <- data.frame (leaders  = c("Xi Jinping", "Kim Jong-Un", "Dmitry Medvedev","Vladimir Putin", "Barack Obama", "Donald Trump", "Joe Biden","Francois Hollande", "Emmanuel Macron","Angela Merkel","Olaf Scholz", "David Cameron","Theresa May","Boris Johnson","Liz Truss"),
+                  date_of_assumption_of_office = c("2012-11-15", "2012-04-11", "2008-05-07", "2012-05-07", "2009-01-20", "2017-01-20", "2021-01-20", "2012-05-15", "2017-05-14", "2005-11-22", "2021-12-08", "2010-05-11", "2016-07-13", "2019-07-24","2022-09-06"),
+                  last_day=                      c("2022-10-31", "2022-10-31", "2012-05-07", "2022-10-31", "2017-01-20", "2021-01-20", "2022-10-31", "2017-05-14", "2022-10-31", "2021-12-08", "2022-10-31", "2016-07-13", "2019-07-24", "2022-09-06", "2022-10-25"), 
+                  country= c("Chiny", "Korea Północna", "Rosja", "Rosja", "Stany Zjednoczone","Stany Zjednoczone","Stany Zjednoczone", "Francja", "Francja", "Niemcy","Niemcy", "Wielka Brytania","Wielka Brytania","Wielka Brytania","Wielka Brytania"),
+                  dodatkowo = c(0, 0, 0,8, 0,0,0, 0,0, 0,0, 0,0,0,0)
+                  )
+df$time_in_office=as.numeric(as.Date(df$last_day)-as.Date(df$date_of_assumption_of_office))
+```
+
+## Poprawa wykresu
+
+Znaleziony wykres został opublikowany przez AFP News Agency dnia 17 pażdziernika 2022 roku. Porównuje on
+ile czasu dane osoby urzędowały na najwyższym stanowisku w danym kraju. Dla poszczególnych słupków 
+wykres zaczyna się w różnych miejscach, a użycie wykresu kolumnowego skumulowanego powoduje, że dane są nieczytelne.
+
+```{r, echo=FALSE, out.width = "50%", out.height="50%", fig.align = "center"}
+knitr::include_graphics("pd2.jpg")
+```
+https://mobile.twitter.com/AFP/status/1581827337141686272?s=20&t=LX8442joFZcwLHCM9e5GKw
+
+Na moim wykresie porównałam łaczny czas ich panowania w latach. Po narysowaniu widać, że 
+Xi Jinping wcale nie jest najdłużej panującym władcą. 
+
+```{r pressure, echo=FALSE, fig.align = "center"}
+df %>% 
+    mutate(time_in_office=time_in_office/365+dodatkowo) %>% 
+    ggplot(aes(fill=factor(ifelse(country=="Chiny","Xi Jinping","Others"))))+
+    geom_col(aes(y=time_in_office, x=leaders,))+
+    scale_x_discrete(limits=rev(df$leaders))+
+    coord_flip()+
+    scale_fill_manual(name = "Leaders", values = c("grey60","red"))+
+    labs(y="Years in office", x = "Leaders")+
+    ggtitle("Xi Jinping longevity compared")
+```
+
+

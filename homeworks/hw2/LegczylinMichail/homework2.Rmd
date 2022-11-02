@@ -1,0 +1,129 @@
+---
+title: "Praca Domowa 2"
+output: html_document
+date: "01.11.2022"
+author: "Michaił Legczylin"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+```
+
+## Obrany wykres
+![](639px-Kühlschifffahrt_Bananen_Exporte_20071.png)
+
+#### Żródło: https://excelcharts.com/wp-content/uploads/2011/06/639px-Kühlschifffahrt_Bananen_Exporte_20071.png
+
+### Opis
+Ten wykres jest zły z wielu przyczyn:
+
+* jest 3D
+  + dalne wartości są przykrywane bliższymi
+  + odczytywanie wartości, które stoją dalej od osi staje się co raz trudniejsze
+  + odczytywanie wartości, które są nawet blisko osi może być trudne, ponieważ istnieje takie zjawisko, jak perspektywa
+* nieodpowiednie tło
+* powtarzająca się definicja (lata mają swoje kolory i to jest opisane w legendzie oraz na samym wykresie)
+
+## Poprawiona wersja
+
+```{r, echo=FALSE}
+
+countries <- c(
+  rep("Ecuador", 12),
+  rep("Philippinen", 12),
+  rep("Costa Rica", 12),
+  rep("Kolumbien", 12),
+  rep("Guatemala", 12),
+  rep("Belg./Luxbg.", 12),
+  rep("Honduras", 12),
+  rep("USA", 12),
+  rep("Ver. Arab. Emir.", 12),
+  rep("Panama", 12),
+  rep("Kamerun", 12)
+)
+
+years <-
+  rep(
+    c(
+      "1994",
+      "1995",
+      "1996",
+      "1997",
+      "1998",
+      "1999",
+      "2000",
+      "2001",
+      "2002",
+      "2003",
+      "2004",
+      "2005"
+    ),
+    11
+  )
+
+quantities <- c(
+  # ecuador
+  sample(3000000:5000000, 12),
+  
+  # philippinen
+  sample(1000000:2000000, 12),
+  
+  # costa rica
+  sample(1500000:2000000, 12),
+  
+  #kolumbien
+  sample(1000000:1500000, 12),
+  
+  #guatemala
+  sample(500000:1000000, 12),
+  
+  #belg
+  sample(500000:1000000, 12),
+  
+  #honduras
+  sample(500000:1000000, 12),
+  
+  #usa
+  sample(500000:500000, 12),
+  
+  #ver
+  sample(0:500000, 12),
+  
+  #panama
+  sample(500000:1000000, 12),
+  
+  #kamerun
+  sample(0:500000, 12)
+)
+
+frame <- data.frame(
+  countries = countries,
+  years = years,
+  quantities = sqrt(quantities / 1000)
+)
+
+options(scipen = 999)
+
+frame %>%
+  ggplot(aes(x = years, y = quantities)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  coord_flip() +
+  facet_wrap(~ countries) +
+  theme_light() +
+  labs(
+    title = "Eksport bananów",
+    x = "Lata",
+    y = "Ilość wyeksportowanych bananów"
+  )
+
+```
+
+### Opis
+
+Ten wykres jest lepszy (choć może i nie tak "atrakcyjny") z następnujących powodóW:
+
+* wszystkie wartości są widoczne
+* wszystkie wartości są łatwo porównywalne w obrębie zarówno kraju, jak i wielu krajów
+* wartości są pogrupowane po krajach, co pozwala na szybkie odnajdywanie się w wykresie

@@ -1,0 +1,63 @@
+---
+title: "Praca domowa 2"
+output: html_document
+date: "2022-10-27"
+---
+```{r include=FALSE}
+library("ggplot2")
+library("dplyr")
+library("tidyverse")
+```
+## Wykres do poprawy
+źródło: https://www.anychart.com/products/anychart/gallery/Mekko_(Marimekko)_and_Mosaic_Charts/Social_Media_Use_in_U.S.php
+ 
+
+#### Jako wykres do poprawy, wybrałem wykres przedstawiający odsetek Amerykanów korzystających z mediów społecznościowych na przestrzeni lat 2006-2021 w czterech grupach wiekowych.
+
+<img src="do_poprawy.png" width="100%"/>
+
+### Słabe strony wykresu:
+1. Ciężko porównać między sobą wartości procentowe różnych grup wiekowych dla tego samego roku, ponieważ prostokąty przedstawiające te procenty mają zupełnie różną wysokość. Dla przykładu prostokąt przedstawiający procent grupy wiekowej 65+ w roku 2021 o wartości 45% jest dużo wyższy niż prostokąt przedstawiający procent grupy wiekowej 18-29 w roku 2021, co może prowadzić do mylnego zrozumienia przedstawionych danych.
+
+2. Źle dobrana kolorystyka. Bardzo ciężko przeczytać wartości procentowe naniesione na prostokąty, szczególnie dla roku 2018.
+3. Trudno zauważyć trend dla danej grupy wiekowej.
+
+## Poprawiony wykres
+
+```{r out.width="100%"}
+# Tworzymy ramke danych na podstawie wykresu
+years <- c(2006, 2009, 2012, 2015, 2018, 2021)
+ayoung <- c(41, 70, 81, 90, 88, 84)
+mid <- c(6, 42, 64, 77, 78, 81)
+older <- c(3, 20, 39, 51, 64, 73)
+oldest <- c(0, 5, 16, 35, 37, 45)
+
+frame <- data.frame(years, ayoung, mid, older, oldest)
+
+# Przygotowujemy dane pod ggplota
+df <-  frame %>%
+  gather(key = "variable", value = "value", -years)
+
+#Tworzymy wykres
+ggplot(df, aes(x = years, y = value)) + 
+  geom_line(aes(color = variable),size=1.2) + 
+  scale_color_hue(labels = c("18-29", "30-49","50-64","65+"))+
+  scale_x_continuous(breaks = c(2006, 2009, 2012, 2015, 2018, 2021))+
+  scale_y_continuous(breaks = seq(0, 100, by=10),
+                     labels = paste(seq(0, 100, by=10),"% "))+
+  labs(title = "Odsetek Amerykanów korzystających z mediów społecznościowych",
+       subtitle = "Lata 2006-2021",
+       x = "Rok",
+       y = "Procent populacji",
+       color = "Wiek")+
+  theme(legend.position = "right",
+        legend.title = element_text(size = 20))
+```
+
+### Dlaczego wykres jest lepszy?
+1. Możemy łatwo porównać wartości procentowe rożnych grup wiekowych dla każdego roku.
+2. Widzimy trend zmian wartości procentowych z roku na rok.
+3. Wykres jest czytelny, przejrzysty i zrozumiały.
+
+
+
