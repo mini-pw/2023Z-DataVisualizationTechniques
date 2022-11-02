@@ -1,0 +1,66 @@
+---
+title: "TWD Zadanie domowe 2"
+author: "Jakub Grzywaczewski"
+date: "2022-11-02"
+output:
+  html_document: default
+---
+
+## Wykres do poprawienia
+![](https://pbs.twimg.com/media/Ff0DT1CXEAIOFI0?format=jpg&name=large)
+
+Owy wykres pojawił się na witrynie twitter.com jako post agencji IBRiS zajmującej się tworzeniem wizualizacji danych dla wielu gazet i organizacji.
+
+Post: https://twitter.com/ibris_pl/status/1584427728987918336
+
+## Poprawiona wersja
+
+### Użyte pakiety
+```{r packages, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(forcats)
+```
+### Wizualizacja
+```{r vis}
+choices <- c("Prawo i Sprawiedliwość", 
+             "Koalicja Obywatelska",
+             "Polska 2050",
+             "Lewica",
+             "Poslkie Stronnictwo Ludowe",
+             "Konfederacja",
+             "niezdecydowani")
+values <- c(0.33, 0.267, 0.096, 0.093, 0.062, 0.052, 0.10) * 100
+colors <- c("#405c99", "#db214e", "#fcbd16", "#95135d", "#00a64e", "#18304e", "#f0ac66")
+
+df <- data.frame(choices, values, colors)
+df <- df[match(choices, df$choices), ]
+df$choices <- fct_rev(factor(df$choices, levels = df$choices))
+
+df %>% 
+  ggplot(aes(x = choices, y = values, fill = colors)) +
+  geom_bar(stat = "identity", fill = colors) +
+  coord_flip() +
+  labs(
+    title = "Aktualne poparcie dla ugrupowań politycznych",
+    y = "Poparcie (wynik sondy)",
+    x = "Ugrupowanie polityczne"
+  ) +
+  theme(
+    plot.margin = margin(20,20,20,10),
+    legend.margin = margin(5, 10, 5, 10)
+  )+
+  theme_bw() +
+  geom_text(aes(label = paste(values, "%", sep="")), hjust = -0.3, colour = "black") +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 100)) 
+```
+
+## Uzasadnienie
+
+### Postcie są nie do skali względem odestku poparcia
+
+Użycie postaci reprezentantów danych partii politycznych jako słupków, o ile kreatywne, nie przynosi niestety odpowiedniego rezultatu ze względu na ludzką fizjologie. Jeżeli chcielibyśmy zachować odpowiednie proporcje wysokości danej postaci do procentu poparcia mielibyśmy małe i postacie, które nie przensiołyby odpowiedniej informacji.
+
+### Prosty wykres słupkowy
+
+W przedstawionej powyżej poprawionej wizualizacji postawiłem na prosty wykres słupkowy z dobrze opisanymi osiami, wynikami sondy oraz odpowiednio wizualizujący skalę różnicy głosów. Jako dodatek słupki są pokolorowane kolorami kluczowymi dla danej partii co pozwoli oglądającemu lepiej odnaleźć się w całym wykresie.
