@@ -101,7 +101,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">11-16</td>
     <td rowspan="4">Hans Rosling: The best stats you've ever seen, Let my dataset change your mindset</td>
     <td rowspan="4">R: plotly - interactive visualization</td>
-    <td rowspan="4">Consultations</td>
+    <td rowspan="4">Prototype</td>
     <td rowspan="4"></td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">11-23</td>
     <td rowspan="4">Dashboards</td>
     <td rowspan="4">R: Shiny - introduction</td>
-    <td rowspan="4">Prototype</td>
+    <td rowspan="4">Consultations</td>
     <td rowspan="4">P1 (1p) <br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/162 target="_blank" rel="noopener noreferrer">HW3 (10p)</a></td>
   </tr>
   <tr>
