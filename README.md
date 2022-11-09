@@ -29,7 +29,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">1</td>
     <td rowspan="4">10-05</td>
-    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/lectures target="_blank" rel="noopener noreferrer">Course introduction, data types, visualization tools</a></td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L1-Intro.pdf target="_blank" rel="noopener noreferrer">Course introduction, data types, visualization tools</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab1 target="_blank" rel="noopener noreferrer">R: review: proton, GitHub</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/projects/project1 target="_blank" rel="noopener noreferrer">Introducing&nbsp;&nbsp;P1</a></td>
     <td rowspan="4"></td>
