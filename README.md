@@ -100,7 +100,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">6</td>
     <td rowspan="4">11-16</td>
     <td rowspan="4">Hans Rosling: The best stats you've ever seen, Let my dataset change your mindset <br> Alberto Cairo: How Charts Lie </td>
-    <td rowspan="4">R: plotly - interactive visualization</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab6  target="_blank" rel="noopener noreferrer">R: plotly - interactive visualization</a></td>
     <td rowspan="4">Prototype</td>
     <td rowspan="4">P1 (1p)</td>
   </tr>
