@@ -29,7 +29,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">1</td>
     <td rowspan="4">10-05</td>
-    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/lectures target="_blank" rel="noopener noreferrer">Course introduction, data types, visualization tools</a></td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L1-Intro.pdf target="_blank" rel="noopener noreferrer">Course introduction, data types, visualization tools</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab1 target="_blank" rel="noopener noreferrer">R: review: proton, GitHub</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/projects/project1 target="_blank" rel="noopener noreferrer">Introducing&nbsp;&nbsp;P1</a></td>
     <td rowspan="4"></td>
@@ -99,10 +99,10 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">6</td>
     <td rowspan="4">11-16</td>
-    <td rowspan="4">Hans Rosling: The best stats you've ever seen, Let my dataset change your mindset</td>
-    <td rowspan="4">R: plotly - interactive visualization</td>
-    <td rowspan="4">Consultations</td>
-    <td rowspan="4"></td>
+    <td rowspan="4">Hans Rosling: <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen" target="_blank" rel="noopener noreferrer">Hans Rosling: The best stats you've ever seen</a>,<a href="https://www.ted.com/talks/hans_rosling_let_my_dataset_change_your_mindset" target="_blank" rel="noopener noreferrer"> Let my dataset change your mindset</a> <br> Alberto Cairo: <a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/lectures/L6-HowChartsLie.pdf target="_blank" rel="noopener noreferrer">How Charts Lie </a></td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab6  target="_blank" rel="noopener noreferrer">R: plotly - interactive visualization</a></td>
+    <td rowspan="4">Prototype</td>
+    <td rowspan="4">P1 (1p)</td>
   </tr>
   <tr>
   </tr>
@@ -115,8 +115,8 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">11-23</td>
     <td rowspan="4">Dashboards</td>
     <td rowspan="4">R: Shiny - introduction</td>
-    <td rowspan="4">Prototype</td>
-    <td rowspan="4">P1 (1p) <br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/162 target="_blank" rel="noopener noreferrer">HW3 (10p)</a></td>
+    <td rowspan="4">Consultations</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/162 target="_blank" rel="noopener noreferrer">HW3 (10p)</a></td>
   </tr>
   <tr>
   </tr>
@@ -128,7 +128,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">8</td>
     <td rowspan="4">11-30</td>
     <td rowspan="4">Presentation of P1 </td>
-    <td rowspan="4">R: Shiny - advanced</td>
+    <td rowspan="4">R: Shiny - exercises </td>
     <td rowspan="4">Discussing P1 <br>Introducing P2</td>
     <td rowspan="4">HW4 (5p)<br>P1 (20p)</td>
   </tr>
@@ -142,7 +142,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">9</td>
     <td rowspan="4">12-07</td>
     <td rowspan="4">History of Statistical Graphics</td>
-    <td rowspan="4">R: tidycharts, rpivotTable, visNetwork</td>
+    <td rowspan="4">R: Shiny - advanced</td>
     <td rowspan="4">Group work</td>
     <td rowspan="4">P2 (1p)</td>
   </tr>
@@ -156,7 +156,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">10</td>
     <td rowspan="4">12-14</td>
     <td rowspan="4">The International Business Communication Standards</td>
-    <td rowspan="4">R: DataExplorer, visdat etc.</td>
+    <td rowspan="4">R: tidycharts, rpivotTable, visNetwork, DataExplorer, visdat etc.</td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4">HW5 (5p)</td>
   </tr>

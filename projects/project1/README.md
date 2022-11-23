@@ -58,14 +58,14 @@ Zajęcia projektowe to głównie wspólne dyskusje, praca w grupie, prezentacje 
   <tr>
     <td>6</td>
     <td>16-11-2022</td>
-    <td>Konsultacje</td>
-    <td></td>
+    <td>Na zajęciach zespoły prezentują prototyp plakatu.</td>
+    <td>1</td>
   </tr>
   <tr>
     <td>7</td>
     <td>23-11-2022</td>
-    <td>Na zajęciach zespoły prezentują prototyp plakatu.</td>
-    <td>1</td>
+    <td>Konsultacje.</td>
+    <td></td>
   </tr>
 </tbody>
 </table>
