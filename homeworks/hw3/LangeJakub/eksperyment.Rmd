@@ -1,0 +1,141 @@
+---
+title: "Praca domowa nr 3"
+author: "Jakub Lange"
+date: "2022-11-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Opis eksperymentu
+
+Celem eksperymentu było sprawdzenie, czy ludzie potrafią szybko i skutecznie odczytywać dane z tzw. Radar Plotów. Dla porównania badani odczytywali również dane z najbardziej typowego wykresu - słupkowego.
+Eksperyment składał się z dwóch zadań. W każdym zadaniu należało spośród kilku zdań zaznaczyć te prawdziwe. Badani mierzyli czas rozwiązania obu zadań.
+Badanie przeprowadzono na dwa sposoby: część badanych odpowiadało za pomocą formularza stworzonego w Google Docs:
+https://forms.gle/hqKGSW5VMN3uPSbx8 
+a pozostali rozwiązywali taki sam test w wersji analogowej.
+
+# Wykresy  i pytania
+
+Poniżej zamieszczono użyte w badaniu wykresy, pytania i odpowiedzi (P - prawda, F - fałsz)
+
+```{r, echo=FALSE, fig.align='center'}
+library(fmsb)
+
+src = c(1,2,3,4,5,6)
+
+grades <- as.data.frame(t(src))
+
+colnames(grades) <- c("Fizyka" , "J. angielski" , "Biologia" , "Wf" , "Informatyka", "Matematyka")
+
+data <- rbind(rep(6,6) , rep(1,6) , grades)
+
+border_color <- rgb(0.2,0.5,0.5,0.9)
+fill_color <- rgb(0.2,0.5,0.5,0.5)
+
+radarchart( data  , axistype=1 , 
+            pcol=border_color, pfcol=fill_color , plwd=4 , 
+            seg=5,
+            cglcol="grey", cglty=1, axislabcol="black", 
+            caxislabels = 1:6, 
+            cglwd=0.8, 
+            title='Oceny Dawida P.'
+)
+
+
+```
+
+Zadanie 1: Zaznacz zdania prawdziwe:
+
+a) Dawid nie zdał z fizyki (P)
+b) Dawid zdał matematykę na ocenę 6 (P)
+c) Dawid jest lepszy z biologii niż z angielskiego (P)
+d) Zaznaczony na wykresie nieregularny kształt oznacza, że oceny Dawida są zróżnicowane (P)
+
+```{r, echo=FALSE, fig.align='center'}
+# Load ggplot2
+library(ggplot2)
+
+
+# Create data
+data <- data.frame(
+  przedmiot=colnames(grades) ,  
+  ocena=src
+)
+
+# Barplot
+ggplot(data, aes(x=przedmiot, y=ocena)) + 
+  geom_bar(stat = "identity", fill=fill_color, color = border_color, size = 2) +
+  scale_y_continuous(expand = c(0,0,0,0.05)) + 
+  ggtitle("Oceny Marka G.") +
+  theme_bw() +
+  theme(plot.title = element_text(hjust = 0.5, size = 15, face = "bold"),
+        panel.grid.minor = element_line(size = 0))
+```
+
+Zadanie 2: Zaznacz zdania prawdziwe
+
+a) Marek zdał fizykę (F)
+b) Marek jest lepszy z angielskiego niż z wf-u (F)
+c) Słupki są różnej wysokości, co świadczy o zróżnicowaniu ocen Marka (P)
+d) Marek zdał informatykę z oceną 5 (P)
+
+## Wyniki
+
+Grupa badawcza wyniosła 16 osób. Dużą część z nich stanowili studenci naszego wydziału, co mogło zaburzyć wynik eksperymentu (ponieważ prawdopodobnie są oni ponadprzeciętnie biegli w czytaniu wykresów). 
+
+Same pytania okazały się zbyt proste - wszystkie 16 osób uzyskały 100% poprawnych odpowiedzi. Podczas analizy wyników pozostało skupić się na czasie odpowiedzi na pytania. 
+
+```{r fig.align='center',echo=FALSE,warning=FALSE,message=FALSE}
+library(tidyverse)
+library(hrbrthemes)
+library(viridis)
+
+
+data <- data.frame(
+  'Nr osoby'=1:16,
+  'Zadanie 1 (RadarPlot)'=c(10,24,60,18,10,14,18,31,11,33,17,21,41,61,42,19),  
+  'Zadanie 2 (BoxPlot)'=c(5,19,50,18,6,12,14,20,6,20,12,13,20,23,18,10),
+  check.names = FALSE
+)
+
+diff <- round((data[,'Zadanie 1 (RadarPlot)'] - data[,'Zadanie 2 (BoxPlot)']) / data[,'Zadanie 2 (BoxPlot)'] * 100, 2)
+col_diff = paste0(diff, "%")
+data <- cbind(data, 'Różnica czasu czytania RadarPlot względem BoxPlot'=col_diff)
+
+library(knitr)
+
+kable(data, caption = 'Czas odpowiedzi w sekundach na zadane pytania',  align = "c")
+
+
+data <- data.frame(
+  Zadanie=c( rep("1. Radar Plot",16), rep("2. Bar Plot",16)),
+  Czas=c( data[,'Zadanie 1 (RadarPlot)'], data[,'Zadanie 2 (BoxPlot)'])
+)
+
+data %>%
+  ggplot(aes(x=Zadanie, y=Czas, fill=Zadanie)) +
+    geom_boxplot() +
+    scale_fill_viridis(discrete = TRUE, alpha=0.6) +
+    geom_jitter(color="black", size=0.4, alpha=0.9) +
+    theme_ipsum() +
+    theme(
+      plot.title = element_text(size=11)
+    ) +
+    ggtitle("Czas odpowiedzi na pytania") +
+    ylab('Czas [s]') +
+  ylim(0, NA)
+```
+
+## Analiza rezultatów
+
+Jak widać na wykresie powyżej, Radar Plot wypada pod kątem łatwości czytania danych gorzej od standardowego wykresu słupkowego. U prawie wszystkich badanych czas odczytywania danych z wykresu RadarPlot był  dłuższy niż czas odczytywania danych z wykresu BoxPlot, średnio o 66,14%. Co ciekawe, mediany czasu odczytywania są jednak zbliżone. Analizując poszczególne wiersze tabeli można zauważyć, że największe różnice w czasie odczytywania pomiędzy typami wykresów odnotowano u osób, które relatywnie wolno poradziły sobie z oboma zadaniami. Może to świadczyć o tym, że odczytywanie RadarPlotów jest problematyczne przede wszystkim dla osób, które ogólnie nie mają dużej styczności z wykresami. 
+``` {r echo=F, include=F}
+round(mean(diff), 2)
+```
+
+## Podsumowanie
+
+Grupa badawcza w eksperymencie była stanowczo za mała, żeby na jego podstawie wyciągać daleko idące wnioski. Eksperyment był też obarczony dużą niedokładnością - osoby, które wypełniały formularz online, same mierzyły sobie czas i podawały go z małą dokładnością (przeważnie w sekundach). Mimo wszystko przypuszczenie, że RadarPloty cechują się mniejszą rozczytywalnością w społeczeństwie, wydaje się uzasadnione.
