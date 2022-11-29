@@ -32,6 +32,3 @@ plot_ly(data = df_clean,
   animation_opts(400) %>%
   animation_button(x = 0.05, y = 0.05) %>%
   animation_slider(currentvalue = list(prefix = "Year: ", font = list(color="green")))
-
-          
-
