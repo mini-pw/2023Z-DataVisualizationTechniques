@@ -2,7 +2,7 @@ library(plotly)
 library(dplyr)
 library(readr)
 
-df <- read.csv("homeworks/hw4/KurdekJeremi/Properties_philly_Kraggle_v2.csv")
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
 
 df$decade <- floor(df$yearBuilt / 10) * 10
 
