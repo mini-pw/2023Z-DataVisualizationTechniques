@@ -1,0 +1,56 @@
+---
+title: "HW4"
+output: html_document
+author: "Sebastian Trojan"
+---
+
+```{R message = FALSE, warning = FALSE}
+library(plotly)
+library(dplyr)
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
+
+
+
+
+
+ramka_cen <- df %>%
+  filter(!is.na(Sale.Price.bid.price),!is.na(School.Score), !is.na(Violent.Crime.Rate))%>%
+  select(cena_koncowa = Sale.Price.bid.price, ocena_szkol = School.Score) %>%
+  mutate(cena_koncowa = as.integer(
+    gsub("(,)", "", gsub("(\\$)", "",cena_koncowa)))
+         )
+
+centyle <- ramka_cen %>%
+  summarise(cena = quantile(cena_koncowa,probs = seq(0.01, 1, 1/100)))
+
+
+which.min2 <- function(y){
+  return(max(which(y == min(y))))
+}
+
+ktory_kwantyl<-function(a,b){
+  return (which.min2(abs(b - a)))
+}
+
+rameczka <- ramka_cen %>% 
+  mutate(centyle = as.numeric(lapply(cena_koncowa, ktory_kwantyl,centyle$cena))) %>%
+  mutate(grupa = case_when(centyle <= 10 ~ 10,
+                           centyle > 10 & centyle <= 20 ~ 20,
+                           centyle > 20 & centyle <= 30 ~ 30,
+                           centyle > 30 & centyle <= 40 ~ 40,
+                           centyle > 40 & centyle <= 50 ~ 50,
+                           centyle > 50 & centyle <= 60 ~ 60,
+                           centyle > 60 & centyle <= 70 ~ 70,
+                           centyle > 70 & centyle <= 80 ~ 80,
+                           centyle > 80 & centyle <= 90 ~ 90,
+                                TRUE ~ 100)) %>%
+  group_by(ocena_szkol, grupa)
+  
+
+plot_ly(data = rameczka, x = ~ocena_szkol, frame = ~grupa, type = "box")  %>% layout(
+  title = "Rozkład ocen szkół, w zależności od ceny nieruchomości",
+  xaxis = list(title = "Ocena szkół"),
+  yaxis  = list(title = "")) %>%
+  animation_slider(currentvalue = list(prefix = "Centyl ceny: ", font = list(color="black")))
+```
+
