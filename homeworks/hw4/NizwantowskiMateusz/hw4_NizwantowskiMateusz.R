@@ -14,7 +14,6 @@ library(readr)
 # a) to jest zadanie za 5 pkt  b) jestem ciekawy wynikow
 
 
-
 dane <- df %>%
   filter(Sale.Price.bid.price != "") %>%
   filter(finished...SqFt. > 2) %>%
@@ -23,10 +22,8 @@ dane <- df %>%
   mutate(cena_za_stope = Sale.Price.bid.price / finished...SqFt.)
 
 
-
 hist(dane$Sale.Price.bid.price, breaks=20)
 hist(dane$cena_za_stope, breaks=20)
-
 
 
 dane <- dane %>%
@@ -39,17 +36,18 @@ dane <- dane %>%
                                             TRUE ~ "Other")) %>%
   mutate(kwantyle_cena_za_stopa = factor(kwantyle_cena_za_stopa, levels = c("Najtansze 20%", "Pomiedzy 20% a 40%", "Pomiedzy 40% a 60%", "Pomiedzy 60% a 80%", "Najdrozsze 20%")))
 
-  
+
 
 plot_ly(
   data = dane, 
   y = ~Sale.Price.bid.price, 
   x = ~Avg.Walk.Transit.score, 
   color = ~kwantyle_cena_za_stopa,
-  colors = "Set1"
+  colors = c("red", "blue", "black", "#32a852", "#c10dd1")
 ) %>%
   layout(title = 'Cena posiadlosci a wskaznik Avg.Walk.Transit.score', plot_bgcolor = "#e5ecf6", 
          yaxis = list(title = 'Price [$]'), legend = list(title=list(text='Cena za ft^2')))
+
 
 # Podsumowując to nic z tego wykresu nie wynika ale jest interaktywny
 # do najladniejszych tez nie nalezy 
