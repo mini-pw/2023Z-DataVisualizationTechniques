@@ -1,0 +1,49 @@
+---
+title: "HW4"
+author: "HubertBaraniak"
+date: "2022-11-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Wykres przedstawiający rozkład przewidywanych cen wynajmu mieszkań w zależności od rodzaju mieszkań.
+
+
+```{r, warning=FALSE, message=FALSE}
+library(plotly)
+library(dplyr)
+
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
+
+df$PropType[df$PropType == "Condominium"] <- "Kondominium"
+df$PropType[df$PropType == "SingleFamily"] <- "Dom jednorodzinny"
+df$PropType[df$PropType == "Townhouse"] <- "Kamienica"
+
+```
+Załadowano dane i zmieniono nazwy na polskie. 
+
+```{r, warning=FALSE, message=FALSE}
+plot_ly(
+  data = df,
+  y = ~Rent.Estimate,
+  x = ~PropType,
+  type = "violin"
+) %>% layout(
+  title = "Przewidywane ceny mieszkań",
+  yaxis = list(title = "Przewidywana cena mieszkań"),
+  xaxis = list(title = "Typ mieszkan"),
+  updatemenus = list(
+    list(
+      x = 1, y = 1,
+      buttons = list(
+        list(method = "restyle",
+             args = list("type", "box"),
+             label = "Boxplot"),
+        list(method = "restyle",
+             args = list("type", "violin"),
+             label = "Violinplot")
+      ))
+  ))
