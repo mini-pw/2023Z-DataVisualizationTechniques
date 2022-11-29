@@ -1,0 +1,69 @@
+---
+title: <center>HW4
+author: <center>Wiktor Woźniak
+output: html_document
+---
+
+<br>
+<center>
+<h5> <b>Wprowadzenie</b></h5>
+</center>
+<br>
+<p align="justify">Celem tej pracy domowej jest stworzenie wykresy z użyciem pakietu plotly. Dane użyte do tego zadania dotyczą rynku nieruchomości w Philadelphi </p>
+<br>
+<center>
+<h5> <b>Wykres</b></h5>
+</center>
+<br>
+<center>
+```{r echo=FALSE, warning=FALSE, message=FALSE, out.width='100%'}
+dane <- read.csv('Properties_philly_Kraggle_v2.csv')
+
+library(plotly)
+library(dplyr)
+
+dane <- dane %>% 
+  group_by(PropType, yearBuilt) %>% 
+  count() %>% 
+  filter(yearBuilt >= 1900 & yearBuilt <= 1990 & PropType != "MultiFamily2To4")
+
+
+
+fig <- plot_ly(
+  data = dane,
+  x = ~yearBuilt,
+  y = ~n,
+  frame = ~PropType,
+  type = "bar",
+  mode = 'markers'
+)
+fig <- fig %>%
+  animation_opts(
+    1000, easing = "elastic", redraw = FALSE
+  )
+fig <- fig %>% layout(
+  title = "Number of properties built, depending on the year and type",
+  yaxis = list(title = 'Number of properties'), 
+  xaxis = list(title = 'Built year')
+)
+fig <- fig %>%
+  animation_slider(
+    currentvalue = list(prefix = "Property type: ", font = list(color="#1f77b4"))
+  )
+fig <- fig %>% animation_button(
+  visible = F
+)
+
+fig
+
+
+```
+</center>
+
+<br>
+<center>
+<h5> <b>Podusmowanie</b></h5>
+</center>
+<br>
+<p align="justify">Ogólnie uważam, że plotly jest ciekawym pakietem do rysowania wykresów interaktywnych, ale jak dla mnie jest bardziej intuicyjny od ggplot, chociaż z praktycznego punktu widzenia ciężej znaleźć w internecie poradniki do R, ponieważ większość z nich odnosi się do Pythona </p>
+
