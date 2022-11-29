@@ -1,0 +1,59 @@
+---
+title: "HW4"
+author: "Martyna Kuśmierz"
+date: '2022-11-29'
+output: html_document
+---
+
+<br />
+
+``````{r, echo=FALSE, warning=FALSE, message=FALSE}
+
+
+
+  
+library(dplyr)
+library(plotly)
+library(readr)
+
+
+dane <- read.csv("dane.csv")
+
+
+
+dane <- dane %>% 
+  mutate(Cena = parse_number(Sale.Price.bid.price)) %>%
+  mutate(Zakres_cen = case_when(
+    Cena < 25000 ~ "0 - 25k",
+    25000 <= Cena & Cena < 50000 ~ "25k - 50k", 
+    50000 <= Cena & Cena < 75000 ~ "50k - 75k",
+    75000 <= Cena & Cena < 100000 ~ "75k - 100k",
+    100000 <= Cena & Cena < 150000 ~ "100k - 150k",
+    150000 <= Cena  ~ "150k - 350k"
+  )) 
+  
+
+
+dane$Zakres_cen <- factor(dane$Zakres_cen, levels = c("0 - 25k","25k - 50k","50k - 75k","75k - 100k","100k - 150k", "150k - 350k"))
+
+plot_ly(
+  data = dane,
+  x = ~Violent.Crime.Rate,
+  y = ~School.Score,
+  type = "scatter",
+  color = ~PropType,
+  frame = ~Zakres_cen,
+  mode = 'markers',
+  text = paste0("Adres: ", dane$Address, "<br>Rok budowy: ", dane$yearBuilt)
+) %>%
+  layout(xaxis = list(title = "Współczynnik przestępczości",zeroline = FALSE),
+         yaxis = list(title = "Punktacja szkół",zeroline = FALSE),
+         title = "Zależność współczynnika przestępczości i punktacji szkół od kwoty sprzedaży"
+  ) %>%
+  animation_slider(currentvalue = list(prefix = "Kwota sprzedaży w dolarach: ",
+                                       xanchor = "left"))
+
+
+
+
+```
