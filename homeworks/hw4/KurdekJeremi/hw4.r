@@ -13,16 +13,16 @@ df <- df %>%
 
 fig <- plot_ly(
   data = df,
-  x = ~price,
-  y = ~finished...SqFt.,
+  y = ~price,
+  x = ~finished...SqFt.,
   frame = ~decade,
   type = "scatter",
   mode = "markers"
 ) %>%
 layout(
   title = "Price vs. Area per Decade",
-  xaxis = list(title = "Price ($)"),
-  yaxis = list(title = "Area (sqft)")
+  yaxis = list(title = "Price ($)"),
+  xaxis = list(title = "Area (sqft)")
 )
 
 fig %>%
