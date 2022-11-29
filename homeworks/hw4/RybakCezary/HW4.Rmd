@@ -1,0 +1,51 @@
+---
+title: "HW4"
+author: "Cezary Rybak"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Kod
+
+```{r, echo=TRUE, include=FALSE}
+library(plotly) 
+library(dplyr) 
+library(stringr)
+```
+```{r, echo=TRUE, include=TRUE}
+#library(plotly) 
+#library(dplyr) 
+#library(stringr)
+
+estate <- read.csv(".\\Properties_philly_Kraggle_v2.csv")
+estate1 <- estate %>% 
+  filter(!is.na(Sale.Price.bid.price) | Sale.Price.bid.price != "") %>% 
+  mutate(soldPrice = substring(Sale.Price.bid.price, 2)) %>% 
+  filter(!is.na(finished...SqFt.)) %>% 
+  mutate(soldPrice = as.numeric(str_replace(soldPrice, ",", ""))) %>% 
+  mutate(finished...SqFt. = finished...SqFt.*0.093) %>% 
+  mutate(Sale.Date = case_when(
+    Sale.Date == "September 13  2016" ~ "2016.09.13",
+    Sale.Date == "October 4  2016" ~ "2016.10.04",
+    Sale.Date == "August 2  2016" ~ "2016.08.02"
+  )) %>% 
+  filter(substring(Sale.Date, 1, 4) == "2016")
+
+estate1 %>% 
+  plot_ly() %>% 
+  add_markers(x=~finished...SqFt., y=~soldPrice, frame=~Sale.Date,
+              text=~paste("Sale price: ", soldPrice, 
+                          "<br>", 
+                          "finished m2: ", finished...SqFt., 
+                          "<br>", 
+                          "Address: ", Address),
+              hoverinfo= "text") %>% 
+  layout(title="Price of sold estates in Philadephia in 2016",
+         xaxis=list(title="Finished square meters"),
+         yaxis=list(title= "Price in $")) %>% 
+  hide_legend()
+```
