@@ -1,6 +1,6 @@
 # P1: Sport
 
-![](png/Baraniak_Ciezki_Charuza.png =250x)
+![](png/Baraniak_Ciezki_Charuza.png)
 Autorzy: Baraniak Hubert, Charuza Alicja, Ciężki Jakub
 
 ![](png/Binda_Grabarski_Grabias.png)             
