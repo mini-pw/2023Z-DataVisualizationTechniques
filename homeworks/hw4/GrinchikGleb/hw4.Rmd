@@ -1,0 +1,46 @@
+---
+title: "Praca Domowa 4"
+author: "Gleb Grinchik"
+date: '2022-11-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+who <- read.csv("Properties_philly_Kraggle_v2.csv")
+
+library(dplyr)
+library(plotly)
+library(stringr)
+```
+
+## "Sprzątanie" ramki danych
+
+```{r frame, echo = TRUE}
+who %>% filter(!is.na(Sale.Price.bid.price), yearBuilt >= 1935) %>% 
+  mutate(Sale.Price.bid.price = str_sub(Sale.Price.bid.price, 2 , -2)) %>%
+  mutate(Sale.Price.bid.price = gsub(",", "", Sale.Price.bid.price)) %>%
+  mutate(Sale.Price.bid.price = as.numeric(Sale.Price.bid.price), bedrooms = ifelse(bedrooms == " -   ", "0", bedrooms)) %>%
+  mutate(bedrooms = as.numeric(bedrooms))-> df
+```
+
+## Generacja wykresu
+
+To jest wykres zależności rankingu szkół koło nieruchomości w zależności od jej ceny dla różnych ich typów i ilości sypialń.
+
+```{r plot, echo=FALSE, warning=FALSE, message=FALSE}
+plot_ly(
+  data = df,
+  y = ~School.Score,
+  x = ~Sale.Price.bid.price,
+  color = ~bedrooms,
+  frame = ~PropType,
+  type = "scatter",
+  colors = c("#ff4000", "#0022ff")
+) %>% layout(
+  xaxis = list(title = "Sale Price", showline = TRUE),
+  yaxis = list(title = "School score"),
+  title = "School Score / Sale Price plot"
+)
+```
+
