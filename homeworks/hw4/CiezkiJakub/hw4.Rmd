@@ -1,0 +1,68 @@
+---
+title: "Praca Domowa 4"
+author: "Jakub Ciężki"
+output: html_document
+---
+
+<style>
+body {
+text-align: justify}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+# Kod i Wykres
+
+```{r Plot}
+library(dplyr)
+library(plotly)
+
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
+df %>% 
+  filter(!is.na(OPA) & !is.na(bedrooms) & !is.na(Sale.Price.bid.price)) -> df
+
+plot_ly(
+  data = df,
+  x = ~Advertising,
+  y = ~Sheriff.Cost,
+  frame = ~bedrooms,
+  color = ~PropType,
+  type = "scatter",
+  mode = "markers",
+  text = ~Advertising,
+  hoverinfo = "text",
+  size = ~Sheriff.Cost
+) %>% 
+  layout(
+  title = "Zależność wartości pola Advertising od Sheriff.Cost",
+  xaxis = list(title = "Advertising", 
+               range = c(1000, 2500)),
+  yaxis = list(title = "Sheriff.Cost"),
+  updatemenus = list(
+    list(
+      x = 1.2, y = 0.5,
+      buttons = list(
+        list(method = "restyle",
+             args = list("type", "scatter"),
+             label = "Scatterplot"),
+        list(method = "restyle",
+             args = list("type", "histogram"),
+             label = "Histogram")
+        )
+      )
+    )
+  ) %>% 
+  animation_opts(easing = "back", 
+                 redraw = TRUE, 
+                 frame = 2000, 
+                 transition = 650) %>% 
+  animation_button(x = 1.2, 
+                   y = 0.8, 
+                   label = "Play Animation") %>%
+  animation_slider(currentvalue = list(prefix = "Bathrooms", 
+                                       font = list(color = "cyan"))) %>% 
+  config(displayModeBar = FALSE)
+
+```
