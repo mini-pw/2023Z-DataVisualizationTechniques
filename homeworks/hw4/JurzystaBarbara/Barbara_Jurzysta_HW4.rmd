@@ -1,0 +1,58 @@
+---
+title: "HW4"
+author: "Barbara Jurzysta"
+date: '2022-11-29'
+output:
+  html_document: default
+  pdf_document: default
+---
+<br />
+
+```{r, warning=FALSE, message=FALSE}
+
+library(plotly)
+library(dplyr)
+library('data.table')
+library("stringr") 
+
+d <- read.csv("Properties_philly_Kraggle_v2.csv")
+d <- d[ d$Sale.Date != ('') , ] 
+d <- d %>% mutate(Sale.Price.bid.price = trimws(Sale.Price.bid.price, whitespace = "[$]*\\s*")) %>% 
+  filter(nzchar(Sale.Price.bid.price))
+d[c("Price1","Price2")] <- str_split_fixed(d$Sale.Price.bid.price, ',', 2)
+d$Price <- paste(d$Price1, d$Price2, sep="")
+d$Price <-as.numeric(gsub(",", ".", d$Price))
+
+fig <- d %>%
+  plot_ly(
+    x = ~PropType,
+    y = ~Price,
+    name = 'Actual Price',
+    side = 'positive',
+    type = 'violin',
+    box = list(
+      visible = T
+    ),
+    meanline = list(
+      visible = T
+    ),color = I("#B7D6C6")
+  ) 
+
+
+fig <- fig %>%
+  add_trace(
+    x = ~PropType,
+    y = ~Opening.Bid,
+    name = 'Opening Bid',
+    side = 'negative',
+    box = list(
+      visible = T
+    ),
+    meanline = list(
+      visible = T
+    ),color = I("#CF909B")) 
+
+fig %>% layout(title = 'Comparison Opening Bid to Actual Price')
+
+```
+
