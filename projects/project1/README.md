@@ -1,63 +1,64 @@
 # P1: Sport
 
-<img src="png/Baraniak_Ciezki_Charuza.png" align="center" width="600"/>
 Autorzy: Baraniak Hubert, Charuza Alicja, Ciężki Jakub
+<img src="png/Baraniak_Ciezki_Charuza.png" align="center" width="600"/>
 
-<img src="png/Binda_Grabarski_Grabias.png" align="center" width="600"/>             
 Autorzy: Binda Michał, Grabarski Łukasz, Grabias Wojciech
+<img src="png/Binda_Grabarski_Grabias.png" align="center" width="600"/>             
 
-<img src="png/Borkowski_Wiktorzak_Andryszak.png" align="center" width="600"/>
 Autorzy: Andryszak Mateusz, Borkowski Maciej, Wiktorzak Mateusz
+<img src="png/Borkowski_Wiktorzak_Andryszak.png" align="center" width="600"/>
 
-<img src="png/Chec_Lepianka_Szuwarska.png" align="center" width="600"/>           
 Autorzy: Chęć Michał, Lepianka Łukasz, Szuwarska Marta
+<img src="png/Chec_Lepianka_Szuwarska.png" align="center" width="600"/>           
 
-<img src="png/Geneja_Pyzowski_Seliga.png" align="center" width="600"/>               
 Autorzy: Geneja Michał, Pyzowski Rafał, Seliga Jakub
+<img src="png/Geneja_Pyzowski_Seliga.png" align="center" width="600"/>               
 
-<img src="png/Grinchik_Matejczuk_Warno.png" align="center" width="600"/>           
 Autorzy: Grinchik Gleb, Matejczuk Michał, Warno Felicja
+<img src="png/Grinchik_Matejczuk_Warno.png" align="center" width="600"/>           
 
-<img src="png/Grzywaczewski_Kocieko_Lange.png" align="center" width="600"/>         
 Autorzy: Grzywaczewski Jakub, Koniecko Wiktoria, Lange Jakub
+<img src="png/Grzywaczewski_Kocieko_Lange.png" align="center" width="600"/>         
 
-<img src="png/Jeczen_Iwicki_Michaluk.png" align="center" width="600"/>          
 Autorzy: Iwicki Michał, Jeczeń Magdalena, Michaluk Wojciech
+<img src="png/Jeczen_Iwicki_Michaluk.png" align="center" width="600"/>          
 
-<img src="png/Jurzysta_Kusmierz_Kyryk.png" align="center" width="600"/>             
 Autorzy: Jurzysta Barbara, Kuśmierz Martyna, Kyryk Viktoriia
+<img src="png/Jurzysta_Kusmierz_Kyryk.png" align="center" width="600"/>             
 
-<img src="png/Kapich_Wnek_Kosakowski.png" align="center" width="600"/>            
 Autorzy: Kapich Aleks, Kosakowski Piotr, Wnęk Kacper
+<img src="png/Kapich_Wnek_Kosakowski.png" align="center" width="600"/>            
 
-<img src="png/Kosz_Kisiel_Kubita.png" align="center" width="600"/>             
 Autorzy: Kisiel Kamil, Kosz Krzysztof, Kubita Mateusz
+<img src="png/Kosz_Kisiel_Kubita.png" align="center" width="600"/>             
 
-<img src="png/Kurdek_Wiewior.png" align="center" width="600"/>                 
 Autorzy: Kurdek Jeremi, Wiewiór Karol
+<img src="png/Kurdek_Wiewior.png" align="center" width="600"/>                 
 
-<img src="png/Kwiecinski_Wierzchowski_Nizwantowski.png" align="center" width="600"/>
 Autorzy: Kwieciński Tymoteusz, Nizwantowski Mateusz, Wierzchowski Wiktor
+<img src="png/Kwiecinski_Wierzchowski_Nizwantowski.png" align="center" width="600"/>
 
-<img src="png/Mroz_Legczylin_Maczka.png" align="center" width="600"/>     
 Autorzy: Legczylin Michaił, Mączka Karolina, Mróz Mikołaj
+<img src="png/Mroz_Legczylin_Maczka.png" align="center" width="600"/>     
 
-<img src="png/Osmalek_Szczepaniak_Szpetmanski.png" align="center" width="600"/>
 Autorzy: Osmałek Agata, Szczepaniak Franciszek, Szpetmański Maciej
+<img src="png/Osmalek_Szczepaniak_Szpetmanski.png" align="center" width="600"/>
 
-<img src="png/Rymarski_Sawicki_Zareba.png" align="center" width="600"/>            
 Autorzy: Rymarski Jakub, Sawicki Jakub, Zaręba Adrian
+<img src="png/Rymarski_Sawicki_Zareba.png" align="center" width="600"/>            
 
-<img src="png/Sawicki_Safiejko_Pirog.png" align="center" width="600"/>              
 Autorzy: Piróg Zuzanna, Safiejko Natalia, Sawicki Krzysztof
+<img src="png/Sawicki_Safiejko_Pirog.png" align="center" width="600"/>              
 
-<img src="png/Swiderski_Kulczycka_Rybak.png" align="center" width="600"/>
 Autorzy: Kulczycka Aleksandra, Rybak Cezary, Świderski Paweł
-  
+<img src="png/Swiderski_Kulczycka_Rybak.png" align="center" width="600"/>
+
+Autorzy: Trojan Sebastian, Urban Tymoteusz, Woźniak Wiktor 
 <img src="png/Trojan_Urban_Wozniak.png" align="center" width="600"/>
-Autorzy: Trojan Sebastian, Urban Tymoteusz, Woźniak Wiktor
 
 
+## Opis
 
 Pierwszy projekt poświęcony jest eksploracji danych dotyczących sportu. Jego celem jest przygotowanie plakatu w formacie A2 (+ .pdf), który przedstawi graficznie ciekawe informacje.
 
