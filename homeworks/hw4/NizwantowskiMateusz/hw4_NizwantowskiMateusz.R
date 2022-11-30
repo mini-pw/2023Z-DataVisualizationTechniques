@@ -40,13 +40,13 @@ dane <- dane %>%
 
 plot_ly(
   data = dane, 
-  y = ~Sale.Price.bid.price, 
-  x = ~Avg.Walk.Transit.score, 
+  x = ~round(log(Sale.Price.bid.price),2), 
+  y = ~round((Avg.Walk.Transit.score + rnorm(611, mean = 0, sd = 0.3)),2), 
   color = ~kwantyle_cena_za_stopa,
   colors = c("red", "blue", "black", "#32a852", "#c10dd1")
 ) %>%
   layout(title = 'Cena posiadlosci a wskaznik Avg.Walk.Transit.score', plot_bgcolor = "#e5ecf6", 
-         yaxis = list(title = 'Price [$]'), legend = list(title=list(text='Cena za ft^2')))
+         xaxis = list(title = 'Skala logarytmiczna ceny'),yaxis = list(title = 'Avg.Walk.Transit.score'), legend = list(title=list(text='Cena za ft^2')))
 
 
 # Podsumowując to nic z tego wykresu nie wynika ale jest interaktywny
