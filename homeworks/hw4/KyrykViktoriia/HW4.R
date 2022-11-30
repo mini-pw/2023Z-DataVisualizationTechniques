@@ -1,0 +1,51 @@
+library(plotly)
+library(dplyr)
+install.packages("gapminder")
+library(gapminder)
+
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
+
+df <- df[ c(df$Sale.Price.bid.price != (''),df$PropType != ('')) , ]
+df$Sale.Price.bid.price<-gsub(",","",as.character(df$Sale.Price.bid.price))
+df1 <- df %>% 
+  mutate(Sale.Price.bid.price = trimws(Sale.Price.bid.price, whitespace = "[$]*\\s*")) %>% 
+  filter(nzchar(Sale.Price.bid.price)) %>% 
+  mutate(Sale.Price.bid.price = as.numeric(Sale.Price.bid.price))
+
+df2 <- df1 %>% 
+  filter(yearBuilt > 0) %>% 
+  select(yearBuilt,Sale.Price.bid.price,PropType,Sale.Date)
+df2 <- rename(df2,"Price" = "Sale.Price.bid.price","Year_Built" = "yearBuilt","Date_of_sale"= "Sale.Date")
+
+df2<-df2[!(df2$Date_of_sale =="February 7  2017" | df2$Date_of_sale=="March 7  2017"),]
+
+fig <- df2 %>%
+  plot_ly(
+  x = ~Year_Built, 
+    
+    y = ~Price, 
+    
+    color = ~PropType,
+    
+    colors = "Set1",
+    
+    frame = ~Date_of_sale, 
+    
+    type = 'scatter',
+    
+    mode = 'markers'
+    
+  )
+
+fig2 <- fig %>% layout(
+  
+  xaxis = list(
+    
+    type = "log"),
+  
+  title = "Price of the house depending on year built, date of sale and its type",
+  legend=list(title=list(text='<b> House type </b>'))
+)
+
+fig2
+
