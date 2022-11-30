@@ -128,7 +128,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">8</td>
     <td rowspan="4">11-30</td>
     <td rowspan="4">Presentation of P1 </td>
-    <td rowspan="4">R: Shiny - exercises </td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab8 target="_blank" rel="noopener noreferrer">R: Shiny - exercises</a> </td>
     <td rowspan="4">Discussing P1 <br>Introducing P2</td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/247 target="_blank" rel="noopener noreferrer"> HW4 (5p)</a><br>P1 (20p)</td>
   </tr>
