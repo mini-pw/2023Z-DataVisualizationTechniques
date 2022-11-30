@@ -1,3 +1,61 @@
+![](png/Baraniak_Ciezki_Charuza.png)
+Baraniak Hubert, Charuza Alicja, Ciężki Jakub
+
+![](png/Binda_Grabarski_Grabias.png)             
+Binda Michał, Grabarski Łukasz, Grabias Wojciech
+
+![](png/Borkowski_Wiktorzak_Andryszak.png)
+Andryszak Mateusz, Borkowski Maciej, Wiktorzak Mateusz
+
+![](png/Chec_Lepianka_Szuwarska.png)             
+Chęć Michał, Lepianka Łukasz, Szuwarska Marta
+
+![](png/Geneja_Pyzowski_Seliga.png)               
+Geneja Michał, Pyzowski Rafał, Seliga Jakub
+
+![](png/Grinchik_Matejczuk_Warno.png)            
+Grinchik Gleb, Matejczuk Michał, Warno Felicja
+
+![](png/Grzywaczewski_Kocieko_Lange.png)          
+Grzywaczewski Jakub, Koniecko Wiktoria, Lange Jakub
+
+![](png/Jeczen_Iwicki_Michaluk.png)              
+Iwicki Michał, Jeczeń Magdalena, Michaluk Wojciech
+
+![](png/Jurzysta_Kusmierz_Kyryk.png)              
+Jurzysta Barbara, Kuśmierz Martyna, Kyryk Viktoriia
+
+![](png/Kapich_Wnek_Kosakowski.png)             
+Kapich Aleks, Kosakowski Piotr, Wnęk Kacper
+
+![](png/Kosz_Kisiel_Kubita.png)               
+Kisiel Kamil, Kosz Krzysztof, Kubita Mateusz
+
+![](png/Kurdek_Wiewior.png)                  
+Kurdek Jeremi, Wiewiór Karol
+
+![](png/Kwiecinski_Wierzchowski_Nizwantowski.png)
+Kwieciński Tymoteusz, Nizwantowski Mateusz, Wierzchowski Wiktor
+
+![](png/Mroz_Legczylin_Maczka.png)     
+Legczylin Michaił, Mączka Karolina, Mróz Mikołaj
+
+![](png/Osmalek_Szczepaniak_Szpetmanski.png)
+Osmałek Agata, Szczepaniak Franciszek, Szpetmański Maciej
+
+![](png/Rymarski_Sawicki_Zareba.png)             
+Rymarski Jakub, Sawicki Jakub, Zaręba Adrian
+
+![](png/Sawicki_Safiejko_Pirog.png)              
+Piróg Zuzanna, Safiejko Natalia, Sawicki Krzysztof
+
+![](png/Swiderski_Kulczycka_Rybak.png)
+Kulczycka Aleksandra, Rybak Cezary, Świderski Paweł
+  
+![](png/Trojan_Urban_Wozniak.png)
+Trojan Sebastian, Urban Tymoteusz, Woźniak Wiktor
+
+
 # P1: Sport
 Pierwszy projekt poświęcony jest eksploracji danych dotyczących sportu. Jego celem jest przygotowanie plakatu w formacie A2 (+ .pdf), który przedstawi graficznie ciekawe informacje.
 
