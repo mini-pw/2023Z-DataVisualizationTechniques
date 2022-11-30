@@ -1,60 +1,60 @@
 # P1: Sport
 
-![](png/Baraniak_Ciezki_Charuza.png)
+<img src="png/Baraniak_Ciezki_Charuza.png" align="center" width="600"/>
 Autorzy: Baraniak Hubert, Charuza Alicja, Ciężki Jakub
 
-![](png/Binda_Grabarski_Grabias.png)             
+<img src="png/Binda_Grabarski_Grabias.png" align="center" width="600"/>             
 Autorzy: Binda Michał, Grabarski Łukasz, Grabias Wojciech
 
-![](png/Borkowski_Wiktorzak_Andryszak.png)
+<img src="png/Borkowski_Wiktorzak_Andryszak.png" align="center" width="600"/>
 Autorzy: Andryszak Mateusz, Borkowski Maciej, Wiktorzak Mateusz
 
-![](png/Chec_Lepianka_Szuwarska.png)             
+<img src="png/Chec_Lepianka_Szuwarska.png" align="center" width="600"/>           
 Autorzy: Chęć Michał, Lepianka Łukasz, Szuwarska Marta
 
-![](png/Geneja_Pyzowski_Seliga.png)               
+<img src="png/Geneja_Pyzowski_Seliga.png" align="center" width="600"/>               
 Autorzy: Geneja Michał, Pyzowski Rafał, Seliga Jakub
 
-![](png/Grinchik_Matejczuk_Warno.png)            
+<img src="png/Grinchik_Matejczuk_Warno.png" align="center" width="600"/>           
 Autorzy: Grinchik Gleb, Matejczuk Michał, Warno Felicja
 
-![](png/Grzywaczewski_Kocieko_Lange.png)          
+<img src="png/Grzywaczewski_Kocieko_Lange.png" align="center" width="600"/>         
 Autorzy: Grzywaczewski Jakub, Koniecko Wiktoria, Lange Jakub
 
-![](png/Jeczen_Iwicki_Michaluk.png)              
+<img src="png/Jeczen_Iwicki_Michaluk.png" align="center" width="600"/>          
 Autorzy: Iwicki Michał, Jeczeń Magdalena, Michaluk Wojciech
 
-![](png/Jurzysta_Kusmierz_Kyryk.png)              
+<img src="png/Jurzysta_Kusmierz_Kyryk.png" align="center" width="600"/>             
 Autorzy: Jurzysta Barbara, Kuśmierz Martyna, Kyryk Viktoriia
 
-![](png/Kapich_Wnek_Kosakowski.png)             
+<img src="png/Kapich_Wnek_Kosakowski.png" align="center" width="600"/>            
 Autorzy: Kapich Aleks, Kosakowski Piotr, Wnęk Kacper
 
-![](png/Kosz_Kisiel_Kubita.png)               
+<img src="png/Kosz_Kisiel_Kubita.png" align="center" width="600"/>             
 Autorzy: Kisiel Kamil, Kosz Krzysztof, Kubita Mateusz
 
-![](png/Kurdek_Wiewior.png)                  
+<img src="png/Kurdek_Wiewior.png" align="center" width="600"/>                 
 Autorzy: Kurdek Jeremi, Wiewiór Karol
 
-![](png/Kwiecinski_Wierzchowski_Nizwantowski.png)
+<img src="png/Kwiecinski_Wierzchowski_Nizwantowski.png" align="center" width="600"/>
 Autorzy: Kwieciński Tymoteusz, Nizwantowski Mateusz, Wierzchowski Wiktor
 
-![](png/Mroz_Legczylin_Maczka.png)     
+<img src="png/Mroz_Legczylin_Maczka.png" align="center" width="600"/>     
 Autorzy: Legczylin Michaił, Mączka Karolina, Mróz Mikołaj
 
-![](png/Osmalek_Szczepaniak_Szpetmanski.png)
+<img src="png/Osmalek_Szczepaniak_Szpetmanski.png" align="center" width="600"/>
 Autorzy: Osmałek Agata, Szczepaniak Franciszek, Szpetmański Maciej
 
-![](png/Rymarski_Sawicki_Zareba.png)             
+<img src="png/Rymarski_Sawicki_Zareba.png" align="center" width="600"/>            
 Autorzy: Rymarski Jakub, Sawicki Jakub, Zaręba Adrian
 
-![](png/Sawicki_Safiejko_Pirog.png)              
+<img src="png/Sawicki_Safiejko_Pirog.png" align="center" width="600"/>              
 Autorzy: Piróg Zuzanna, Safiejko Natalia, Sawicki Krzysztof
 
-![](png/Swiderski_Kulczycka_Rybak.png)
+<img src="png/Swiderski_Kulczycka_Rybak.png" align="center" width="600"/>
 Autorzy: Kulczycka Aleksandra, Rybak Cezary, Świderski Paweł
   
-![](png/Trojan_Urban_Wozniak.png)
+<img src="png/Trojan_Urban_Wozniak.png" align="center" width="600"/>
 Autorzy: Trojan Sebastian, Urban Tymoteusz, Woźniak Wiktor
 
 
