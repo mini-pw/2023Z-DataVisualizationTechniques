@@ -127,9 +127,9 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">8</td>
     <td rowspan="4">11-30</td>
-    <td rowspan="4">Presentation of P1 </td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/projects/project1/README.md target="_blank" rel="noopener noreferrer">Presentation of P1</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab8 target="_blank" rel="noopener noreferrer">R: Shiny - exercises</a> </td>
-    <td rowspan="4">Discussing P1 <br>Introducing P2</td>
+    <td rowspan="4">Discussing P1 <br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/blob/main/projects/project2/P2-Intro.pdf target="_blank" rel="noopener noreferrer">Introducing P2</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/247 target="_blank" rel="noopener noreferrer"> HW4 (5p)</a><br>P1 (20p)</td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">The International Business Communication Standards</td>
     <td rowspan="4">R: tidycharts, rpivotTable, visNetwork, DataExplorer, visdat etc.</td>
     <td rowspan="4">Consultations</td>
-    <td rowspan="4">HW5 (5p)</td>
+    <td rowspan="4"><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/330" target="_blank" rel="noopener noreferrer">HW5 (10p)</a></td>
   </tr>
   <tr>
   </tr>
@@ -172,7 +172,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">Amazing Data Visualization Tools</td>
     <td rowspan="4">R: Xmas trees - gganimate, RBokeh, ggiraph, vegalite, googleVis</td>
     <td rowspan="4">Data analysis</td>
-    <td rowspan="4">P2 (2p)<br>HW6 (10p)</td>
+    <td rowspan="4">P2 (2p)<br>HW6 (5p)</td>
   </tr>
   <tr>
   </tr>
