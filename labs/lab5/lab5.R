@@ -39,7 +39,24 @@ require(maps)
 ?map_data
 
 # maps::county(), maps::france(), maps::italy(), maps::nz(), maps::state(), maps::usa(), maps::world(), maps::world2()
+states <- map_data("state")
+world <- map_data("world")
 
+df3 <- data.frame(
+  "region" = unique(states$region),
+  "value" = rnorm(49, mean = 1, sd = 3)
+)
+
+df_states <- states %>% 
+  left_join(df3)
+
+ggplot(df_states, aes(long, lat))+
+  geom_polygon(aes(group = group, fill = value), color = "grey")+
+  coord_map(projection = "mollweide")
+
+ggplot(world, aes(long, lat))+
+  geom_polygon(aes(group = group), color = "grey")+
+  coord_map(projection = "mollweide")
 
 # Więcej: https://ggplot2.tidyverse.org/reference/coord_map.html
 
@@ -47,10 +64,22 @@ require(maps)
 ## Zadanie 4
 # Wykorzystując dane countries narysuj mapę świata i zaznacz na niej wskaźnik urodzeń. 
 
+countries
+
+world %>% 
+  left_join(countries, by = c("region" = "country")) %>%
+  ggplot(aes(long, lat)) +
+  geom_polygon(aes(group = group, fill = birth.rate), color = "grey")+
+  coord_map(projection = "mollweide")
+
+
+
+df_states <- states %>% 
+  left_join(df3)
 
 ## ggpubr
 
-devtools::install_github("kassambara/ggpubr")
+# devtools::install_github("kassambara/ggpubr")
 
 library(ggpubr)
 
