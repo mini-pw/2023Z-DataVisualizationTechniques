@@ -158,7 +158,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">The International Business Communication Standards</td>
     <td rowspan="4">R: tidycharts, rpivotTable, visNetwork, DataExplorer, visdat etc.</td>
     <td rowspan="4">Consultations</td>
-    <td rowspan="4">HW5 (10p)</td>
+    <td rowspan="4"><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/330" target="_blank" rel="noopener noreferrer">HW5 (10p)</a></td>
   </tr>
   <tr>
   </tr>
