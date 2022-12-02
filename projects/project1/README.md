@@ -26,7 +26,7 @@ Autorzy: Grinchik Gleb, Matejczuk Michał, Warno Felicja
 
 Autorzy: Grzywaczewski Jakub, Koniecko Wiktoria, Lange Jakub
 
-<img src="png/Grzywaczewski_Kocieko_Lange.png" align="center" width="600"/>         
+<img src="png/Lange_Grzywaczewski_Koniecko.png" align="center" width="600"/>         
 
 Autorzy: Iwicki Michał, Jeczeń Magdalena, Michaluk Wojciech
 
@@ -42,7 +42,7 @@ Autorzy: Kapich Aleks, Kosakowski Piotr, Wnęk Kacper
 
 Autorzy: Kisiel Kamil, Kosz Krzysztof, Kubita Mateusz
 
-<img src="png/Kosz_Kisiel_Kubita.png" align="center" width="600"/>             
+<img src="png/Kosz_Kubita_Kisiel.png" align="center" width="600"/>             
 
 Autorzy: Kurdek Jeremi, Wiewiór Karol
 
