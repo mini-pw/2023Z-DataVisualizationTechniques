@@ -141,8 +141,8 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">9</td>
     <td rowspan="4">12-07</td>
-    <td rowspan="4">History of Statistical Graphics</td>
-    <td rowspan="4">R: Shiny - advanced</td>
+    <td rowspan="4"> - </td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab9 target="_blank" rel="noopener noreferrer">R: Shiny - advanced</a></td>
     <td rowspan="4">Group work</td>
     <td rowspan="4">P2 (1p)</td>
   </tr>
@@ -155,7 +155,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">10</td>
     <td rowspan="4">12-14</td>
-    <td rowspan="4">The International Business Communication Standards</td>
+    <td rowspan="4">History of Statistical Graphics</td>
     <td rowspan="4">R: tidycharts, rpivotTable, visNetwork, DataExplorer, visdat etc.</td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4"><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/330" target="_blank" rel="noopener noreferrer">HW5 (10p)</a></td>
@@ -169,7 +169,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">11</td>
     <td rowspan="4">12-21</td>
-    <td rowspan="4">Amazing Data Visualization Tools</td>
+    <td rowspan="4">The International Business Communication Standards</td>
     <td rowspan="4">R: Xmas trees - gganimate, RBokeh, ggiraph, vegalite, googleVis</td>
     <td rowspan="4">Data analysis</td>
     <td rowspan="4">P2 (2p)<br>HW6 (5p)</td>
@@ -183,7 +183,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">01-04</td>
-    <td rowspan="4">Scrollytelling: Pockets, Powerless, Here’s How America Uses Its Land</td>
+    <td rowspan="4">Amazing Data Visualization Tools</td>
     <td rowspan="4">Python: pandas, numpy, pandas.plot</td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4">HW7 (5p)</td>
@@ -197,7 +197,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">13</td>
     <td rowspan="4">01-11</td>
-    <td rowspan="4">TBA</td>
+    <td rowspan="4">Scrollytelling: Pockets, Powerless, Here’s How America Uses Its Land</td>
     <td rowspan="4">Python: matplotlib, seaborn</td>
     <td rowspan="4">Prototype</td>
     <td rowspan="4">P2 (2p)</td>
