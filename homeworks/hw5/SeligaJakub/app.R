@@ -195,7 +195,8 @@ app_ui <- navbarPage(
                   <a class='text-dark' href='https://github.com/kseligga'>kseligga</a>
                 </p>
                 </footer>
-                ")
+                "),
+  header = tags$head(tags$link(rel = "stylesheet", href = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"))
 
 )
 
