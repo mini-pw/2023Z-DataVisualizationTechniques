@@ -71,10 +71,14 @@ ui <- fluidPage(
   br(),
   fluidRow(
     column(6,
+        shinycssloaders::withSpinner(
             plotlyOutput("pointPlot")
+        )
     ),
     column(6,
+        shinycssloaders::withSpinner(
             plotlyOutput("linePlot")
+        )
     )
   )
 )
