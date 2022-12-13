@@ -156,7 +156,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">10</td>
     <td rowspan="4">12-14</td>
     <td rowspan="4">History of Statistical Graphics</td>
-    <td rowspan="4">R: tidycharts, rpivotTable, visNetwork, DataExplorer, visdat etc.</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab10 target="_blank" rel="noopener noreferrer">R: leaflet, ggalluvial, ggdist, ggbump, ggbeeswarm, ggridges, visNetwork</a></td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4"><a href="https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/330" target="_blank" rel="noopener noreferrer">HW5 (10p)</a></td>
   </tr>
