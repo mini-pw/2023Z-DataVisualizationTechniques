@@ -1,0 +1,1 @@
+https://borkowskimaciej.shinyapps.io/Ekonomiczne_losy_absolwentow/
