@@ -1,0 +1,11 @@
+---
+title: "HW5"
+author: "Łukasz Grabarski"
+date: "2022-12-14"
+output: html_document
+---
+
+## Link do aplikacji Shiny
+ https://lukaszgrabarski.shinyapps.io/TWD_HW5/
+ 
+Zapraszam do aplikacji!
