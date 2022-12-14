@@ -1,0 +1,1 @@
+[Link do aplikacji](https://szuwarska.shinyapps.io/analiza_ekonomicznych_losow_uczelni_w_polsce/)
