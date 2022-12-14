@@ -172,7 +172,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">The International Business Communication Standards</td>
     <td rowspan="4">R: Xmas trees - gganimate, RBokeh, ggiraph, vegalite, googleVis</td>
     <td rowspan="4">Data analysis</td>
-    <td rowspan="4">P2 (2p)<br>HW6 (5p)</td>
+    <td rowspan="4">P2 (2p)<br><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/375 target="_blank" rel="noopener noreferrer">HW6 (5p)</a></td>
   </tr>
   <tr>
   </tr>
