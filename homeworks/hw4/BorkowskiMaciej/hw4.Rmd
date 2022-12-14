@@ -1,0 +1,43 @@
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(plotly)
+library(dplyr)
+
+dane <- read.csv("data.csv")
+
+konwertuj_kwotę <- function(kwota) {
+  kwota <- substring(kwota, 2)
+  kwota <- gsub(",", ".", kwota)
+  kwota <- as.numeric(kwota) * 1000
+}
+
+dane <- dane %>% filter(!(yearBuilt == 0)) %>% mutate(sale_price = konwertuj_kwotę(Sale.Price.bid.price)) %>% 
+  mutate(rok_budowy = case_when(
+    yearBuilt < 1900 ~ "1875 - 1900",
+    1900 <= yearBuilt & yearBuilt < 1910 ~ "1900 - 1909",
+    1910 <= yearBuilt & yearBuilt < 1920 ~ "1910 - 1919",
+    1920 <= yearBuilt & yearBuilt < 1930 ~ "1920 - 1929",
+    1930 <= yearBuilt & yearBuilt < 1940 ~ "1930 - 1939",
+    1940 <= yearBuilt & yearBuilt < 1950 ~ "1940 - 1949",
+    1950 <= yearBuilt & yearBuilt < 1960 ~ "1950 - 1959",
+    1960 <= yearBuilt & yearBuilt < 1970 ~ "1960 - 1969",
+    1970 <= yearBuilt & yearBuilt < 1980 ~ "1970 - 1979",
+    1980 <= yearBuilt & yearBuilt < 1990 ~ "1980 - 1989",
+    1990 <= yearBuilt & yearBuilt < 2000 ~ "1990 - 1999",
+    TRUE ~ "2000 - 2006"
+  ))
+
+plot_ly(
+  data = dane,
+  x = ~sale_price,
+  type = "histogram",
+  color = ~PropType,
+  frame = ~rok_budowy
+) %>%
+  layout(xaxis = list(title = "Kwota w dolarach"),
+         yaxis = list(title = "Liczba nieruchomości", range = c(0, 45)),
+         title = "Wykres liczności nieruchomości w zależności od kwoty sprzedaży"
+         ) %>% 
+  animation_slider(currentvalue = list(prefix = "Rok budowy w przedziale: "))
+
+```
+

@@ -1,0 +1,48 @@
+---
+title: "HW4"
+author: "Mateusz Andryszak"
+date: "2022-11-29"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(plotly)
+library(dplyr)
+
+setwd("C:/Users/Dell/Documents/studia/TWD/AndryszakMateusz")
+df <- read.csv("Properties_philly_Kraggle_v2.csv")
+
+```
+
+### Praca domowa 4
+
+W ramach tej pracy domowej zrobiłem 2 rodzaje wykresów do wyboru: (Boxplot oraz Violinplot), które pokazują rozkład ceny ofertowej domów w Filadelfii danego typu, który również możemy wybrać spośród 4 podanych typów.
+
+
+```{r}
+df <- df %>% 
+  filter(yearBuilt != 0) %>% 
+  mutate(Sale.Price.bid.price = as.numeric(gsub(',','',substring(Sale.Price.bid.price,2))))
+
+fig <- plot_ly(data = df, y = ~Sale.Price.bid.price, frame = ~PropType, type = "box", name= ~PropType
+)
+fig %>% layout(
+  updatemenus = list(
+    list(
+      x = 1, y = 1,
+      buttons = list(
+        list(method = "restyle",
+             args = list("type", "box"),
+             label = "Boxplot"
+             ),
+        list(method = "restyle",
+             args = list("type", "violin"),
+             label = "Violinplot")
+      ))
+  ),
+  title = "Bid price of houses depending on their type",
+  yaxis = list(title="Bid price")) %>% 
+  animation_opts(1200)
+
+```
+
