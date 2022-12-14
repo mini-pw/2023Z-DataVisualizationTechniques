@@ -1,0 +1,2 @@
+Link do aplikacji
+https://17andri17.shinyapps.io/HW5app/?_ga=2.25830651.778148851.1670626176-1871913365.1670523569
