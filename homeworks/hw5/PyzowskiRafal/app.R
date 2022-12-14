@@ -4,11 +4,6 @@ library(ggplot2)
 library(tidyr)
 library(bslib)
 
-# setwd("C:/Users/rafp2/OneDrive/Pulpit/RAFAŁ/studia/sem3/TWD/lab/hw5/PyzowskiRafalHW5")
-# graduates_national <- read.csv("../graduates-national-data.csv", sep = ";")
-
-# graduates_national <- read.csv("C:/Users/rafp2/OneDrive/Pulpit/RAFAŁ/studia/sem3/TWD/lab/hw5/graduates-national-data.csv", sep = ";")
-
 graduates_national <- read.csv("graduates-national-data.csv", sep = ";")
 
 graduates_national %>% 
