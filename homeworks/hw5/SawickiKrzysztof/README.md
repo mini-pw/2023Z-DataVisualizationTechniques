@@ -1,0 +1,1 @@
+Link: https://sawickik.shinyapps.io/EkonomiczneLosyStudentowHW5/?_ga=2.22988284.636445309.1670946264-1925545300.1670946264
