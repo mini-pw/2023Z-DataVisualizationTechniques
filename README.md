@@ -186,7 +186,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">Amazing Data Visualization Tools</td>
     <td rowspan="4">Python: pandas, numpy, pandas.plot</td>
     <td rowspan="4">Consultations</td>
-    <td rowspan="4">HW7 (5p)</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/380 target="_blank" rel="noopener noreferrer">HW7 (5p)</a></td>
   </tr>
   <tr>
   </tr>
