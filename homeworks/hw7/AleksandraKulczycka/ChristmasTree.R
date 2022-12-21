@@ -6,17 +6,8 @@ color <- rep(c("darkgreen", "red"), each = length(t))
 open3d(windowRect = c(100, 100, 600, 600), zoom = 0.9)
 bg3d("black")
 spheres3d(x, y, z, radius = 0.4, color = color)
-movie3d(
-  movie="3dAnimatedScatterplot", 
-  spin3d( axis = c(0, 0, 1), rpm = 20,dev = cur3d()),
-  startTime = 0,
-  duration = 10, 
-  dir = ".",
-  type = "gif", 
-  clean = T,
-  fps=10,
-  convert=T
-)
-install.packages("ImageMagick")
-library(installr)
-install.ImageMagick()
+color <- rep(c("darkgreen", "red"), each = length(t))
+open3d(windowRect = c(100, 100, 600, 600), zoom = 0.9)
+bg3d("black")
+spheres3d(x, y, z, radius = 0.4, color = color)
+play3d(spin3d(axis = c(0, 0, 1), rpm = 5.5))
