@@ -1,0 +1,22 @@
+t <- seq(0, 5*pi, by = 0.2)
+x <- t * c(sin(t), sin(t+pi))
+y <- t * c(cos(t), cos(t+pi))
+z <- -2 * c(t,t)
+color <- rep(c("darkgreen", "red"), each = length(t))
+open3d(windowRect = c(100, 100, 600, 600), zoom = 0.9)
+bg3d("black")
+spheres3d(x, y, z, radius = 0.4, color = color)
+movie3d(
+  movie="3dAnimatedScatterplot", 
+  spin3d( axis = c(0, 0, 1), rpm = 20,dev = cur3d()),
+  startTime = 0,
+  duration = 10, 
+  dir = ".",
+  type = "gif", 
+  clean = T,
+  fps=10,
+  convert=T
+)
+install.packages("ImageMagick")
+library(installr)
+install.ImageMagick()
