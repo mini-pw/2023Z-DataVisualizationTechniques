@@ -12,9 +12,12 @@ df_drzewo = pd.DataFrame(drzewo)
 licznik_bombek = 0
 size_drzewa = df_drzewo.shape
 
-while licznik_bombek < 10:
-    kolumna = random.randint(0, size_drzewa[1] - 1)
+
+while licznik_bombek < 20:
     wiersz = random.randint(0, size_drzewa[0] - 1)
+    kolumna = random.randint(0, size_drzewa[1] - 1)
+
+
     if df_drzewo[kolumna][wiersz] == "^":
         licznik_bombek += 1
         df_drzewo[kolumna][wiersz] = "0"
@@ -26,7 +29,7 @@ for index, row in df_drzewo.iterrows():
 
 bombki = ""
 for index, row in df_drzewo.iterrows():
-    bombki += "".join(list(row)).replace("^", " ")
+    bombki += " ".join(list(row)).replace("^", " ")
 
 gwiazda = ''.join([' '] * 14 + ['★'] + [' '] * 14)
 korzen = ''.join([' '] * 13 + ['|||'] + [' '] * 13) + "\n" + ''.join([' '] * 13 + ['|||'] + [' '] * 13)
@@ -42,4 +45,5 @@ fig.text(0.5, 0.05, pozdrowienia, ha='center', va='center', size=40, color='blac
 tekst = fig.text(0.5, 0.873, gwiazda, ha='center', va='center', size=20, color='yellow')
 tekst.set_path_effects([path_effects.Stroke(linewidth=3, foreground='black'),
                        path_effects.Normal()])
+plt.savefig("choinka.jpg", dpi=250)
 plt.show()
