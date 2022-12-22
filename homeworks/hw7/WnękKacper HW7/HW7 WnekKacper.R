@@ -1,0 +1,41 @@
+par(bg="darkblue")
+plot(1:10,1:10,xlim=c(-5,5), ylim=c(0,10), type='n',xlab='',ylab='', xaxt='n',yaxt='n')
+points(x=runif(100, -5, 5), y=runif(100, 3, 10), col="lightblue", pch=8, cex=1)
+
+rect(-7,-2,7,3,col="lightblue",border="lightblue",lwd=0)
+rect(-0.75,0,0.75,2,col='chocolate4',border="coral4",lwd=3)
+polygon(c(-5,0,5),c(2,4,2),col="darkgreen",lwd=3)
+polygon(c(-4.25,0,4.25),c(3,5,3),col="forestgreen",lwd=2)
+polygon(c(-3.5,0,3.5),c(4,6,4),col="darkgreen",lwd=3)
+polygon(c(-2.75,0,2.75),c(5,7,5),col="forestgreen",lwd=2)
+polygon(c(-2,0,2),c(6,8,6),col="darkgreen",lwd=3)
+polygon(c(-1.25,0,1.25),c(7,9,7),col="forestgreen",lwd=2)
+polygon(c(-0.75,0,0.75),c(8,10,8),col="darkgreen",lwd=2)
+
+
+points(x=runif(7,-4,4),y=rep(2,7), col="red", cex=3,pch=20)
+points(x=runif(7,-4,4),y=rep(2,7), col="blue", cex=3,pch=20)
+points(x=runif(8,-3.5,3.5),y=rep(3,8), col="red", cex=3,pch=20)
+points(x=runif(8,-3.5,3.5),y=rep(3,8), col="blue", cex=3,pch=20)
+points(x=runif(8,-3.5,3.5),y=rep(3,8), col="yellow", cex=3,pch=20)
+points(x=runif(8,-2.75,2.75),y=rep(4,8), col="red", cex=3,pch=20)
+points(x=runif(8,-2.75,2.75),y=rep(4,8), col="blue", cex=3,pch=20)
+points(x=runif(8,-2.75,2.75),y=rep(4,8), col="yellow", cex=3,pch=20)
+points(x=runif(7,-2,2),y=rep(5,7), col="red", cex=3,pch=20)
+points(x=runif(7,-2,2),y=rep(5,7), col="blue", cex=3,pch=20)
+points(x=runif(7,-2,2),y=rep(5,7), col="yellow", cex=3,pch=20)
+points(x=runif(6,-1.25,1.25),y=rep(6,6), col="red", cex=3,pch=20)
+points(x=runif(6,-1.25,1.25),y=rep(6,6), col="blue", cex=3,pch=20)
+points(x=runif(6,-1.25,1.25),y=rep(6,6), col="yellow", cex=3,pch=20)
+points(x=runif(4,-0.75,0.75),y=rep(7,4), col=sample(c("red","blue","yellow"),size=1, replace=T), cex=3,pch=20)
+points(x=runif(4,-0.75,0.75),y=rep(8,4), col=sample(c("red","blue","yellow"),size=1, replace=T), cex=3,pch=20)
+points(0,9.5,pch=8,cex=5,col="gold",lwd=3)
+
+
+xGift=runif(10,-4.5,4.5)
+xWidth=runif(10,0.1,0.5)
+xHeight=runif(10,0,1)
+for(i in 1:10){
+  rect(xGift[i]-xWidth[i],0,xGift[i]+xWidth[i],xHeight[i]+0.5, col=sample(c('darkorchid4','deeppink2'),size=1))
+  rect(xGift[i]-0.25*xWidth[i],0,xGift[i]+0.25*xWidth[i],xHeight[i]+0.5,col=sample(c("gold","gray82"),size=1))
+}
