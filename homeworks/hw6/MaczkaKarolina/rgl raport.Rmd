@@ -1,0 +1,48 @@
+---
+title: "praca domowa 6"
+author: "Karolina Mączka"
+date: '2022-12-29'
+output: html_document
+---
+
+## Interaktywny wykres - można przesuwać
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("rgl")
+knitr::knit_hooks$set(webgl = hook_webgl)
+
+```
+```{r, test-rgl, webgl=TRUE}
+x<-runif(80,0,5)
+y<-runif(80,0,8)
+z<-runif(80,0,10)
+
+rgl.open() 
+rgl.bg(color="black")
+rgl.points(x, y, z, color ="white", size=4) 
+rgl.viewpoint(theta = 20, phi = 20, zoom = 0.8)
+lim <- function(x){c(-max(abs(x)), max(abs(x))) * 1.1}
+rgl.lines((x), c(0, 0), c(0, 0), color = "white")
+rgl.lines(c(0, 0), lim(y), c(0, 0), color = "white")
+rgl.lines(c(0, 0), c(0, 0), lim(z), color = "white")
+
+ellips <- ellipse3d(cov(cbind(x,y,z)), 
+                    centre=c(mean(x), mean(y), mean(z)), level = 0.95)
+shade3d(ellips, col = "white", alpha = 0.3, lit = FALSE)
+aspect3d(1,1,1)
+title3d(main="Wykresik")
+
+```
+
+## Pakiet RGL
+
+Pakiet RGL służy do przygotowywania interaktywnych wykresów i animacji 3d. Na początku musimy otworzyć narzędzie za pomocą funkcji rg.open(), później na pustym tle możemy zacząć rysować. Możemy tak jak powyżej narysować scatterplot, ale to nie jedyne dostępne wykresy. Możemy narysować:\
+
+- histogram (hist3d)\
+ ucięty wykres liniowy (segments3d)\
+- planes3d(), może być użyta na przykład do rysowania regression plane\
+- można też skorzystać z ogólnej funkcji do rysowania wykresu (plot3d), w jej wnętrzu możemy zdefiniować typ wykresu jaki chcemy narysować w parametrze type, ‘s’ – kule, ‘l’ – linie, ‘p’ – punkty, ‘h’ – części wykresu liniowego\
+- elipsę koncentracji za pomocą shade3d  
+  
+Dostępne są również funkcje, które zmieniają kształty punktów (dostępna jest tutaj cała gama: cube3d(), tetrahedron3d(), octahedron3d(),icosahedron3d(), dodecahedron3d(), cuboctahedron3d()), używa się ich w funkcji shapelist3d w parametrze shapes. 
+
