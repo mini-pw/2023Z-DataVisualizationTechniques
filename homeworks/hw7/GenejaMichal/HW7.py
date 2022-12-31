@@ -58,7 +58,6 @@ def draw_ball(x, y):
 if __name__ == '__main__':
 	screen = Screen()
 	penup()
-	speed(20)
 	shape("turtle")
 	set_up()
 	draw_wood()
