@@ -5,17 +5,17 @@ def draw_wood():
 	color('brown')
 	pendown()
 	begin_fill()
-	fd(25)
+	fd(20)
 	for i in range(5):
 		lt(90)
-		fd(50)
+		fd(40)
 	end_fill()
 	penup()
 
 
 def set_up():
 	rt(90)
-	fd(500)
+	fd(250)
 	lt(90)
 
 
@@ -25,22 +25,43 @@ def draw_tree():
 	begin_fill()
 	rt(90)
 	for i in range(3):
-		fd(262-100*i)
+		fd(131 - 50 * i)
 		lt(120)
-		fd(480-140*i)
+		fd(240 - 70 * i)
 		rt(120)
 	rt(120)
 	for i in range(3):
-		fd(200+140*i)
+		fd(100 + 70 * i)
 		lt(120)
-		fd(62+100*i)
+		fd(31 + 50 * i)
 		rt(120)
 	end_fill()
+	penup()
+
+
+def draw_ornaments():
+	title("Press to put a ball on a Christmas Tree")
+	ht()
+	screen.onclick(draw_ball)
+
+
+def draw_ball(x, y):
+	goto(x-10, y)
+	color("red")
+	pendown()
+	begin_fill()
+	circle(10)
+	end_fill()
+	penup()
 
 
 if __name__ == '__main__':
+	screen = Screen()
 	penup()
+	speed(20)
+	shape("turtle")
 	set_up()
 	draw_wood()
 	draw_tree()
+	draw_ornaments()
 	done()
