@@ -1,3 +1,4 @@
+import random
 from turtle import *
 
 
@@ -46,13 +47,16 @@ def draw_ornaments():
 
 
 def draw_ball(x, y):
-	goto(x-10, y)
-	color("red")
+	screen.onclick(None)
+	c = random.choice(["blue", "red", "yellow", "white"])
+	goto(x - 10, y)
+	color(c)
 	pendown()
 	begin_fill()
 	circle(10)
 	end_fill()
 	penup()
+	screen.onclick(draw_ball)
 
 
 if __name__ == '__main__':
