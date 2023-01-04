@@ -20,5 +20,5 @@ draw_sierpinski([0, 0, 90, 0, 45, 90], 3, colors=['darkgreen'])
 draw_sierpinski([0, 0, 90, 0, 45, 90], 7, colors=['white', 'darkgreen','darkgreen','darkgreen'])
 
 plt.axis('off')
-
+plt.savefig('hw7.png')
 plt.show()
