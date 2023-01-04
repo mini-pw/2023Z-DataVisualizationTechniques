@@ -183,8 +183,8 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">01-04</td>
-    <td rowspan="4">Amazing Data Visualization Tools</td>
-    <td rowspan="4">Python: pandas, numpy, pandas.plot</td>
+    <td rowspan="4">Amazing Data Visualization Tools <br> Scrollytelling: Pockets, Powerless, Here’s How America Uses Its Land</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab12 target="_blank" rel="noopener noreferrer">Python: pandas, numpy, pandas.plot</a></td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/380 target="_blank" rel="noopener noreferrer">HW7 (5p)</a></td>
   </tr>
@@ -197,7 +197,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">13</td>
     <td rowspan="4">01-11</td>
-    <td rowspan="4">Scrollytelling: Pockets, Powerless, Here’s How America Uses Its Land</td>
+    <td rowspan="4">TBA</td>
     <td rowspan="4">Python: matplotlib, seaborn</td>
     <td rowspan="4">Prototype</td>
     <td rowspan="4">P2 (2p)</td>
@@ -211,9 +211,9 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">14</td>
     <td rowspan="4">01-18</td>
-    <td rowspan="4">Presentation of P2 (part 1)</td>
+    <td rowspan="4">TBA</td>
     <td rowspan="4">Python: plotly</td>
-    <td rowspan="4">Discussing P2</td>
+    <td rowspan="4">Consultations</td>
     <td rowspan="4">HW8 (5p)</td>
   </tr>
   <tr>
@@ -225,9 +225,9 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">15</td>
     <td rowspan="4">01-25</td>
-    <td rowspan="4">Presentation of P2 (part 2)</td>
+    <td rowspan="4">Presentation of P2 (part 1)</td>
     <td rowspan="4">Python: pandas-profiler etc.</td>
-    <td rowspan="4">Consultations</td>
+    <td rowspan="4">Presentation of P2 (part 2)</td>
     <td rowspan="4">P2 (20p)</td>
   </tr>
   <tr>
