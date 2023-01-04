@@ -183,7 +183,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">12</td>
     <td rowspan="4">01-04</td>
-    <td rowspan="4">Amazing Data Visualization Tools <br> Scrollytelling: Pockets, Powerless, Here’s How America Uses Its Land</td>
+    <td rowspan="4"><a href= https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/homeworks/hw6 target="_blank" rel="noopener noreferrer">Amazing Data Visualization Tools </a><br> Scrollytelling: <a href= https://pudding.cool/2018/08/pockets/ target="_blank" rel="noopener noreferrer">Pockets</a>, <a href= https://projects.propublica.org/graphics/wva target="_blank" rel="noopener noreferrer">Powerless</a>,<a href=https://www.bloomberg.com/graphics/2018-us-land-use/ target="_blank" rel="noopener noreferrer">Here’s How America Uses Its Land</a></td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab12 target="_blank" rel="noopener noreferrer">Python: pandas, numpy, pandas.plot</a></td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/380 target="_blank" rel="noopener noreferrer">HW7 (5p)</a></td>
