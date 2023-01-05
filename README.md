@@ -197,7 +197,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">13</td>
     <td rowspan="4">01-11</td>
-    <td rowspan="4">TBA</td>
+    <td rowspan="4">-</td>
     <td rowspan="4">Python: matplotlib, seaborn</td>
     <td rowspan="4">Prototype</td>
     <td rowspan="4">P2 (2p)</td>
@@ -211,7 +211,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
   <tr>
     <td rowspan="4">14</td>
     <td rowspan="4">01-18</td>
-    <td rowspan="4">TBA</td>
+    <td rowspan="4">Guest lecturer</td>
     <td rowspan="4">Python: plotly</td>
     <td rowspan="4">Consultations</td>
     <td rowspan="4">HW8 (5p)</td>
