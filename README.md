@@ -198,7 +198,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">13</td>
     <td rowspan="4">01-11</td>
     <td rowspan="4">-</td>
-    <td rowspan="4">Python: matplotlib, seaborn</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab13 rel="noopener noreferrer">Python: matplotlib, seaborn</a></td>
     <td rowspan="4">Prototype</td>
     <td rowspan="4">P2 (2p)</td>
   </tr>
