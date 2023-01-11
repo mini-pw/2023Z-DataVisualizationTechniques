@@ -214,7 +214,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">Guest lecturer</td>
     <td rowspan="4">Python: plotly</td>
     <td rowspan="4">Consultations</td>
-    <td rowspan="4">HW8 (5p)</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/issues/465 rel="noopener noreferrer">HW8 (5p)</a></td>
   </tr>
   <tr>
   </tr>
