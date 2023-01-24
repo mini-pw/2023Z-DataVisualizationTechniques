@@ -1,0 +1,493 @@
+"","artistName","category","trackName","energy","startTime","energy_level","genre","duration"
+"1","Aerosmith","free time","Dream On",0.433,2022-12-27 15:13:05,"medium","album rock",3
+"2","Aerosmith","other","Dream On",0.433,2022-12-27 15:13:05,"medium","album rock",26
+"3","Aerosmith","studies","Dream On",0.433,2022-12-27 15:13:05,"medium","album rock",96
+"4","Alex Turner","free time","Stuck on the puzzle",0.682,2022-12-19 10:09:28,"fast","modern rock",190
+"5","Alex Turner","free time","Stuck on the puzzle",0.682,2022-12-28 22:15:28,"fast","modern rock",211
+"6","Alex Turner","studies","Stuck on the puzzle",0.682,2022-12-29 18:23:28,"fast","modern rock",176
+"7","Alexis Ffrench","other","Have Yourself a Merry Little Christmas",0.12,2022-12-16 16:13:58,"slow","compositional ambient",93
+"8","Alice Cooper","free time","Only Women Bleed",0.476,2022-12-28 15:45:29,"medium","album rock",71
+"9","Alice Cooper","studies","Only Women Bleed",0.476,2022-12-28 15:45:29,"medium","album rock",170
+"10","Alice In Chains","free time","Nutshell",0.561,2022-12-28 16:17:40,"medium","alternative metal",4
+"11","Alice In Chains","other","Nutshell",0.561,2022-12-28 16:17:40,"medium","alternative metal",80
+"12","Alice In Chains","studies","Nutshell",0.561,2022-12-28 16:17:40,"medium","alternative metal",125
+"13","Alicja","free time","Kolęda Dla Nieobecnych",0.183,2022-12-16 14:36:33,"slow","polish pop",23
+"14","Alicja","other","Kolęda Dla Nieobecnych",0.183,2022-12-16 14:36:33,"slow","polish pop",39
+"15","Anna Serafinska","free time","Nie mówimy o Brunie",0.505,2022-12-26 16:25:55,"medium","classic polish pop",4
+"16","Anthony Gonzalez","free time","Un Poco Loco",0.496,2022-12-26 19:46:07,"medium","hollywood",62
+"17","Anthony Gonzalez","studies","Un Poco Loco",0.496,2022-12-26 19:46:07,"medium","hollywood",1
+"18","Aphrodite's Child","free time","The Four Horsemen",0.653,2022-12-28 11:05:06,"medium","art rock",48
+"19","Aphrodite's Child","studies","The Four Horsemen",0.653,2022-12-28 11:05:06,"medium","art rock",342
+"20","Arctic Monkeys","free time","Anyways",0.576,2022-12-29 13:28:18,"medium","garage rock",51
+"21","Arctic Monkeys","free time","Do I Wanna Know? - Live",0.77,2022-12-29 13:31:46,"fast","garage rock",5
+"22","Arctic Monkeys","free time","Fluorescent Adolescent",0.813,2022-12-28 22:18:56,"fast","garage rock",155
+"23","Arctic Monkeys","free time","Knee Socks",0.542,2022-12-29 13:34:42,"medium","garage rock",3
+"24","Arctic Monkeys","free time","Perhaps Vampires Is A Bit Strong But…",0.914,2022-12-29 13:05:31,"fast","garage rock",20
+"25","Arctic Monkeys","free time","R U Mine?",0.758,2022-12-19 10:13:38,"fast","garage rock",104
+"26","Arctic Monkeys","free time","There’d Better Be A Mirrorball",0.365,2022-12-29 14:09:34,"medium","garage rock",4
+"27","Arctic Monkeys","free time","When The Sun Goes Down",0.875,2022-12-29 19:04:37,"fast","garage rock",1
+"28","Arctic Monkeys","other","Anyways",0.576,2022-12-29 13:28:18,"medium","garage rock",2
+"29","Arctic Monkeys","other","Brianstorm - Live",0.934,2022-12-29 13:18:30,"fast","garage rock",50
+"30","Arctic Monkeys","other","Cornerstone",0.721,2022-12-29 14:04:42,"fast","garage rock",31
+"31","Arctic Monkeys","other","Do I Wanna Know?",0.532,2022-12-29 13:10:26,"medium","garage rock",11
+"32","Arctic Monkeys","other","Perhaps Vampires Is A Bit Strong But…",0.914,2022-12-29 13:05:31,"fast","garage rock",10
+"33","Arctic Monkeys","other","Pretty Visitors",0.896,2022-12-29 13:15:19,"fast","garage rock",59
+"34","Arctic Monkeys","other","R U Mine?",0.758,2022-12-19 10:13:38,"fast","garage rock",59
+"35","Arctic Monkeys","other","When The Sun Goes Down",0.875,2022-12-29 12:20:37,"fast","garage rock",11
+"36","Arctic Monkeys","studies","505 - Live",0.724,2022-12-29 14:08:15,"fast","garage rock",15
+"37","Arctic Monkeys","studies","Anyways",0.576,2022-12-29 13:28:18,"medium","garage rock",178
+"38","Arctic Monkeys","studies","Brianstorm - Live",0.934,2022-12-29 13:18:30,"fast","garage rock",179
+"39","Arctic Monkeys","studies","Cornerstone",0.721,2022-12-29 14:04:42,"fast","garage rock",199
+"40","Arctic Monkeys","studies","Do I Wanna Know?",0.532,2022-12-29 13:10:26,"medium","garage rock",308
+"41","Arctic Monkeys","studies","Do I Wanna Know? - Live",0.77,2022-12-29 13:31:46,"fast","garage rock",133
+"42","Arctic Monkeys","studies","Fluorescent Adolescent",0.813,2022-12-29 20:06:56,"fast","garage rock",164
+"43","Arctic Monkeys","studies","I Wanna Be Yours",0.417,2022-12-29 13:05:56,"medium","garage rock",3
+"44","Arctic Monkeys","studies","Knee Socks",0.542,2022-12-29 13:34:42,"medium","garage rock",195
+"45","Arctic Monkeys","studies","Mardy Bum",0.599,2022-12-28 22:45:04,"medium","garage rock",175
+"46","Arctic Monkeys","studies","Perhaps Vampires Is A Bit Strong But…",0.914,2022-12-29 13:05:31,"fast","garage rock",199
+"47","Arctic Monkeys","studies","Pretty Visitors",0.896,2022-12-29 13:15:19,"fast","garage rock",137
+"48","Arctic Monkeys","studies","She Looks Like Fun - Live",0.635,2022-12-29 13:05:52,"medium","garage rock",7
+"49","Arctic Monkeys","studies","Snap Out Of It",0.638,2022-12-29 13:38:46,"medium","garage rock",193
+"50","Arctic Monkeys","studies","The World's First Ever Monster Truck Front Flip",0.601,2022-12-29 13:21:59,"medium","garage rock",180
+"51","Arctic Monkeys","studies","There’d Better Be A Mirrorball",0.365,2022-12-29 14:09:34,"medium","garage rock",248
+"52","Arctic Monkeys","studies","When The Sun Goes Down",0.875,2022-12-29 12:20:37,"fast","garage rock",157
+"53","Arctic Monkeys","studies","When The Sun Goes Down",0.875,2022-12-29 19:04:37,"fast","garage rock",168
+"54","Baby Lulu","free time","Children Go Where I Send Thee",0.124,2022-12-16 15:51:25,"slow","christmas instrumental",45
+"55","Baby Lulu","other","Children Go Where I Send Thee",0.124,2022-12-16 15:51:25,"slow","christmas instrumental",11
+"56","Baby Lulu","other","O Come All Ye Faithful",0.0232,2022-12-16 16:17:52,"slow","christmas instrumental",90
+"57","Baby Lulu","other","Rudolph the Red-Nosed Reindeer",0.12,2022-12-16 16:04:47,"slow","christmas instrumental",87
+"58","Barclay James Harvest","other","Mocking Bird",0.335,2022-12-28 12:07:20,"medium","album rock",72
+"59","Barclay James Harvest","studies","Child Of The Universe",0.588,2022-12-28 15:15:58,"medium","album rock",1
+"60","Barclay James Harvest","studies","For No One",0.578,2022-12-28 15:00:52,"medium","album rock",307
+"61","Barclay James Harvest","studies","Mocking Bird",0.335,2022-12-28 12:07:20,"medium","album rock",277
+"62","Beach House","free time","Space Song",0.792,2022-12-15 22:21:57,"fast","baltimore indie",28
+"63","Beach House","other","Space Song",0.792,2022-12-15 22:21:57,"fast","baltimore indie",71
+"64","Beach House","studies","Space Song",0.792,2022-12-15 22:21:57,"fast","baltimore indie",39
+"65","Bill Withers","free time","Ain't No Sunshine",0.789,2022-12-27 14:20:54,"fast","funk",3
+"66","Bill Withers","other","Ain't No Sunshine",0.789,2022-12-27 14:20:54,"fast","funk",2
+"67","Bill Withers","studies","Ain't No Sunshine",0.789,2022-12-27 14:20:54,"fast","funk",143
+"68","Black Sabbath","free time","Solitude",0.0213,2022-12-28 12:19:58,"slow","album rock",242
+"69","Black Sabbath","other","Paranoid",0.658,2022-12-27 16:09:11,"medium","album rock",22
+"70","Black Sabbath","other","Planet Caravan",0.0595,2022-12-27 16:38:30,"slow","album rock",9
+"71","Black Sabbath","other","Solitude",0.0213,2022-12-28 12:19:58,"slow","album rock",59
+"72","Black Sabbath","studies","Paranoid",0.658,2022-12-27 16:09:11,"medium","album rock",141
+"73","Black Sabbath","studies","Planet Caravan",0.0595,2022-12-27 16:38:30,"slow","album rock",250
+"74","Bob Dylan","studies","Knockin' On Heaven's Door",0.396,2022-12-27 15:48:30,"medium","classic rock",158
+"75","Bobby Helms","free time","Jingle Bell Rock",0.424,2022-12-23 20:52:22,"medium","adult standards",37
+"76","Bobby Helms","free time","Jingle Bell Rock",0.424,2022-12-27 12:56:49,"medium","adult standards",30
+"77","Bobby Helms","other","Jingle Bell Rock",0.424,2022-12-18 12:31:49,"medium","adult standards",130
+"78","Bobby Helms","studies","Jingle Bell Rock",0.424,2022-12-27 12:56:49,"medium","adult standards",58
+"79","Boston","studies","More Than a Feeling",0.681,2022-12-27 16:30:14,"fast","album rock",263
+"80","Burl Ives","free time","A Holly Jolly Christmas",0.375,2022-12-27 12:58:44,"medium","adult standards",96
+"81","Burl Ives","studies","A Holly Jolly Christmas",0.375,2022-12-27 12:58:44,"medium","adult standards",49
+"82","Cage The Elephant","free time","Come A Little Closer",0.778,2022-12-27 12:44:45,"fast","modern rock",3
+"83","Cage The Elephant","other","Come A Little Closer",0.778,2022-12-27 12:44:45,"fast","modern rock",33
+"84","Cage The Elephant","studies","Come A Little Closer",0.778,2022-12-27 12:44:45,"fast","modern rock",85
+"85","Camel","other","Spirit Of The Water",0.101,2022-12-27 15:51:53,"slow","album rock",6
+"86","Camel","studies","Spirit Of The Water",0.101,2022-12-27 15:51:53,"slow","album rock",147
+"87","Celeste","free time","Strange",0.0847,2022-12-26 21:15:44,"slow","british soul",255
+"88","Chris Isaak","other","Wicked Game",0.296,2022-12-27 16:11:10,"slow","mellow gold",12
+"89","Chris Isaak","studies","Wicked Game",0.296,2022-12-27 16:11:10,"slow","mellow gold",182
+"90","Chuck Berry","free time","Run Rudolph Run",0.715,2022-12-27 13:01:14,"fast","classic rock",3
+"91","Chuck Berry","studies","Run Rudolph Run",0.715,2022-12-27 13:01:14,"fast","classic rock",111
+"92","Claus Egan","other","God rest you Merry Gentlemen",0.254,2022-12-16 15:26:58,"slow","christmas instrumental",61
+"93","Claus Egan","other","Silent Night",0.00295,2022-12-16 15:37:42,"slow","christmas instrumental",62
+"94","Claus Egan","studies","Joy to the World",0.0142,2022-12-18 12:28:43,"slow","christmas instrumental",15
+"95","Coldplay","free time","The Scientist",0.442,2022-12-29 12:43:50,"medium","permanent wave",42
+"96","Coldplay","free time","Yellow",0.661,2022-12-29 10:18:33,"medium","permanent wave",70
+"97","Coldplay","other","Fix You",0.417,2022-12-29 20:10:04,"medium","permanent wave",1
+"98","Coldplay","other","The Scientist",0.442,2022-12-29 12:43:50,"medium","permanent wave",4
+"99","Coldplay","studies","Fix You",0.417,2022-12-29 11:48:04,"medium","permanent wave",295
+"100","Coldplay","studies","Fix You",0.417,2022-12-29 20:10:04,"medium","permanent wave",282
+"101","Coldplay","studies","The Scientist",0.442,2022-12-29 12:43:50,"medium","permanent wave",251
+"102","Coldplay","studies","The Scientist",0.442,2022-12-29 18:59:50,"medium","permanent wave",318
+"103","Coldplay","studies","Viva La Vida",0.617,2022-12-29 18:37:57,"medium","permanent wave",229
+"104","Coldplay","studies","Viva La Vida",0.617,2022-12-29 21:30:58,"medium","permanent wave",1
+"105","Coldplay","studies","Yellow",0.661,2022-12-29 10:18:33,"medium","permanent wave",169
+"106","Coldplay","studies","Yellow",0.661,2022-12-29 21:08:33,"medium","permanent wave",233
+"107","Creedence Clearwater Revival","free time","Have You Ever Seen The Rain",0.697,2022-12-29 21:52:19,"fast","classic rock",160
+"108","Creedence Clearwater Revival","studies","Have You Ever Seen The Rain",0.697,2022-12-28 11:57:19,"fast","classic rock",135
+"109","Cuby & The Blizzards","studies","Window Of My Eyes - From ""The American"" Soundtrack",0.526,2022-12-28 16:22:33,"medium","dutch blues",206
+"110","David Bowie","free time","Starman - 2012 Remaster",0.449,2022-12-29 12:15:45,"medium","art rock",11
+"111","David Bowie","other","Starman - 2012 Remaster",0.449,2022-12-29 12:15:45,"medium","art rock",35
+"112","David Bowie","other","Starman - 2012 Remaster",0.449,2022-12-29 19:46:45,"medium","art rock",58
+"113","David Bowie","studies","Space Oddity - 2015 Remaster",0.403,2022-12-28 11:22:41,"medium","art rock",280
+"114","David Bowie","studies","Space Oddity - 2015 Remaster",0.403,2022-12-29 19:28:41,"medium","art rock",313
+"115","David Bowie","studies","Starman - 2012 Remaster",0.449,2022-12-29 12:15:45,"medium","art rock",208
+"116","David Bowie","studies","Starman - 2012 Remaster",0.449,2022-12-29 19:46:45,"medium","art rock",179
+"117","David Schultz","free time","Feliz Navidad",0.368,2022-12-16 15:46:47,"medium","classify",65
+"118","David Schultz","other","Driving Home for Christmas",0.133,2022-12-16 15:36:35,"slow","classify",84
+"119","David Schultz","other","Feliz Navidad",0.368,2022-12-16 15:46:47,"medium","classify",5
+"120","David Schultz","other","Oh Come All Ye Faithful",0.0784,2022-12-16 15:57:55,"slow","classify",61
+"121","David Schultz","other","Winter Wonderland",0.0611,2022-12-16 16:16:37,"slow","classify",97
+"122","Dawid Podsiadło","free time","And I",0.72,2022-12-15 22:24:43,"fast","polish pop",303
+"123","Dawid Podsiadło","free time","mori",0.497,2022-12-26 21:01:45,"medium","polish pop",194
+"124","Dawid Podsiadło","free time","Tapety",0.642,2022-12-26 21:12:28,"medium","polish pop",211
+"125","Dawid Podsiadło","free time","Trofea",0.673,2022-12-26 21:08:15,"fast","polish pop",224
+"126","Dawid Podsiadło","free time","WiRUS",0.575,2022-12-27 12:43:35,"medium","polish pop",4
+"127","Dawid Podsiadło","other","And I",0.72,2022-12-15 22:24:43,"fast","polish pop",12
+"128","Dawid Podsiadło","studies","And I",0.72,2022-12-15 22:24:43,"fast","polish pop",3
+"129","Dawid Podsiadło","studies","And I",0.72,2022-12-26 21:58:43,"fast","polish pop",66
+"130","Dawid Podsiadło","studies","WiRUS",0.575,2022-12-27 12:43:35,"medium","polish pop",51
+"131","Dawid Tyszkowski","free time","Tlen",0.431,2022-12-26 21:31:47,"medium","polish alternative",192
+"132","Dire Straits","studies","Six Blade Knife",0.434,2022-12-27 17:22:48,"medium","album rock",219
+"133","Dire Straits","studies","Sultans Of Swing",0.868,2022-12-28 15:54:11,"fast","album rock",299
+"134","Dire Straits","studies","Where Do You Think You're Going?",0.497,2022-12-28 13:04:10,"medium","album rock",246
+"135","Eagles","free time","Hotel California - 2013 Remaster",0.508,2022-12-28 12:32:28,"medium","album rock",21
+"136","Eagles","other","Hotel California - 2013 Remaster",0.508,2022-12-28 12:32:28,"medium","album rock",8
+"137","Eagles","other","Hotel California - 2013 Remaster",0.508,2022-12-29 18:31:28,"medium","album rock",108
+"138","Eagles","studies","Hotel California - 2013 Remaster",0.508,2022-12-28 12:32:28,"medium","album rock",179
+"139","Eagles","studies","Hotel California - 2013 Remaster",0.508,2022-12-29 18:31:28,"medium","album rock",307
+"140","Eagles","studies","Hotel California - 2013 Remaster",0.508,2022-12-29 21:30:58,"medium","album rock",1
+"141","Eddie Vedder","studies","Guaranteed",0.4,2022-12-28 14:57:15,"medium","acoustic rock",157
+"142","Eddie Vedder","studies","No Ceiling",0.652,2022-12-28 11:27:25,"medium","acoustic rock",60
+"143","Eddie Vedder","studies","Society",0.327,2022-12-28 12:55:03,"slow","acoustic rock",184
+"144","Eels","studies","That Look You Give That Guy",0.517,2022-12-28 11:53:44,"medium","alternative rock",238
+"145","Elton John","studies","Rocket Man (I Think It's Going To Be A Long, Long Time)",0.532,2022-12-28 11:49:18,"medium","glam rock",272
+"146","George Harrison","studies","Ballad Of Sir Frankie Crisp (Let It Roll) - Remastered 2014",0.591,2022-12-28 11:16:11,"medium","album rock",253
+"147","GOLEC UORKIESTRA","free time","Bóg Się Rodzi",0.648,2022-12-22 14:10:59,"medium","polish pop",136
+"148","GOLEC UORKIESTRA","free time","Przybieżeli do Betlejem",0.822,2022-12-22 13:58:33,"fast","polish pop",143
+"149","GOLEC UORKIESTRA","studies","Bóg Się Rodzi",0.648,2022-12-22 14:10:59,"medium","polish pop",11
+"150","Gotye","studies","Somebody That I Used To Know",0.495,2022-12-26 21:45:55,"medium","australian pop",244
+"151","Grant Lee Buffalo","other","Fuzzy",0.416,2022-12-27 17:40:07,"medium","alternative country",187
+"152","Grant Lee Buffalo","studies","Fuzzy",0.416,2022-12-27 17:40:07,"medium","alternative country",92
+"153","Gregory Oberle","other","White Christmas",0.0223,2022-12-16 15:33:21,"slow","instrumental lullaby",98
+"154","Grover Washington, Jr.","free time","Just the Two of Us",0.497,2022-12-26 21:23:36,"medium","smooth jazz",443
+"155","Henry Smith","free time","A Holly Jolly Christmas - Piano Version",0.0129,2022-12-18 11:06:14,"slow","neo-classical",147
+"156","Henry Smith","free time","It's Beginning to Look a Lot Like Christmas - Piano Version",0.0258,2022-12-18 11:04:39,"slow","neo-classical",102
+"157","Henry Smith","free time","Jingle Bell Rock - Piano Version",0.0149,2022-12-18 11:09:44,"slow","neo-classical",136
+"158","Henry Smith","free time","O Holy Night - Piano Version",0.00193,2022-12-18 11:16:28,"slow","neo-classical",140
+"159","Henry Smith","free time","Rockin' Around the Christmas Tree - Piano Version",0.0192,2022-12-18 11:01:20,"slow","neo-classical",6
+"160","Henry Smith","free time","Rudolph the Red-Nosed Reindeer - Piano Version",0.0255,2022-12-18 11:26:24,"slow","neo-classical",11
+"161","Henry Smith","free time","Santa Baby - Piano Version",0.00449,2022-12-18 11:11:58,"slow","neo-classical",182
+"162","Henry Smith","free time","The Night Before Christmas Song - Piano Version",0.0386,2022-12-16 14:37:29,"slow","neo-classical",9
+"163","Henry Smith","free time","White Christmas - Piano Version",0.00903,2022-12-18 11:14:39,"slow","neo-classical",112
+"164","Henry Smith","other","A Holly Jolly Christmas - Piano Version",0.0129,2022-12-16 14:49:14,"slow","neo-classical",166
+"165","Henry Smith","other","A Holly Jolly Christmas - Piano Version",0.0129,2022-12-18 11:06:14,"slow","neo-classical",7
+"166","Henry Smith","other","I Saw Mommy Kissing Santa Claus - Piano Version",0.037,2022-12-16 14:52:30,"slow","neo-classical",150
+"167","Henry Smith","other","I Saw Mommy Kissing Santa Claus - Piano Version",0.037,2022-12-18 11:28:30,"slow","neo-classical",20
+"168","Henry Smith","other","It's Beginning to Look a Lot Like Christmas - Piano Version",0.0258,2022-12-16 14:54:39,"slow","neo-classical",66
+"169","Henry Smith","other","Jingle Bell Rock - Piano Version",0.0149,2022-12-16 14:42:44,"slow","neo-classical",136
+"170","Henry Smith","other","Little Drummer Boy - Piano Version",0.058,2022-12-18 11:46:53,"slow","neo-classical",23
+"171","Henry Smith","other","Rockin' Around the Christmas Tree - Piano Version",0.0192,2022-12-16 14:47:20,"slow","neo-classical",129
+"172","Henry Smith","other","Rockin' Around the Christmas Tree - Piano Version",0.0192,2022-12-18 11:01:20,"slow","neo-classical",21
+"173","Henry Smith","other","Rudolph the Red-Nosed Reindeer - Piano Version",0.0255,2022-12-18 11:26:24,"slow","neo-classical",146
+"174","Henry Smith","other","Sleigh Ride - Piano Version",0.0619,2022-12-16 14:44:31,"slow","neo-classical",138
+"175","Henry Smith","other","Sleigh Ride - Piano Version",0.0619,2022-12-18 11:23:31,"slow","neo-classical",76
+"176","Henry Smith","other","The Christmas Song (Merry Christmas to You) - Piano Version",0.0123,2022-12-18 11:19:39,"slow","neo-classical",23
+"177","Henry Smith","other","The Night Before Christmas Song - Piano Version",0.0386,2022-12-16 14:37:29,"slow","neo-classical",120
+"178","Henry Smith","other","We Wish You a Merry Christmas - Piano Version",0.0138,2022-12-16 14:39:53,"slow","neo-classical",156
+"179","Henry Smith","other","We Wish You a Merry Christmas - Piano Version",0.0138,2022-12-18 11:21:53,"slow","neo-classical",121
+"180","Henry Smith","studies","A Holly Jolly Christmas - Piano Version",0.0129,2022-12-18 11:06:14,"slow","neo-classical",14
+"181","Henry Smith","studies","Angels We Have Heard on High - Piano Version",0.0314,2022-12-18 11:44:23,"slow","neo-classical",156
+"182","Henry Smith","studies","I Saw Mommy Kissing Santa Claus - Piano Version",0.037,2022-12-18 11:28:30,"slow","neo-classical",120
+"183","Henry Smith","studies","Little Drummer Boy - Piano Version",0.058,2022-12-18 11:46:53,"slow","neo-classical",125
+"184","Henry Smith","studies","Rockin' Around the Christmas Tree - Piano Version",0.0192,2022-12-18 11:01:20,"slow","neo-classical",112
+"185","Henry Smith","studies","Rudolph the Red-Nosed Reindeer - Piano Version",0.0255,2022-12-18 11:26:24,"slow","neo-classical",2
+"186","Henry Smith","studies","Sleigh Ride - Piano Version",0.0619,2022-12-18 11:23:31,"slow","neo-classical",25
+"187","Henry Smith","studies","The Christmas Song (Merry Christmas to You) - Piano Version",0.0123,2022-12-18 11:19:39,"slow","neo-classical",116
+"188","Henry Smith","studies","The Night Before Christmas Song - Piano Version",0.0386,2022-12-18 11:49:29,"slow","neo-classical",129
+"189","Henry Smith","studies","We Wish You a Merry Christmas - Piano Version",0.0138,2022-12-16 14:39:53,"slow","neo-classical",2
+"190","Henry Smith","studies","We Wish You a Merry Christmas - Piano Version",0.0138,2022-12-18 11:21:53,"slow","neo-classical",4
+"191","Henry Smith","studies","White Christmas - Piano Version",0.00903,2022-12-18 11:14:39,"slow","neo-classical",15
+"192","Ian Wong","free time","I Saw Three Ships",0.0924,2022-12-16 15:54:14,"slow","christmas instrumental",24
+"193","Ian Wong","other","I Saw Three Ships",0.0924,2022-12-16 15:54:14,"slow","christmas instrumental",59
+"194","Idina Menzel","free time","Into the Unknown",0.405,2022-12-26 16:25:56,"medium","hollywood",3
+"195","Idina Menzel","free time","Into the Unknown",0.405,2022-12-26 20:07:45,"medium","hollywood",143
+"196","Idina Menzel","free time","Let It Go - From ""Frozen""/Soundtrack Version",0.485,2022-12-26 16:28:55,"medium","hollywood",4
+"197","Iggy Pop","studies","The Passenger",0.889,2022-12-28 12:59:16,"fast","classic rock",283
+"198","Igor Kwiatkowski","free time","Drobnostka",0.703,2022-12-26 16:13:16,"fast","disney polska",134
+"199","Igor Kwiatkowski","free time","Drobnostka",0.703,2022-12-26 16:15:55,"fast","disney polska",4
+"200","Igor Kwiatkowski","studies","Drobnostka",0.703,2022-12-26 20:26:16,"fast","disney polska",163
+"201","Imagine Dragons","free time","Second Chances",0.567,2022-12-26 20:44:22,"medium","modern rock",30
+"202","Imagine Dragons","studies","Second Chances",0.567,2022-12-26 20:44:22,"medium","modern rock",187
+"203","J.J. Cale","free time","Magnolia",0.175,2022-12-27 16:21:36,"slow","blues",102
+"204","J.J. Cale","other","Magnolia",0.175,2022-12-27 16:21:36,"slow","blues",3
+"205","J.J. Cale","studies","Magnolia",0.175,2022-12-27 16:21:36,"slow","blues",69
+"206","Janis Joplin","other","Summertime",0.394,2022-12-28 16:00:21,"medium","blues rock",205
+"207","Janis Joplin","studies","Summertime",0.394,2022-12-28 16:00:21,"medium","blues rock",60
+"208","Jason Mraz","studies","Winter Wonderland - Bonus Track",0.305,2022-12-22 18:54:39,"slow","acoustic pop",80
+"209","Jeff Buckley","free time","Lilac Wine",0.0847,2022-12-28 13:46:27,"slow","art rock",169
+"210","Jeff Buckley","other","Lilac Wine",0.0847,2022-12-28 13:46:27,"slow","art rock",6
+"211","Jeff Buckley","studies","Lilac Wine",0.0847,2022-12-28 13:46:27,"slow","art rock",71
+"212","Jefferson Airplane","studies","Somebody to Love",0.578,2022-12-27 16:47:05,"medium","acid rock",205
+"213","Jethro Tull","free time","Bourée",0.275,2022-12-28 13:40:13,"slow","album rock",12
+"214","Jethro Tull","other","Bourée",0.275,2022-12-28 13:40:13,"slow","album rock",144
+"215","Jethro Tull","studies","Bourée",0.275,2022-12-28 13:40:13,"slow","album rock",55
+"216","Jim Morrison","free time","A Feast of Friends - 2022 Remastered Version",0.415,2022-12-28 13:17:50,"medium","classic rock",110
+"217","Jim Morrison","studies","A Feast of Friends - 2022 Remastered Version",0.415,2022-12-28 13:17:50,"medium","classic rock",25
+"218","Jim Morrison","studies","A Feast of Friends - 2022 Remastered Version",0.415,2022-12-29 21:49:50,"medium","classic rock",130
+"219","Jimi Hendrix","studies","Little Wing",0.534,2022-12-27 16:35:34,"medium","acid rock",142
+"220","Jimi Hendrix","studies","The Wind Cries Mary",0.495,2022-12-28 13:28:39,"medium","acid rock",195
+"221","Joanna Wlodarska","studies","Taki to kot",0.147,2022-12-26 20:41:12,"slow","zespol dzieciecy",47
+"222","John Lennon","free time","Imagine - Remastered 2010",0.257,2022-12-28 22:05:52,"slow","album rock",96
+"223","John Lennon","free time","Imagine - Remastered 2010",0.257,2022-12-29 18:15:52,"slow","album rock",17
+"224","John Lennon","free time","Imagine - Remastered 2010",0.257,2022-12-29 21:29:13,"slow","album rock",5
+"225","John Lennon","other","Imagine - Remastered 2010",0.257,2022-12-29 18:15:52,"slow","album rock",3
+"226","John Lennon","studies","Imagine - Remastered 2010",0.257,2022-12-28 22:05:52,"slow","album rock",70
+"227","John Lennon","studies","Imagine - Remastered 2010",0.257,2022-12-29 18:15:52,"slow","album rock",119
+"228","John Lennon","studies","Imagine - Remastered 2010",0.257,2022-12-29 21:29:13,"slow","album rock",82
+"229","José Feliciano","free time","Feliz Navidad",0.831,2022-12-18 12:28:57,"fast","latin pop",13
+"230","José Feliciano","free time","Feliz Navidad",0.831,2022-12-23 19:56:57,"fast","latin pop",223
+"231","José Feliciano","free time","Feliz Navidad",0.831,2022-12-23 20:33:57,"fast","latin pop",153
+"232","José Feliciano","free time","Feliz Navidad",0.831,2022-12-27 12:46:57,"fast","latin pop",21
+"233","José Feliciano","free time","The Star Spangled Banner - Live",0.472,2022-12-27 12:50:10,"medium","latin pop",2
+"234","José Feliciano","other","Feliz Navidad",0.831,2022-12-18 12:28:57,"fast","latin pop",149
+"235","José Feliciano","other","Feliz Navidad",0.831,2022-12-22 13:51:57,"fast","latin pop",167
+"236","José Feliciano","other","Feliz Navidad",0.831,2022-12-22 18:55:57,"fast","latin pop",59
+"237","José Feliciano","other","Feliz Navidad",0.831,2022-12-27 12:46:57,"fast","latin pop",126
+"238","José Feliciano","other","The Star Spangled Banner - Live",0.472,2022-12-27 12:50:10,"medium","latin pop",14
+"239","José Feliciano","studies","Feliz Navidad",0.831,2022-12-18 12:28:57,"fast","latin pop",3
+"240","José Feliciano","studies","Feliz Navidad",0.831,2022-12-22 18:55:57,"fast","latin pop",78
+"241","José Feliciano","studies","Feliz Navidad",0.831,2022-12-23 19:56:57,"fast","latin pop",1
+"242","José Feliciano","studies","Feliz Navidad",0.831,2022-12-27 12:46:57,"fast","latin pop",32
+"243","José Feliciano","studies","The Star Spangled Banner - Live",0.472,2022-12-27 12:50:10,"medium","latin pop",102
+"244","Joseph Sullinger","free time","O Come, All Ye FaithFul (Adeste Fideles)",0.221,2022-12-16 15:52:26,"slow","acoustic guitar cover",74
+"245","Joseph Sullinger","other","O Come, All Ye FaithFul (Adeste Fideles)",0.221,2022-12-16 15:52:26,"slow","acoustic guitar cover",23
+"246","Justin Bieber","other","Mistletoe",0.56,2022-12-18 12:42:57,"medium","canadian pop",182
+"247","KALEO","free time","Way down We Go",0.505,2022-12-19 10:02:26,"medium","icelandic indie",231
+"248","Keane","free time","Everybody's Changing",0.835,2022-12-29 20:18:24,"fast","neo mellow",80
+"249","Keane","free time","Somewhere Only We Know",0.655,2022-12-29 10:45:30,"medium","neo mellow",76
+"250","Keane","studies","Everybody's Changing",0.835,2022-12-29 20:18:24,"fast","neo mellow",128
+"251","Keane","studies","Somewhere Only We Know",0.655,2022-12-29 10:45:30,"medium","neo mellow",62
+"252","King Crimson","studies","Book Of Saturday",0.0818,2022-12-28 13:37:04,"slow","album rock",157
+"253","Kings of Leon","studies","Sex on Fire",0.905,2022-12-29 21:16:36,"fast","modern rock",238
+"254","Kings of Leon","studies","Use Somebody",0.715,2022-12-29 19:08:09,"fast","modern rock",241
+"255","Koza","studies","Duchy",0.793,2022-12-26 21:53:49,"fast","polish alternative rap",10
+"256","Kristen Bell","free time","Love Is an Open Door - From ""Frozen""/Soundtrack Version",0.637,2022-12-26 19:50:55,"medium","disney",21
+"257","Kuban","free time","na okrągło",0.525,2022-12-26 20:53:51,"medium","polish alternative rap",37
+"258","Kuban","studies","na okrągło",0.525,2022-12-26 20:53:51,"medium","polish alternative rap",162
+"259","Lake Isabel","other","Jolly Old Saint Nicholas",0.0466,2022-12-16 15:56:04,"slow","christmas instrumental",79
+"260","Led Zeppelin","other","Black Dog - Remaster",0.864,2022-12-28 15:12:16,"fast","album rock",101
+"261","Led Zeppelin","studies","Black Dog - Remaster",0.864,2022-12-28 15:12:16,"fast","album rock",123
+"262","Led Zeppelin","studies","Stairway to Heaven - Remaster",0.34,2022-12-27 15:57:57,"medium","album rock",480
+"263","LemON","free time","Cicha noc",0.0931,2022-12-22 14:06:09,"slow","polish pop",2
+"264","LemON","free time","Tycha nicz",0.0426,2022-12-23 20:48:25,"slow","polish pop",78
+"265","LemON","other","Do świąt",0.123,2022-12-22 18:58:56,"slow","polish pop",63
+"266","LemON","studies","Cicha noc",0.0931,2022-12-22 14:06:09,"slow","polish pop",179
+"267","LemON","studies","Jutro",0.613,2022-12-26 20:31:58,"medium","polish pop",1
+"268","LemON","studies","Tycha nicz",0.0426,2022-12-23 20:48:25,"slow","polish pop",117
+"269","Magdalena Wasylik","free time","Pierwszy Raz Jak Siega Pamiec",0.366,2022-12-26 20:11:15,"medium","bajki",169
+"270","Maisie Peters","free time","Worst of You",0.466,2022-12-19 09:59:42,"medium","alt z",180
+"271","Mandy Moore","free time","When Will My Life Begin? - From ""Tangled"" / Soundtrack Version",0.42,2022-12-26 19:48:27,"medium","dance pop",147
+"272","Męskie Granie Orkiestra 2018","free time","Początek",0.703,2022-12-26 21:05:03,"fast","polish alternative",236
+"273","Michael Bublé","studies","Holly Jolly Christmas",0.465,2022-12-27 12:54:58,"medium","adult standards",121
+"274","Michal Rosinski","free time","Corazón",0.416,2022-12-26 20:41:56,"medium","disney polska",35
+"275","Michal Rosinski","studies","Corazón",0.416,2022-12-26 20:41:56,"medium","disney polska",91
+"276","Muse","free time","Starlight",0.874,2022-12-29 18:26:59,"fast","modern rock",43
+"277","Muse","studies","Starlight",0.874,2022-12-29 18:26:59,"fast","modern rock",215
+"278","Music Lab Collective","other","Silent Night (Arr.Guitar)",0.0216,2022-12-16 15:30:19,"slow","classify",101
+"279","Myslovitz","studies","Dla Ciebie",0.598,2022-12-26 21:42:14,"medium","polish alternative",225
+"280","Nat King Cole","other","Joy To The World",0.337,2022-12-18 12:41:35,"medium","adult standards",84
+"281","Natalia Nykiel","free time","Pół kroku stąd - z filmu ""Vaiana - Skarb Oceanu""",0.402,2022-12-26 16:16:02,"medium","polish alternative",165
+"282","Nick Drake","studies","Day Is Done",0.298,2022-12-27 16:06:33,"slow","art rock",134
+"283","Nirvana","free time","Come As You Are",0.824,2022-12-29 12:52:21,"fast","grunge",2
+"284","Nirvana","free time","The Man Who Sold The World",0.753,2022-12-27 17:13:38,"fast","grunge",5
+"285","Nirvana","other","Come As You Are",0.824,2022-12-29 12:52:21,"fast","grunge",3
+"286","Nirvana","studies","Come As You Are",0.824,2022-12-29 12:52:21,"fast","grunge",231
+"287","Nirvana","studies","Come As You Are",0.824,2022-12-29 20:03:21,"fast","grunge",197
+"288","Nirvana","studies","The Man Who Sold The World",0.753,2022-12-27 17:13:38,"fast","grunge",273
+"289","Nirvana","studies","The Man Who Sold The World",0.753,2022-12-29 10:27:38,"fast","grunge",44
+"290","Oasis","free time","Stop Crying Your Heart Out",0.558,2022-12-29 10:37:56,"medium","beatlesque",8
+"291","Oasis","free time","Wonderwall - Remastered",0.893,2022-12-28 22:25:41,"fast","beatlesque",91
+"292","Oasis","free time","Wonderwall - Remastered",0.893,2022-12-29 19:42:41,"fast","beatlesque",2
+"293","Oasis","other","Wonderwall - Remastered",0.893,2022-12-29 19:42:41,"fast","beatlesque",14
+"294","Oasis","studies","Half the World Away - Remastered",0.458,2022-12-29 21:31:39,"medium","beatlesque",20
+"295","Oasis","studies","Stop Crying Your Heart Out",0.558,2022-12-29 10:37:56,"medium","beatlesque",287
+"296","Oasis","studies","Stop Crying Your Heart Out",0.558,2022-12-29 19:55:56,"medium","beatlesque",322
+"297","Oasis","studies","Wonderwall - Remastered",0.893,2022-12-28 22:25:41,"fast","beatlesque",170
+"298","Oasis","studies","Wonderwall - Remastered",0.893,2022-12-29 19:42:41,"fast","beatlesque",214
+"299","Obywatel G.C.","free time","Tak ... Tak ... To Ja",0.921,2022-12-26 16:21:52,"fast","polish rock",7
+"300","OneRepublic","free time","Love Runs Out",0.935,2022-12-26 20:47:15,"fast","piano rock",47
+"301","OneRepublic","other","Love Runs Out",0.935,2022-12-26 20:47:15,"fast","piano rock",9
+"302","OneRepublic","studies","Love Runs Out",0.935,2022-12-26 20:47:15,"fast","piano rock",148
+"303","Pavlov's Dog","free time","Julia",0.446,2022-12-28 13:19:50,"medium","art rock",28
+"304","Pavlov's Dog","studies","Julia",0.446,2022-12-28 13:19:50,"medium","art rock",124
+"305","Pawbeats","other","Pod śniegiem",0.485,2022-12-19 09:58:35,"medium","polish alternative rap",24
+"306","Pentatonix","other","White Christmas (feat. The Manhattan Transfer)",0.419,2022-12-18 12:45:41,"medium","a cappella",20
+"307","Pierre Oslonn","free time","Angels We Have Heard On High",0.13,2022-12-16 15:44:34,"slow","piano cover",45
+"308","Pierre Oslonn","other","Angels We Have Heard On High",0.13,2022-12-16 15:44:34,"slow","piano cover",27
+"309","Pink Floyd","free time","Comfortably Numb - 2011 Remastered Version",0.3,2022-12-27 15:16:40,"slow","album rock",8
+"310","Pink Floyd","free time","Wish You Were Here",0.262,2022-12-27 16:16:38,"slow","album rock",137
+"311","Pink Floyd","other","Wish You Were Here",0.262,2022-12-27 16:16:38,"slow","album rock",42
+"312","Pink Floyd","studies","Comfortably Numb - 2011 Remastered Version",0.3,2022-12-27 15:16:40,"slow","album rock",360
+"313","Pink Floyd","studies","Wish You Were Here",0.262,2022-12-27 16:16:38,"slow","album rock",31
+"314","Pixies","free time","Where Is My Mind? - Remastered",0.441,2022-12-28 22:22:05,"medium","alternative rock",110
+"315","Pixies","free time","Where Is My Mind? - Remastered",0.441,2022-12-29 18:19:05,"medium","alternative rock",14
+"316","Pixies","other","Where Is My Mind? - Remastered",0.441,2022-12-28 22:22:05,"medium","alternative rock",11
+"317","Pixies","other","Where Is My Mind? - Remastered",0.441,2022-12-29 18:19:05,"medium","alternative rock",78
+"318","Pixies","studies","Where Is My Mind? - Remastered",0.441,2022-12-27 14:23:05,"medium","alternative rock",234
+"319","Pixies","studies","Where Is My Mind? - Remastered",0.441,2022-12-28 22:22:05,"medium","alternative rock",102
+"320","Pixies","studies","Where Is My Mind? - Remastered",0.441,2022-12-29 18:19:05,"medium","alternative rock",116
+"321","Queen","free time","Who Wants To Live Forever - Remastered 2011",0.399,2022-12-28 13:23:04,"medium","classic rock",32
+"322","Queen","other","Spread Your Wings - Remastered 2011",0.658,2022-12-28 13:51:25,"medium","classic rock",3
+"323","Queen","other","The Show Must Go On - Remastered 2011",0.686,2022-12-27 15:22:22,"fast","classic rock",65
+"324","Queen","studies","Spread Your Wings - Remastered 2011",0.658,2022-12-28 13:51:25,"medium","classic rock",229
+"325","Queen","studies","The Show Must Go On - Remastered 2011",0.686,2022-12-27 15:22:22,"fast","classic rock",178
+"326","Queen","studies","Who Wants To Live Forever - Remastered 2011",0.399,2022-12-28 13:23:04,"medium","classic rock",246
+"327","R.E.M.","free time","Everybody Hurts",0.324,2022-12-29 10:32:39,"slow","alternative rock",169
+"328","R.E.M.","free time","Losing My Religion",0.855,2022-12-26 21:34:31,"fast","alternative rock",268
+"329","R.E.M.","free time","Losing My Religion",0.855,2022-12-27 15:02:31,"fast","alternative rock",1
+"330","R.E.M.","free time","Losing My Religion",0.855,2022-12-29 19:51:31,"fast","alternative rock",5
+"331","R.E.M.","free time","Man On The Moon",0.699,2022-12-27 16:24:45,"fast","alternative rock",27
+"332","R.E.M.","other","Losing My Religion",0.855,2022-12-27 15:02:31,"fast","alternative rock",22
+"333","R.E.M.","other","Man On The Moon",0.699,2022-12-29 18:41:45,"fast","alternative rock",19
+"334","R.E.M.","other","Nightswimming",0.385,2022-12-27 15:29:41,"medium","alternative rock",218
+"335","R.E.M.","studies","Drive",0.432,2022-12-27 16:50:28,"medium","alternative rock",274
+"336","R.E.M.","studies","Everybody Hurts",0.324,2022-12-27 14:31:39,"slow","alternative rock",320
+"337","R.E.M.","studies","Everybody Hurts",0.324,2022-12-29 10:32:39,"slow","alternative rock",100
+"338","R.E.M.","studies","Imitation Of Life",0.755,2022-12-29 12:32:02,"fast","alternative rock",191
+"339","R.E.M.","studies","Imitation Of Life",0.755,2022-12-29 19:12:02,"fast","alternative rock",251
+"340","R.E.M.","studies","Losing My Religion",0.855,2022-12-27 15:02:31,"fast","alternative rock",280
+"341","R.E.M.","studies","Losing My Religion",0.855,2022-12-28 22:40:31,"fast","alternative rock",227
+"342","R.E.M.","studies","Losing My Religion",0.855,2022-12-29 19:51:31,"fast","alternative rock",257
+"343","R.E.M.","studies","Man On The Moon",0.699,2022-12-27 16:24:45,"fast","alternative rock",264
+"344","R.E.M.","studies","Man On The Moon",0.699,2022-12-29 18:41:45,"fast","alternative rock",279
+"345","R.E.M.","studies","Nightswimming",0.385,2022-12-27 15:29:41,"medium","alternative rock",23
+"346","R.E.M.","studies","Nightswimming",0.385,2022-12-29 21:30:58,"medium","alternative rock",1
+"347","Radiohead","free time","Creep",0.43,2022-12-29 12:40:01,"medium","alternative rock",184
+"348","Radiohead","free time","Karma Police",0.501,2022-12-27 15:44:35,"medium","alternative rock",4
+"349","Radiohead","free time","No Surprises",0.393,2022-12-29 21:05:10,"medium","alternative rock",5
+"350","Radiohead","other","Creep",0.43,2022-12-27 14:41:01,"medium","alternative rock",72
+"351","Radiohead","other","Creep",0.43,2022-12-29 12:40:01,"medium","alternative rock",38
+"352","Radiohead","other","Karma Police",0.501,2022-12-27 15:44:35,"medium","alternative rock",5
+"353","Radiohead","other","No Surprises",0.393,2022-12-29 21:05:10,"medium","alternative rock",152
+"354","Radiohead","studies","Creep",0.43,2022-12-29 12:40:01,"medium","alternative rock",3
+"355","Radiohead","studies","Creep",0.43,2022-12-29 18:56:01,"medium","alternative rock",214
+"356","Radiohead","studies","High and Dry",0.383,2022-12-27 17:26:42,"medium","alternative rock",242
+"357","Radiohead","studies","High and Dry",0.383,2022-12-29 12:14:48,"medium","alternative rock",71
+"358","Radiohead","studies","Karma Police",0.501,2022-12-27 15:44:35,"medium","alternative rock",251
+"359","Radiohead","studies","No Surprises",0.393,2022-12-29 21:05:10,"medium","alternative rock",59
+"360","Ralph Kaminski","other","Wyjątkowo zimny maj",0.452,2022-12-27 12:39:36,"medium","polish alternative",52
+"361","Ralph Kaminski","studies","Kosmiczne Energie",0.535,2022-12-26 20:28:37,"medium","polish alternative",22
+"362","Ralph Kaminski","studies","Mój Hymn o Warszawie",0.279,2022-12-26 20:41:58,"slow","polish alternative",1
+"363","Ralph Kaminski","studies","Wyjątkowo zimny maj",0.452,2022-12-27 12:39:36,"medium","polish alternative",212
+"364","Rare Bird","other","Sympathy",0.0916,2022-12-27 17:45:12,"slow","art rock",47
+"365","Rare Bird","studies","Sympathy",0.0916,2022-12-27 17:45:12,"slow","art rock",114
+"366","Red Hot Chili Peppers","free time","I Could Die for You",0.734,2022-12-19 09:55:47,"fast","alternative rock",23
+"367","Red Hot Chili Peppers","free time","Otherside",0.795,2022-12-28 22:08:44,"fast","alternative rock",132
+"368","Red Hot Chili Peppers","free time","Road Trippin'",0.474,2022-12-27 14:28:35,"medium","alternative rock",7
+"369","Red Hot Chili Peppers","free time","Scar Tissue",0.717,2022-12-26 21:39:24,"fast","alternative rock",119
+"370","Red Hot Chili Peppers","free time","Scar Tissue",0.717,2022-12-29 11:44:24,"fast","alternative rock",6
+"371","Red Hot Chili Peppers","free time","Under the Bridge",0.345,2022-12-28 22:30:35,"medium","alternative rock",93
+"372","Red Hot Chili Peppers","other","I Could Die for You",0.734,2022-12-19 09:55:47,"fast","alternative rock",179
+"373","Red Hot Chili Peppers","other","Road Trippin'",0.474,2022-12-29 12:28:35,"medium","alternative rock",2
+"374","Red Hot Chili Peppers","other","Under the Bridge",0.345,2022-12-27 14:51:35,"medium","alternative rock",95
+"375","Red Hot Chili Peppers","studies","By the Way",0.97,2022-12-29 21:13:23,"fast","alternative rock",220
+"376","Red Hot Chili Peppers","studies","Californication",0.767,2022-12-29 12:56:30,"fast","alternative rock",329
+"377","Red Hot Chili Peppers","studies","Californication",0.767,2022-12-29 21:20:30,"fast","alternative rock",285
+"378","Red Hot Chili Peppers","studies","Otherside",0.795,2022-12-28 22:08:44,"fast","alternative rock",107
+"379","Red Hot Chili Peppers","studies","Road Trippin'",0.474,2022-12-27 14:28:35,"medium","alternative rock",201
+"380","Red Hot Chili Peppers","studies","Road Trippin'",0.474,2022-12-29 12:28:35,"medium","alternative rock",187
+"381","Red Hot Chili Peppers","studies","Road Trippin'",0.474,2022-12-29 20:15:35,"medium","alternative rock",191
+"382","Red Hot Chili Peppers","studies","Scar Tissue",0.717,2022-12-26 21:39:24,"fast","alternative rock",119
+"383","Red Hot Chili Peppers","studies","Scar Tissue",0.717,2022-12-29 11:44:24,"fast","alternative rock",253
+"384","Red Hot Chili Peppers","studies","Scar Tissue",0.717,2022-12-29 19:19:24,"fast","alternative rock",200
+"385","Red Hot Chili Peppers","studies","Snow (Hey Oh)",0.9,2022-12-29 10:22:25,"fast","alternative rock",334
+"386","Red Hot Chili Peppers","studies","The Zephyr Song",0.803,2022-12-29 18:47:08,"fast","alternative rock",231
+"387","Red Hot Chili Peppers","studies","Under the Bridge",0.345,2022-12-27 14:51:35,"medium","alternative rock",163
+"388","Red Hot Chili Peppers","studies","Under the Bridge",0.345,2022-12-28 22:30:35,"medium","alternative rock",143
+"389","Red Hot Chili Peppers","studies","Under the Bridge",0.345,2022-12-29 19:38:35,"medium","alternative rock",228
+"390","Richard Hawley","studies","You and I",0.893,2022-12-29 13:25:33,"fast","british singer-songwriter",206
+"391","Rick Gallagher Project","other","The Wassail Song",0.107,2022-12-16 15:27:54,"slow","background piano",125
+"392","Robert Rozmus","free time","W drodze przez bajoro",0.889,2022-12-26 20:33:28,"fast","disney polska",23
+"393","Robert Rozmus","studies","W drodze przez bajoro",0.889,2022-12-26 20:33:28,"fast","disney polska",71
+"394","Rozen","studies","Lepszy ląd",0.557,2022-12-26 20:22:58,"medium","polish alternative",1
+"395","Sam Smith","studies","Have Yourself A Merry Little Christmas",0.178,2022-12-22 18:54:09,"slow","pop",110
+"396","sanah","free time","Eldorado",0.744,2022-12-26 16:18:55,"fast","polish pop",4
+"397","sanah","free time","najlepszy dzień w moim życiu",0.433,2022-12-26 20:56:48,"medium","polish pop",186
+"398","sanah","studies","Idź",0.432,2022-12-26 20:37:14,"medium","polish pop",225
+"399","sanah","studies","Królowa dram",0.313,2022-12-26 20:22:54,"slow","polish pop",5
+"400","sanah","studies","najlepszy dzień w moim życiu",0.433,2022-12-26 20:56:48,"medium","polish pop",38
+"401","Sergio Mendes & Brasil '66","free time","Mas Que Nada",0.483,2022-12-26 20:51:20,"medium","lounge",46
+"402","Sergio Mendes & Brasil '66","studies","Mas Que Nada",0.483,2022-12-26 20:51:20,"medium","lounge",81
+"403","Sia","other","Snowflake",0.354,2022-12-18 12:34:57,"medium","australian dance",242
+"404","Sia","studies","Snowman",0.512,2022-12-27 12:52:14,"medium","australian dance",165
+"405","Slade","studies","Far Far Away",0.832,2022-12-28 13:07:25,"fast","album rock",178
+"406","Snowy White","studies","Bird of Paradise",0.443,2022-12-27 17:18:18,"medium","blues rock",263
+"407","Stephanie Beatriz","free time","The Family Madrigal",0.628,2022-12-26 15:54:42,"medium","hollywood",193
+"408","Stephanie Beatriz","free time","The Family Madrigal",0.628,2022-12-26 20:02:42,"medium","hollywood",162
+"409","Stephanie Beatriz","free time","Waiting On A Miracle",0.554,2022-12-26 15:59:18,"medium","hollywood",122
+"410","Sting","free time","Englishman In New York",0.347,2022-12-28 10:56:32,"medium","permanent wave",25
+"411","Sting","studies","Englishman In New York",0.347,2022-12-28 10:56:32,"medium","permanent wave",212
+"412","Sting","studies","Shape Of My Heart",0.373,2022-12-27 15:40:20,"medium","permanent wave",221
+"413","Supertramp","studies","Breakfast In America - 2010 Remastered",0.663,2022-12-28 11:20:20,"medium","album rock",159
+"414","System Of A Down","studies","Lonely Day",0.796,2022-12-29 21:36:12,"fast","alternative metal",167
+"415","The Alan Parsons Project","free time","Eye In The Sky",0.417,2022-12-28 14:53:23,"medium","album rock",13
+"416","The Alan Parsons Project","other","Eye In The Sky",0.417,2022-12-28 14:53:23,"medium","album rock",7
+"417","The Alan Parsons Project","studies","Eye In The Sky",0.417,2022-12-28 14:53:23,"medium","album rock",229
+"418","The Animals","free time","House of the Rising Sun",0.584,2022-12-27 15:06:30,"medium","album rock",130
+"419","The Animals","free time","House of the Rising Sun",0.584,2022-12-29 21:41:30,"medium","album rock",213
+"420","The Animals","other","House of the Rising Sun",0.584,2022-12-29 21:41:30,"medium","album rock",33
+"421","The Animals","studies","House of the Rising Sun",0.584,2022-12-27 15:06:30,"medium","album rock",136
+"422","The Animals","studies","House of the Rising Sun",0.584,2022-12-29 21:41:30,"medium","album rock",27
+"423","The Beatles","free time","Let It Be - Remastered 2009",0.403,2022-12-28 12:38:56,"medium","beatlesque",3
+"424","The Beatles","free time","While My Guitar Gently Weeps - Remastered 2009",0.654,2022-12-28 12:02:15,"medium","beatlesque",7
+"425","The Beatles","free time","Yesterday - Remastered 2009",0.179,2022-12-28 22:12:54,"slow","beatlesque",28
+"426","The Beatles","other","While My Guitar Gently Weeps",0.654,2022-12-27 14:48:13,"medium","beatlesque",68
+"427","The Beatles","other","While My Guitar Gently Weeps - Remastered 2009",0.654,2022-12-28 12:02:15,"medium","beatlesque",63
+"428","The Beatles","studies","Blackbird - Remastered 2009",0.127,2022-12-28 11:10:41,"slow","beatlesque",138
+"429","The Beatles","studies","Let It Be - Remastered 2009",0.403,2022-12-28 12:38:56,"medium","beatlesque",233
+"430","The Beatles","studies","Let It Be - Remastered 2009",0.403,2022-12-29 19:33:56,"medium","beatlesque",218
+"431","The Beatles","studies","While My Guitar Gently Weeps",0.654,2022-12-27 14:48:13,"medium","beatlesque",121
+"432","The Beatles","studies","While My Guitar Gently Weeps - Remastered 2009",0.654,2022-12-28 12:02:15,"medium","beatlesque",176
+"433","The Beatles","studies","Yesterday - Remastered 2009",0.179,2022-12-27 14:26:54,"slow","beatlesque",125
+"434","The Beatles","studies","Yesterday - Remastered 2009",0.179,2022-12-28 22:12:54,"slow","beatlesque",115
+"435","The Beatles","studies","Yesterday - Remastered 2009",0.179,2022-12-29 21:30:58,"slow","beatlesque",1
+"436","The Cassino","free time","Coming Down",0.462,2022-12-15 22:34:03,"medium","polish indie",109
+"437","The Cassino","free time","Nie w tym Mieście",0.599,2022-12-26 21:54:33,"medium","polish indie",6
+"438","The Cassino","other","Coming Down",0.462,2022-12-15 22:34:03,"medium","polish indie",37
+"439","The Cassino","studies","Coming Down",0.462,2022-12-15 22:34:03,"medium","polish indie",73
+"440","The Cassino","studies","Nie w tym Mieście",0.599,2022-12-26 21:54:33,"medium","polish indie",262
+"441","The Clash","free time","London Calling - Remastered",0.801,2022-12-27 14:58:39,"fast","classic rock",1
+"442","The Clash","other","London Calling - Remastered",0.801,2022-12-27 14:58:39,"fast","classic rock",91
+"443","The Clash","studies","London Calling - Remastered",0.801,2022-12-27 14:58:39,"fast","classic rock",66
+"444","The Clash","studies","London Calling - Remastered",0.801,2022-12-29 13:02:20,"fast","classic rock",39
+"445","The Cure","free time","Boys Don't Cry",0.841,2022-12-29 10:43:24,"fast","new wave",59
+"446","The Cure","other","Boys Don't Cry",0.841,2022-12-29 10:43:24,"fast","new wave",21
+"447","The Cure","studies","Boys Don't Cry",0.841,2022-12-29 10:43:24,"fast","new wave",81
+"448","The Cure","studies","Boys Don't Cry",0.841,2022-12-29 20:00:24,"fast","new wave",133
+"449","The Doors","other","People Are Strange",0.467,2022-12-27 15:27:49,"medium","acid rock",24
+"450","The Doors","studies","People Are Strange",0.467,2022-12-27 15:27:49,"medium","acid rock",78
+"451","The Fratellis","free time","Chelsea Dagger",0.817,2022-12-29 20:27:24,"fast","alternative rock",22
+"452","The Fratellis","other","Chelsea Dagger",0.817,2022-12-29 20:27:24,"fast","alternative rock",5
+"453","The Fratellis","other","Whistle For The Choir",0.691,2022-12-29 21:25:24,"fast","alternative rock",72
+"454","The Fratellis","studies","Chelsea Dagger",0.817,2022-12-29 20:27:24,"fast","alternative rock",145
+"455","The Fratellis","studies","Whistle For The Choir",0.691,2022-12-29 21:25:24,"fast","alternative rock",127
+"456","The Goo Goo Dolls","free time","Iris",0.715,2022-12-29 18:51:10,"fast","neo mellow",14
+"457","The Goo Goo Dolls","other","Iris",0.715,2022-12-29 12:24:10,"fast","neo mellow",13
+"458","The Goo Goo Dolls","studies","Iris",0.715,2022-12-29 12:24:10,"fast","neo mellow",288
+"459","The Goo Goo Dolls","studies","Iris",0.715,2022-12-29 18:51:10,"fast","neo mellow",257
+"460","The Mamas & The Papas","free time","California Dreamin' - Single Version",0.608,2022-12-27 14:45:17,"medium","bubblegum pop",21
+"461","The Mamas & The Papas","other","California Dreamin' - Single Version",0.608,2022-12-27 14:45:17,"medium","bubblegum pop",12
+"462","The Mamas & The Papas","studies","California Dreamin' - Single Version",0.608,2022-12-27 14:45:17,"medium","bubblegum pop",95
+"463","The Police","free time","Every Breath You Take",0.452,2022-12-28 11:00:46,"medium","album rock",6
+"464","The Police","free time","Every Breath You Take",0.452,2022-12-29 21:00:46,"medium","album rock",1
+"465","The Police","other","Every Breath You Take",0.452,2022-12-29 21:00:46,"medium","album rock",119
+"466","The Police","studies","Every Breath You Take",0.452,2022-12-28 11:00:46,"medium","album rock",249
+"467","The Police","studies","Message In A Bottle",0.808,2022-12-28 15:06:57,"fast","album rock",2
+"468","The Rolling Stones","free time","Paint It, Black",0.795,2022-12-29 21:46:37,"fast","british invasion",104
+"469","The Rolling Stones","studies","Angie",0.554,2022-12-28 15:06:58,"medium","british invasion",1
+"470","The Rolling Stones","studies","Paint It, Black",0.795,2022-12-29 21:46:37,"fast","british invasion",59
+"471","The Velvet Underground","free time","Pale Blue Eyes",0.107,2022-12-28 12:14:20,"slow","alternative rock",162
+"472","The Velvet Underground","studies","Pale Blue Eyes",0.107,2022-12-28 12:14:20,"slow","alternative rock",182
+"473","The Verve","free time","Bitter Sweet Symphony",0.917,2022-12-28 22:35:02,"fast","alternative rock",79
+"474","The Verve","studies","Bitter Sweet Symphony",0.917,2022-12-28 22:35:02,"fast","alternative rock",304
+"475","The Verve","studies","Bitter Sweet Symphony",0.917,2022-12-29 19:23:02,"fast","alternative rock",338
+"476","Thirteen Senses","free time","Into The Fire",0.63,2022-12-26 21:20:21,"medium","britpop",203
+"477","Thirteen Senses","other","Into The Fire",0.63,2022-12-26 21:20:21,"medium","britpop",5
+"478","Twenty One Pilots","free time","Stressed Out",0.637,2022-12-19 10:06:37,"medium","modern rock",202
+"479","Twenty One Pilots","other","Chlorine",0.674,2022-12-19 10:16:35,"fast","modern rock",278
+"480","U2","free time","With Or Without You - Remastered",0.429,2022-12-28 15:07:04,"medium","irish rock",40
+"481","U2","studies","With Or Without You - Remastered",0.429,2022-12-28 15:07:04,"medium","irish rock",245
+"482","Us The Duo","other","Winter Wonderland",0.316,2022-12-18 12:38:17,"slow","folk-pop",162
+"483","Weezer","studies","Island In The Sun",0.81,2022-12-29 12:49:39,"fast","alternative rock",194
+"484","Weezer","studies","Island In The Sun",0.81,2022-12-29 19:15:39,"fast","alternative rock",160
+"485","Wendy Salisbury","other","We Wish You a Merry Christmas",0.0457,2022-12-16 15:31:31,"slow","lullaby",88
+"486","Wishbone Ash","other","Leaf And Stream",0.405,2022-12-27 15:33:53,"medium","album rock",13
+"487","Wishbone Ash","other","Throw Down The Sword",0.547,2022-12-28 11:43:08,"medium","album rock",41
+"488","Wishbone Ash","studies","Leaf And Stream",0.405,2022-12-27 15:33:53,"medium","album rock",271
+"489","Wishbone Ash","studies","Throw Down The Sword",0.547,2022-12-28 11:43:08,"medium","album rock",329
+"490","Yusuf / Cat Stevens","other","Wild World",0.542,2022-12-28 16:04:39,"medium","british folk",60
+"491","Yusuf / Cat Stevens","studies","Wild World",0.542,2022-12-28 16:04:39,"medium","british folk",124
+"492","Zuza Jabłońska","free time","Wierna, odważna i prawa - z filmu „Mulan”",0.455,2022-12-26 16:25:58,"medium","polish pop",1
