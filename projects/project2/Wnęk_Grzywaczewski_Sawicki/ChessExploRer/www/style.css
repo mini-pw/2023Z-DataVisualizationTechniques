@@ -1,0 +1,12 @@
+/* Step 1: basic css for pages */
+
+body {
+  background-color: rgba(225, 223, 221, 0.2);
+  min-height: 611px;
+  margin: 0;
+}
+
+p {
+  color: #ff0000;
+}
+
