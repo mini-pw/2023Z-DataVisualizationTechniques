@@ -24,7 +24,7 @@ access_token <- get_spotify_access_token()
 # ?adujemy pliki
 
 PERSON_CHOICES <- c("Natalia", "Wojtek", "Tymek")
-PERSON <- "Natalia"
+PERSON <- "Wojtek"
 
 
 START_DATE <- as.Date("2022-12-01")
@@ -34,7 +34,7 @@ END_DATE <- as.Date("2023-01-31")
 energy_levels <- seq(from = 0, to = 1, length.out = 4)
 energy_labels <- c("slow", "medium", "fast")
 
-df_spotify <- read_spotify_data(PERSON, sufix = "_spotify") %>%
+df_spotify <- read_spotify_data(PERSON, sufix = "_raw_spotify") %>%
     filter(date %within% interval(START_DATE, END_DATE))
 
 

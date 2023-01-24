@@ -167,13 +167,18 @@ add_audio_features <-
       if(length(track_list)== 0){
         return(NA)
       }
-      artist_id <- track_list[[1]][[1]][[2]][[1]]
-      cat(artist_id, "\n")
-      artist_info <- get_artists(artist_id)
-      if (class(artist_info[[1]][[1]]) != "character") {
+      tryCatch({artist_id <- track_list[[1]][[1]][[2]][[1]]
+               cat(artist_id, "\n")
+               artist_info <- get_artists(artist_id)
+               return(artist_info[[1]][[1]][[1]])},
+      error=function(cond){
         return(NA)
-      }
-      artist_info[[1]][[1]][[1]]
+      })
+      
+      #if (class(artist_info[[1]][[1]]) != "character") {
+      #  return(NA)
+      #}
+      
     }
     # Funkcja zwracająca informacje o piosence z jej nazwy i autora
     get_track_info_name_and_artist <-

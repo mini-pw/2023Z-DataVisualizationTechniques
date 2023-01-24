@@ -127,6 +127,7 @@
         margin: 20px;
         border-radius:5px;
         align-items: center;
+        cursor: pointer;
         
       }
       .us-image{
@@ -139,6 +140,7 @@
       }
       .box11:hover {
         background-color: #2a2a2a
+        cursor: pointer;
       }
       .description-box:hover {
         background-color: #2a2a2a
