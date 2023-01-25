@@ -1,0 +1,183 @@
+.ui {
+  background-color: #312e2b;
+}
+
+.inline {
+  display: inline-flex !important;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+
+.inline .field {
+  padding: 0px 30px 0px 30px;
+}
+
+.field label{
+  color: white !important;
+  font-size: 1rem !important;
+}
+
+.clear-bg div {
+  background-color: transparent !important;
+}
+
+.timeStart .input {
+  color: lightgray !important;
+}
+.timeEnd .input {
+  color: lightgray !important;
+}
+
+#shiny-tab-home > .grid {
+  height: 100%;
+}
+
+.padded > .grid {
+  margin: 0px 5px 20px 10px !important;
+}
+
+.full-span {
+  width: 100%;
+  height: 100%;
+}
+
+.accordion > .title {
+  font-size: 1.1 !important;
+  color: #dfdede !important;
+}
+.faq {
+  position: relative;
+  bottom: 0%;
+}
+
+.flex-column-rev {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+.flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-70 {
+  height: 70%;
+}
+
+.player-game-selector{
+  border: 2px #dcdbdb solid !important;
+}
+
+.player-game-selector > .item {
+  background-color: #141818 !important;
+  color: white !important;
+}
+
+.player-game-selector > a:hover {
+  background-color: #534e49 !important;
+}
+
+.player-game-selector > .divider {
+  width: 2px;
+  background-color: #dcdbdb;
+}
+
+.text-grey {
+  color: #534e49 !important;
+}
+
+.text-white {
+  color: #dcdbdb !important;
+}
+
+.text-orange {
+  color: #f9a03f !important;
+}
+
+.statistic {
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
+}
+
+#timeControlComp > label {
+  white-space: nowrap !important;
+}
+
+.grouped > .field {
+  margin-top: 1em !important;
+  margin-bottom: 0 !important;
+}
+
+.checkbox > input {
+  accent-color: #f00;
+  background-color: #f00 !important;
+}
+
+.ui.radio.checkbox input:checked ~ label::after {
+  background-color: #f9a03f !important;
+  width: 20px !important;
+  height: 20px !important;
+  border: 1px solid #fc962a99 !important;
+}
+
+.ui.radio.checkbox input:checked ~ label::before {
+  background-color: #272522 !important;
+  border: 1px solid #f9a03f99 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.ui.checkbox > label::before{
+  background-color: #272522 !important;
+  border: 1px solid #fc962a99 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.ui.grid > .row > .column {
+  padding: 0px !important;
+}
+
+#winRate{
+  margin-left: 20px;
+  padding: 10px 15px 10px 15px;
+}
+
+.ui.input {
+  color: #f9a03f !important;
+}
+
+.ui.input > input {
+  background: #272522 !important;
+  border: 1px solid #fc962a99 !important;
+  color: #dcdbdb !important;
+}
+
+.ui.icon.input > i.icon{
+  opacity: 0.9;
+}
+
+.ui.form > .field {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: left !important;
+}
+
+label[for="gif"] {
+  white-space: nowrap !important;
+  margin-right: 20px !important;
+  font-size: 1.3em !important;
+  display: block;
+  text-align: center;
+}
+
+.pwhite{
+  white-space: nowrap;
+  margin-left: 10px;
+  font-size: 1.3em !important;
+  text-align: center;
+}
