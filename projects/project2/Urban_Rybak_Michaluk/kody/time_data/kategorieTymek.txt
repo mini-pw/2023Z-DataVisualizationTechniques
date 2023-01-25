@@ -1,0 +1,6 @@
+home <- c("konstancin", "home")
+uni <- c("wydział", "pw")
+fun <- c("ramen", "asia", "boisko", "green", "garden", "mcdonald's", "momencik", "park", "soto", "sphinx", "cafe",
+"piaseczno", "handsome", "dworzec", "kabaty", "stańczyka", "kebab", "marcello", "dolinka", "pawilony", "wars", 
+"tarasy", "gołków", "arkadia", "boisko", "galeria", "janki")
+other <- c("biedronka", "stara", "lidl", "magazyn", "lecznica", "żabka")
