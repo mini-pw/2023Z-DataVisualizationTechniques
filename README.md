@@ -226,7 +226,7 @@ Previous: [Winter Semester 2021/22](https://github.com/mini-pw/2022Z-DataVisuali
     <td rowspan="4">15</td>
     <td rowspan="4">01-25</td>
     <td rowspan="4">Presentation of P2 (part 1)</td>
-    <td rowspan="4">Python: pandas-profiler etc.</td>
+    <td rowspan="4"><a href=https://github.com/MI2-Education/2023Z-DataVisualizationTechniques/tree/main/labs/lab15 rel="noopener noreferrer">Python: pandas-profiler etc.</a></td>
     <td rowspan="4">Presentation of P2 (part 2)</td>
     <td rowspan="4">P2 (20p)</td>
   </tr>
