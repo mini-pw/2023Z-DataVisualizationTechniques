@@ -1,0 +1,3 @@
+home <- c("kazimierów", "willa", "repkowska", "sokołowska")
+uni <- c("gmach", "university")
+fun <- c("cybermachina", "gato", "kredens", "kuchnia", "manekin", "muzeum", "cafe", "restauracja")
