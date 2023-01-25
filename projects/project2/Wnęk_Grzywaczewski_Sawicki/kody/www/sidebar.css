@@ -1,0 +1,13 @@
+#uisidebar {
+  background-color: #272522;
+  font-size: 1rem;
+}
+
+#uisidebar .item { 
+  color: #dfdede !important;
+}
+
+#uisidebar .active{ 
+  color: #f9a03f !important;
+}
+
