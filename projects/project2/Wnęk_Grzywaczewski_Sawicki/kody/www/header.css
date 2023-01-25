@@ -1,0 +1,24 @@
+.dsHeader {
+  background-color: #dbd9d7 !important;
+}
+.dsHeader a {
+  color: black !important;
+}
+
+#creator-container{
+  width: 13rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 1rem;
+}
+
+#creator {
+  color: #848a90;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
