@@ -7,6 +7,7 @@
 #    http://shiny.rstudio.com/
 #
 
+
 #library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -16,7 +17,7 @@ library(forcats)
 library(data.table)
 library(wordcloud2)
 library(RColorBrewer)
-
+library(reshape2)
 # Let's get the data
 #setwd("D:/IAD/sem3/wizualizacja danych/projekt2")
 
@@ -97,7 +98,7 @@ ui3 <- fluidPage(
         "wybierz rok",
         min = 2015,
         max = 2022,
-        value = 1,
+        value = c(2015,2022),
         step = 1,
         sep =''),
       sliderInput(
@@ -105,11 +106,11 @@ ui3 <- fluidPage(
         "wybierz miesiąc",
         min = 1,
         max = 12,
-        value = 1,
+        value = c(1,12),
         step = 1
       ),
       shiny::markdown(
-        "Wykres przedstawia średnią liczbę wiadomości wysyłanych oraz odbieranych przez użytkownika w konkretnych godzinach na przestrzeni całego dnia. Dane przedstawione są w zależności od miesięcy, a także lat począwszy od 2015 roku.
+        "Wykres przedstawia średnią liczbę wiadomości wysyłanych oraz odbieranych przez użytkownika w konkretnych godzinach na przestrzeni całego dnia. Dane przedstawione są w zależności od wybranego zakresu dat: miesięcy, a także lat począwszy od 2015 roku.
         Doskonale odwzorowuje to zmiany w naszych codziennych nawykach komunikacyjnych wraz z dojrzewaniem, a także np rożnicami pomiędzy okresami świątecznymi/wakacyjnymi, czy rokiem szkolnym.")
       
     ),
@@ -125,9 +126,11 @@ ui3 <- fluidPage(
 ui4 <- fluidPage(
   sidebarLayout(
     sidebarPanel(
+      textInput("text", label = h3("wpisz nazwę konwersacji"), value = "Ela Kulczycka"),
+      
       
       shiny::markdown(
-        "Wykres przedstawia liczbę członków poszczególnych konwersacji grupowych powyżej 5 uczestników dla wybranej osoby. To pozwala nam zaobserwować, jakie są preferencje każdego z użytkowników, jesli chodzi chociażby o utrzymywanie kontaktów"))
+        "Wykres przedstawia słowa z największą różnicą występowania pomiędzy uczestnikami konwersacji. Dla zobrazowania użytkownik może wpisać np.: Dla Oli 'Magdalena Jeczeń'. Dla Łukasza 'Aleksandra Kulczycka'. Dla Magdy 'Łukasz Grabarski'"))
     ,
     mainPanel(shinycssloaders::withSpinner(plotly::plotlyOutput("myPlot4",height =400),
                                            type = getOption("spinner.type", default = 8),
@@ -140,9 +143,9 @@ ui4 <- fluidPage(
 # Merge two UI in one app, choose theme and add a footer with the link
 app_ui <- navbarPage(
   collapsible=TRUE,
-  title = div(h3("Messenger Statistics")),
+  title = div(h3("Messenger Statystyki")),
   selectInput("person",
-              "Choose the person:",
+              "Wybierz użytkownika:",
               choices = c("Ola" = "ola",
                           "Magda" = "magda",
                           "Łukasz" = "lukasz")),
@@ -150,7 +153,7 @@ app_ui <- navbarPage(
   
   tabPanel("aktywność na forum",icon = icon("user-group"), ui2),
   tabPanel("schemat dzienny",icon = icon("hourglass-start"), ui3),
-  tabPanel("w grupie raźniej",icon = icon("face-laugh-wink"), ui4),
+  tabPanel("zróżnicowane słownictwo",icon = icon("font"), ui4),
   theme = bslib::bs_theme( bg = "#FFFFFF", fg = "black", primary = "#FFB5EE", bootswatch = "sketchy"
   ),
   footer = shiny::HTML("
@@ -168,6 +171,8 @@ app_ui <- navbarPage(
 )
 # Define server logic required to draw plots
 server <- function(input, output) {
+  output$value <- renderPrint({ input$text })
+  
   
   ##nie zadziałało, ale miało perspektywy przed sobą
   
@@ -279,34 +284,110 @@ server <- function(input, output) {
   })
   output$myPlot4 <- renderPlotly({
     
+    example_file <- input$text
+    merged_common_words <- ola_merged_common_words
+    words_to_use <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      mutate(roznica = abs(my_count - other_count)) %>% 
+      arrange(desc(roznica)) %>% 
+      head(5)
+    words_to_use <- words_to_use$word
     
-    p41 <- filter(ola_merged_message_to_work, participants > 5)%>%
-      ggplot(aes(file, participants)) +
-      geom_point(color = "lightblue") +
+    merged_common_words_to_work <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      filter(word %in% words_to_use)
+    
+    
+    dfm <- melt(merged_common_words_to_work[,c('word','my_count','other_count')],id.vars = 1)
+    p41 <- ggplot(dfm, aes(x = word, y = value)) + 
+      geom_bar(aes(fill = variable),position="stack", stat="identity" ) +
+      scale_y_log10() + 
       theme_minimal() +
-      labs(title = "Liczba osób w konwersacjach grupowych powyżej 5 członków",
-           x = "konwersacja",
-           y = "Liczba osób w konwersacji") + 
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
-            axis.ticks.x=element_blank())
-    p42 <- filter(magda_merged_message_to_work, participants > 5)%>%
-      ggplot(aes(file, participants)) +
-      geom_point(color = "lightblue") +
+      labs(title = "Słowa z największą różnicą występowania",
+           x = "Słowo",
+           y = "Ile razy słowo zostało użyte w konwersacji") + 
+      scale_fill_discrete(NULL) +
+      theme(legend.title = element_blank()) + 
+      scale_fill_discrete(labels=c('Ja', 'Uczestnik konwersacji'))
+    p41
+    
+    merged_common_words <- magda_merged_common_words
+    words_to_use <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      mutate(roznica = abs(my_count - other_count)) %>% 
+      arrange(desc(roznica)) %>% 
+      head(5)
+    words_to_use <- words_to_use$word
+    
+    merged_common_words_to_work <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      filter(word %in% words_to_use)
+    
+    
+    dfm <- melt(merged_common_words_to_work[,c('word','my_count','other_count')],id.vars = 1)
+    p42 <- ggplot(dfm, aes(x = word, y = value)) + 
+      geom_bar(aes(fill = variable),position="stack", stat="identity" ) +
+      scale_y_log10() + 
       theme_minimal() +
-      labs(title = "Liczba osób w konwersacjach grupowych powyżej 5 członków",
-           x = "konwersacja",
-           y = "Liczba osób w konwersacji") + 
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
-            axis.ticks.x=element_blank())
-    p43 <- filter(lukasz_merged_message_to_work, participants > 5)%>%
-      ggplot(aes(file, participants)) +
-      geom_point(color = "lightblue") +
+      labs(title = "Słowa z największą różnicą występowania",
+           x = "Słowo",
+           y = "Ile razy słowo zostało użyte w konwersacji") + 
+      scale_fill_discrete(NULL) +
+      theme(legend.title = element_blank()) + 
+      scale_fill_discrete(labels=c('Ja', 'Uczestnik konwersacji'))
+    p42
+    
+    merged_common_words <- lukasz_merged_common_words
+    words_to_use <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      mutate(roznica = abs(my_count - other_count)) %>% 
+      arrange(desc(roznica)) %>% 
+      head(5)
+    words_to_use <- words_to_use$word
+    
+    merged_common_words_to_work <- merged_common_words %>% 
+      filter(file == example_file) %>% 
+      filter(word %in% words_to_use)
+    
+    
+    dfm <- melt(merged_common_words_to_work[,c('word','my_count','other_count')],id.vars = 1)
+    p43 <- ggplot(dfm, aes(x = word, y = value)) + 
+      geom_bar(aes(fill = variable),position="stack", stat="identity" ) +
+      scale_y_log10() + 
       theme_minimal() +
-      labs(title = "Liczba osób w konwersacjach grupowych powyżej 5 członków",
-           x = "konwersacja",
-           y = "Liczba osób w konwersacji") + 
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
-            axis.ticks.x=element_blank())
+      labs(title = "Słowa z największą różnicą występowania",
+           x = "Słowo",
+           y = "Ile razy słowo zostało użyte w konwersacji") + 
+      theme(legend.title = element_blank()) + 
+      scale_fill_discrete(labels=c('Ja', 'Uczestnik konwersacji'))
+    p43
+    # p41 <- filter(ola_merged_message_to_work, participants > 5)%>%
+    #   ggplot(aes(file, participants)) +
+    #   geom_point(color = "lightblue") +
+    #   theme_minimal() +
+    #   labs(title = "Liczba osób w konwersacjach grupowych powyżej 5 członków",
+    #        x = "konwersacja",
+    #        y = "Liczba osób w konwersacji") + 
+    #   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
+    #         axis.ticks.x=element_blank())
+    # p42 <- filter(magda_merged_message_to_work, participants > 5)%>%
+    #   ggplot(aes(file, participants)) +
+    #   geom_point(color = "lightblue") +
+    #   theme_minimal() +
+    #   labs(title = "Liczba wiadomości zależnie od h",
+    #        x = "konwersacja",
+    #        y = "Liczba osób w konwersacji") + 
+    #   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
+    #         axis.ticks.x=element_blank())
+    # p43 <- filter(lukasz_merged_message_to_work, participants > 5)%>%
+    #   ggplot(aes(file, participants)) +
+    #   geom_point(color = "lightblue") +
+    #   theme_minimal() +
+    #   labs(title = "Liczba wiadomości zależnie od h",
+    #        x = "konwersacja",
+    #        y = "Liczba osób w konwersacji") + 
+    #   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),axis.text.x=element_blank(),
+    #         axis.ticks.x=element_blank())
     
     
     switch(input$person,
