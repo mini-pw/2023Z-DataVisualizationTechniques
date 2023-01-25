@@ -1,0 +1,1 @@
+https://grzywa.shinyapps.io/ChessExploRer/
