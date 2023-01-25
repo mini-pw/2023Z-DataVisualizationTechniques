@@ -1,0 +1,13 @@
+name: project2
+title: project2
+username:
+account: albdarion
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8106353
+bundleId: 6770273
+url: https://albdarion.shinyapps.io/project2/
+when: 1674599254.30974
+lastSyncTime: 1674599254.30976
+asMultiple: FALSE
+asStatic: FALSE
